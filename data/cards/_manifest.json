@@ -1,0 +1,2023 @@
+{
+ "01-ai/Yi-Coder-9B": {
+  "url": "https://huggingface.co/01-ai/Yi-Coder-9B/resolve/bc6e63fd26a654ee42dba737a553310bfa01dc5d/README.md",
+  "fetched_at": "2026-10-22T14:11:48+09:00",
+  "status": "ok",
+  "body_chars": 4978,
+  "has_front_matter": true,
+  "card_revision": "bc6e63fd26a654ee42dba737a553310bfa01dc5d",
+  "model_id": "01-ai/Yi-Coder-9B",
+  "body_sha256": "c60dabd939dd0d65f7c205b976f51d75b901d749c29bcf0b1b1a6d34d7ce048a"
+ },
+ "01-ai/Yi-Coder-9B-Chat": {
+  "url": "https://huggingface.co/01-ai/Yi-Coder-9B-Chat/resolve/356a1f8d4e4a606d0b879e54191ca809918576b8/README.md",
+  "fetched_at": "2026-10-22T14:11:50+09:00",
+  "status": "ok",
+  "body_chars": 4978,
+  "has_front_matter": true,
+  "card_revision": "356a1f8d4e4a606d0b879e54191ca809918576b8",
+  "model_id": "01-ai/Yi-Coder-9B-Chat",
+  "body_sha256": "c60dabd939dd0d65f7c205b976f51d75b901d749c29bcf0b1b1a6d34d7ce048a"
+ },
+ "HuggingFaceTB/SmolLM2-1.7B-Instruct": {
+  "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct/resolve/31b70e2e869a7173562077fd711b654946d38674/README.md",
+  "fetched_at": "2026-10-22T14:13:31+09:00",
+  "status": "ok",
+  "body_chars": 14728,
+  "has_front_matter": true,
+  "card_revision": "31b70e2e869a7173562077fd711b654946d38674",
+  "model_id": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+  "body_sha256": "1f7f4969b7a850ebaa2e30b67504ac932d1a4776b30946ef67cfcd2ba2e31c0d"
+ },
+ "HuggingFaceTB/SmolLM3-3B": {
+  "url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/resolve/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "fetched_at": "2026-10-22T14:13:32+09:00",
+  "status": "ok",
+  "body_chars": 17292,
+  "has_front_matter": true,
+  "card_revision": "a07cc9a04f16550a088caea529712d1d335b0ac1",
+  "model_id": "HuggingFaceTB/SmolLM3-3B",
+  "body_sha256": "ffaea077e3ad179779f3d50ea4176f3ff47e376b3ac96805dc2404ac4e307a63"
+ },
+ "HuggingFaceTB/SmolLM3-3B-Base": {
+  "url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B-Base/resolve/d78a42f79198603e614095753484a04c10c2b940/README.md",
+  "fetched_at": "2026-10-22T14:13:33+09:00",
+  "status": "ok",
+  "body_chars": 12202,
+  "has_front_matter": true,
+  "card_revision": "d78a42f79198603e614095753484a04c10c2b940",
+  "model_id": "HuggingFaceTB/SmolLM3-3B-Base",
+  "body_sha256": "1e1705e27f706d1c7edab72bea5ace3acf3a830bbdb85d76cf2dfb6debc11088"
+ },
+ "HuggingFaceTB/SmolVLM2-2.2B-Instruct": {
+  "url": "https://huggingface.co/HuggingFaceTB/SmolVLM2-2.2B-Instruct/resolve/482adb537c021c86670beed01cd58990d01e72e4/README.md",
+  "fetched_at": "2026-10-22T14:13:34+09:00",
+  "status": "ok",
+  "body_chars": 10920,
+  "has_front_matter": true,
+  "card_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+  "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+  "body_sha256": "aeb5fe7d842cfe22aebfb0be1f1f0e08d745701291540d86ab75fb21ac0cd13c"
+ },
+ "K-intelligence/Midm-2.0-Base-Instruct": {
+  "url": "https://huggingface.co/K-intelligence/Midm-2.0-Base-Instruct/resolve/35479c5fc9a18a5db7cc6dbadcf1db68db7beab0/README.md",
+  "fetched_at": "2026-10-22T14:14:55+09:00",
+  "status": "ok",
+  "body_chars": 17662,
+  "has_front_matter": true,
+  "card_revision": "35479c5fc9a18a5db7cc6dbadcf1db68db7beab0",
+  "model_id": "K-intelligence/Midm-2.0-Base-Instruct",
+  "body_sha256": "269f2dff5bfc7094888f85ce0cc95c5ad9425f2e102be186ee2477322bd7f36a"
+ },
+ "K-intelligence/Midm-2.0-Mini-Instruct": {
+  "url": "https://huggingface.co/K-intelligence/Midm-2.0-Mini-Instruct/resolve/383eb221c52a32278f1985257b264ade8d982e60/README.md",
+  "fetched_at": "2026-10-22T14:14:56+09:00",
+  "status": "ok",
+  "body_chars": 17717,
+  "has_front_matter": true,
+  "card_revision": "383eb221c52a32278f1985257b264ade8d982e60",
+  "model_id": "K-intelligence/Midm-2.0-Mini-Instruct",
+  "body_sha256": "31219b43c9554d47301cb89f0ed0c0d9e3f3150949e03a05c713b6507744d50b"
+ },
+ "LGAI-EXAONE/EXAONE-3.0-7.8B-Instruct": {
+  "url": "https://huggingface.co/LGAI-EXAONE/EXAONE-3.0-7.8B-Instruct/resolve/7f15baedd46858153d817445aff032f4d6cf4939/README.md",
+  "fetched_at": "2026-10-22T14:15:06+09:00",
+  "status": "ok",
+  "body_chars": 5009,
+  "has_front_matter": true,
+  "card_revision": "7f15baedd46858153d817445aff032f4d6cf4939",
+  "model_id": "LGAI-EXAONE/EXAONE-3.0-7.8B-Instruct",
+  "body_sha256": "caf54ca434a8b5a23a774eb0a28ce021dfb79d57aff10346b722e378b6e3c316"
+ },
+ "LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct": {
+  "url": "https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct/resolve/ccce25bd39c141fe053e0bc75818a8f5fe962802/README.md",
+  "fetched_at": "2026-10-22T14:15:06+09:00",
+  "status": "ok",
+  "body_chars": 7301,
+  "has_front_matter": true,
+  "card_revision": "ccce25bd39c141fe053e0bc75818a8f5fe962802",
+  "model_id": "LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct",
+  "body_sha256": "483818d5c3d46c062b650a380088446c9a38567c3c32239afcc441955c5e5db7"
+ },
+ "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct": {
+  "url": "https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct/resolve/553ea250b9a5317231459279d5847d6cf955b9aa/README.md",
+  "fetched_at": "2026-10-22T14:15:08+09:00",
+  "status": "ok",
+  "body_chars": 7248,
+  "has_front_matter": true,
+  "card_revision": "553ea250b9a5317231459279d5847d6cf955b9aa",
+  "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+  "body_sha256": "a1663dcd812c540afe6bbea89cc1bf4866b6020ecedf2f298078814c098b94b3"
+ },
+ "LGAI-EXAONE/EXAONE-4.0-1.2B": {
+  "url": "https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-1.2B/resolve/3abf2810673c7c0778df64a73c2d52eab32d91c4/README.md",
+  "fetched_at": "2026-10-22T14:15:09+09:00",
+  "status": "ok",
+  "body_chars": 36833,
+  "has_front_matter": true,
+  "card_revision": "3abf2810673c7c0778df64a73c2d52eab32d91c4",
+  "model_id": "LGAI-EXAONE/EXAONE-4.0-1.2B",
+  "body_sha256": "cc4e758807fd8341e16987c09c3082b3667bff834aa5051d1eb39a7c141ed7e3"
+ },
+ "LGAI-EXAONE/EXAONE-Deep-2.4B": {
+  "url": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-2.4B/resolve/69d80cdf4784e2c182854d83e9b2d02494626a3e/README.md",
+  "fetched_at": "2026-10-22T14:15:10+09:00",
+  "status": "ok",
+  "body_chars": 10860,
+  "has_front_matter": true,
+  "card_revision": "69d80cdf4784e2c182854d83e9b2d02494626a3e",
+  "model_id": "LGAI-EXAONE/EXAONE-Deep-2.4B",
+  "body_sha256": "04864359e7c676c6e2420c42d68a06f9df969f55a8e06f06131f6058ab2b2c83"
+ },
+ "LGAI-EXAONE/EXAONE-Deep-7.8B": {
+  "url": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-7.8B/resolve/8a120673fc7309b55be2175a2e61f9a0839e4f61/README.md",
+  "fetched_at": "2026-10-22T14:15:11+09:00",
+  "status": "ok",
+  "body_chars": 10803,
+  "has_front_matter": true,
+  "card_revision": "8a120673fc7309b55be2175a2e61f9a0839e4f61",
+  "model_id": "LGAI-EXAONE/EXAONE-Deep-7.8B",
+  "body_sha256": "336c0819a92fd342e32ef9533d1aa9240e49830130f56f48ffd52d1c33ebc564"
+ },
+ "LiquidAI/LFM2.5-1.2B-Instruct": {
+  "url": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct/resolve/0f604ada3f766f9f257460c4c9f0b5d6f69d431b/README.md",
+  "fetched_at": "2026-10-22T14:13:44+09:00",
+  "status": "ok",
+  "body_chars": 16013,
+  "has_front_matter": true,
+  "card_revision": "0f604ada3f766f9f257460c4c9f0b5d6f69d431b",
+  "model_id": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "body_sha256": "d8275d537c49def4d9ebc763fc21554c938f2690a5b12733ae81d8ecf347d9ac"
+ },
+ "LiquidAI/LFM2.5-2.6B": {
+  "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B/resolve/654f9463ce32b05d0429d76fe1f580b27d4c1ac0/README.md",
+  "fetched_at": "2026-10-22T14:13:45+09:00",
+  "status": "ok",
+  "body_chars": 18007,
+  "has_front_matter": true,
+  "card_revision": "654f9463ce32b05d0429d76fe1f580b27d4c1ac0",
+  "model_id": "LiquidAI/LFM2.5-2.6B",
+  "body_sha256": "1e339ee49a0c267a476b97280fa26d0367bd139b07a9730e4cea0293073ff5c6"
+ },
+ "NCSOFT/VARCO-VISION-2.0-1.7B": {
+  "url": "https://huggingface.co/NCSOFT/VARCO-VISION-2.0-1.7B/resolve/ed09f37445518b1564d1ef3c6e26fbd7c1b2c818/README.md",
+  "fetched_at": "2026-10-22T14:15:16+09:00",
+  "status": "ok",
+  "body_chars": 13770,
+  "has_front_matter": true,
+  "card_revision": "ed09f37445518b1564d1ef3c6e26fbd7c1b2c818",
+  "model_id": "NCSOFT/VARCO-VISION-2.0-1.7B",
+  "body_sha256": "e64b364059fe5e1d79ab2777e425f07324efab64d48d49d16a8989a62a51e0f5"
+ },
+ "NCSOFT/VARCO-VISION-2.0-1.7B-OCR": {
+  "url": "https://huggingface.co/NCSOFT/VARCO-VISION-2.0-1.7B-OCR/resolve/5c83a19639613ee6ea8bc24070ca1b38305aae69/README.md",
+  "fetched_at": "2026-10-22T14:15:17+09:00",
+  "status": "ok",
+  "body_chars": 6365,
+  "has_front_matter": true,
+  "card_revision": "5c83a19639613ee6ea8bc24070ca1b38305aae69",
+  "model_id": "NCSOFT/VARCO-VISION-2.0-1.7B-OCR",
+  "body_sha256": "f2fe58a1b8da380abf81e93abbcc4ce5db6b10c4db103f2f3d31d1e025e77acc"
+ },
+ "Qwen/Qwen-7B": {
+  "url": "https://huggingface.co/Qwen/Qwen-7B/resolve/ef3c5c9c57b252f3149c1408daf4d649ec8b6c85/README.md",
+  "fetched_at": "2026-10-22T14:12:24+09:00",
+  "status": "ok",
+  "body_chars": 16539,
+  "has_front_matter": true,
+  "card_revision": "ef3c5c9c57b252f3149c1408daf4d649ec8b6c85",
+  "model_id": "Qwen/Qwen-7B",
+  "body_sha256": "053624dbdf0031ac21c708478f8b55394d3552bcca2dbb58846a98243e83381e"
+ },
+ "Qwen/Qwen1.5-1.8B-Chat": {
+  "url": "https://huggingface.co/Qwen/Qwen1.5-1.8B-Chat/resolve/e482ee3f73c375a627a16fdf66fd0c8279743ca6/README.md",
+  "fetched_at": "2026-10-22T14:12:25+09:00",
+  "status": "ok",
+  "body_chars": 4080,
+  "has_front_matter": true,
+  "card_revision": "e482ee3f73c375a627a16fdf66fd0c8279743ca6",
+  "model_id": "Qwen/Qwen1.5-1.8B-Chat",
+  "body_sha256": "81399a0950640f46cd4d5c0ac92a0dde1b364300ed946cfe1e4ea20145844b65"
+ },
+ "Qwen/Qwen1.5-7B": {
+  "url": "https://huggingface.co/Qwen/Qwen1.5-7B/resolve/831096e3a59a0789a541415da25ef195ceb802fe/README.md",
+  "fetched_at": "2026-10-22T14:12:26+09:00",
+  "status": "ok",
+  "body_chars": 2584,
+  "has_front_matter": true,
+  "card_revision": "831096e3a59a0789a541415da25ef195ceb802fe",
+  "model_id": "Qwen/Qwen1.5-7B",
+  "body_sha256": "89cb630ceaa73beb3e6a3b97e88c911206e0fe41451527bba682c24e6f31e543"
+ },
+ "Qwen/Qwen1.5-MoE-A2.7B": {
+  "url": "https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B/resolve/1a758c50ecb6350748b9ce0a99d2352fd9fc11c9/README.md",
+  "fetched_at": "2026-10-22T14:12:28+09:00",
+  "status": "ok",
+  "body_chars": 1211,
+  "has_front_matter": true,
+  "card_revision": "1a758c50ecb6350748b9ce0a99d2352fd9fc11c9",
+  "model_id": "Qwen/Qwen1.5-MoE-A2.7B",
+  "body_sha256": "4795b36d020ba4b14700a34f2f1cddee26619154181774f1f32af22ce6ece88e"
+ },
+ "Qwen/Qwen2-1.5B": {
+  "url": "https://huggingface.co/Qwen/Qwen2-1.5B/resolve/8a16abf2848eda07cc5253dec660bf1ce007ad7a/README.md",
+  "fetched_at": "2026-10-22T14:12:29+09:00",
+  "status": "ok",
+  "body_chars": 3905,
+  "has_front_matter": true,
+  "card_revision": "8a16abf2848eda07cc5253dec660bf1ce007ad7a",
+  "model_id": "Qwen/Qwen2-1.5B",
+  "body_sha256": "d3221cdbed18b6d21c02d8577fd4998b701b37e23d7d0a7af45f907829cccb13"
+ },
+ "Qwen/Qwen2-1.5B-Instruct": {
+  "url": "https://huggingface.co/Qwen/Qwen2-1.5B-Instruct/resolve/ba1cf1846d7df0a0591d6c00649f57e798519da8/README.md",
+  "fetched_at": "2026-10-22T14:12:30+09:00",
+  "status": "ok",
+  "body_chars": 3450,
+  "has_front_matter": true,
+  "card_revision": "ba1cf1846d7df0a0591d6c00649f57e798519da8",
+  "model_id": "Qwen/Qwen2-1.5B-Instruct",
+  "body_sha256": "22aa65509893197ee48e0cc9c1da33300fb948d2fd7c9a127416b62f75fc221f"
+ },
+ "Qwen/Qwen2-7B": {
+  "url": "https://huggingface.co/Qwen/Qwen2-7B/resolve/453ed1575b739b5b03ce3758b23befdb0967f40e/README.md",
+  "fetched_at": "2026-10-22T14:12:31+09:00",
+  "status": "ok",
+  "body_chars": 4508,
+  "has_front_matter": true,
+  "card_revision": "453ed1575b739b5b03ce3758b23befdb0967f40e",
+  "model_id": "Qwen/Qwen2-7B",
+  "body_sha256": "b19c90857d354baf4c399ce278778ce87917a61832db9afeacc3064f2aa8694f"
+ },
+ "Qwen/Qwen2-7B-Instruct": {
+  "url": "https://huggingface.co/Qwen/Qwen2-7B-Instruct/resolve/f2826a00ceef68f0f2b946d945ecc0477ce4450c/README.md",
+  "fetched_at": "2026-10-22T14:12:32+09:00",
+  "status": "ok",
+  "body_chars": 6464,
+  "has_front_matter": true,
+  "card_revision": "f2826a00ceef68f0f2b946d945ecc0477ce4450c",
+  "model_id": "Qwen/Qwen2-7B-Instruct",
+  "body_sha256": "62b51738cb9cc08e3f9ef59a290f7a134428602b377a8f8641c36a22bd7bc01e"
+ },
+ "Qwen/Qwen2-Math-1.5B": {
+  "url": "https://huggingface.co/Qwen/Qwen2-Math-1.5B/resolve/a257a714105a2c4a79c898201cfd907bc9b02138/README.md",
+  "fetched_at": "2026-10-22T14:14:43+09:00",
+  "status": "ok",
+  "body_chars": 2167,
+  "has_front_matter": true,
+  "card_revision": "a257a714105a2c4a79c898201cfd907bc9b02138",
+  "model_id": "Qwen/Qwen2-Math-1.5B",
+  "body_sha256": "89833a8dbbd3361410c6e2353e47bcb6c8a4c15365b2d1e32987ced6db133fdd"
+ },
+ "Qwen/Qwen2-VL-2B-Instruct": {
+  "url": "https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct/resolve/895c3a49bc3fa70a340399125c650a463535e71c/README.md",
+  "fetched_at": "2026-10-22T14:12:34+09:00",
+  "status": "ok",
+  "body_chars": 17236,
+  "has_front_matter": true,
+  "card_revision": "895c3a49bc3fa70a340399125c650a463535e71c",
+  "model_id": "Qwen/Qwen2-VL-2B-Instruct",
+  "body_sha256": "6d09d82aab777fd95bcc8e3278e975ea3a982ba2b7a433227a4292e5812a2fdf"
+ },
+ "Qwen/Qwen2-VL-7B-Instruct": {
+  "url": "https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct/resolve/eed13092ef92e448dd6875b2a00151bd3f7db0ac/README.md",
+  "fetched_at": "2026-10-22T14:12:35+09:00",
+  "status": "ok",
+  "body_chars": 17534,
+  "has_front_matter": true,
+  "card_revision": "eed13092ef92e448dd6875b2a00151bd3f7db0ac",
+  "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+  "body_sha256": "ae8970145b9556cf3029d33c332d4220fd3da06646f46b14741bfa75010e06b6"
+ },
+ "Qwen/Qwen2.5-1.5B": {
+  "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B/resolve/8faed761d45a263340a0528343f099c05c9a4323/README.md",
+  "fetched_at": "2026-10-22T14:12:36+09:00",
+  "status": "ok",
+  "body_chars": 3673,
+  "has_front_matter": true,
+  "card_revision": "8faed761d45a263340a0528343f099c05c9a4323",
+  "model_id": "Qwen/Qwen2.5-1.5B",
+  "body_sha256": "995d8d1db0915688f4693bae6f3be6c44b0f128a1d9295b9e4ee87355673017e"
+ },
+ "Qwen/Qwen2.5-1.5B-Instruct": {
+  "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/resolve/989aa7980e4cf806f80c7fef2b1adb7bc71aa306/README.md",
+  "fetched_at": "2026-10-22T14:12:37+09:00",
+  "status": "ok",
+  "body_chars": 4688,
+  "has_front_matter": true,
+  "card_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+  "body_sha256": "f07913238496e12144426b56fc3af61e2af76c2e77c60c58518f3491d2f2e78f"
+ },
+ "Qwen/Qwen2.5-14B": {
+  "url": "https://huggingface.co/Qwen/Qwen2.5-14B/resolve/97e1e76335b7017d8f67c08a19d103c0504298c9/README.md",
+  "fetched_at": "2026-10-22T14:12:38+09:00",
+  "status": "ok",
+  "body_chars": 3646,
+  "has_front_matter": true,
+  "card_revision": "97e1e76335b7017d8f67c08a19d103c0504298c9",
+  "model_id": "Qwen/Qwen2.5-14B",
+  "body_sha256": "246a20755f6cfc6d645c4aa6f894d7a7876100801d96e306726d783a6ce2d10f"
+ },
+ "Qwen/Qwen2.5-14B-Instruct": {
+  "url": "https://huggingface.co/Qwen/Qwen2.5-14B-Instruct/resolve/cf98f3b3bbb457ad9e2bb7baf9a0125b6b88caa8/README.md",
+  "fetched_at": "2026-10-22T14:12:39+09:00",
+  "status": "ok",
+  "body_chars": 5783,
+  "has_front_matter": true,
+  "card_revision": "cf98f3b3bbb457ad9e2bb7baf9a0125b6b88caa8",
+  "model_id": "Qwen/Qwen2.5-14B-Instruct",
+  "body_sha256": "2370de06fac04244e174bd1ed21edf5914b6c318b8fb34da9dc1cfbf2c596520"
+ },
+ "Qwen/Qwen2.5-3B": {
+  "url": "https://huggingface.co/Qwen/Qwen2.5-3B/resolve/3aab1f1954e9cc14eb9509a215f9e5ca08227a9b/README.md",
+  "fetched_at": "2026-10-22T14:12:40+09:00",
+  "status": "ok",
+  "body_chars": 3669,
+  "has_front_matter": true,
+  "card_revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+  "model_id": "Qwen/Qwen2.5-3B",
+  "body_sha256": "c0d4247bec7ffb11c854f0bb2bd7b249f4e3ac582220b0bd7a86695d6dddb2ee"
+ },
+ "Qwen/Qwen2.5-3B-Instruct": {
+  "url": "https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/resolve/aa8e72537993ba99e69dfaafa59ed015b17504d1/README.md",
+  "fetched_at": "2026-10-22T14:12:42+09:00",
+  "status": "ok",
+  "body_chars": 4682,
+  "has_front_matter": true,
+  "card_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "model_id": "Qwen/Qwen2.5-3B-Instruct",
+  "body_sha256": "f4274e792cf5767484f72869938616ef94d4b6eba2039c602a32f3dad2a59ba2"
+ },
+ "Qwen/Qwen2.5-7B": {
+  "url": "https://huggingface.co/Qwen/Qwen2.5-7B/resolve/d149729398750b98c0af14eb82c78cfe92750796/README.md",
+  "fetched_at": "2026-10-22T14:12:43+09:00",
+  "status": "ok",
+  "body_chars": 3644,
+  "has_front_matter": true,
+  "card_revision": "d149729398750b98c0af14eb82c78cfe92750796",
+  "model_id": "Qwen/Qwen2.5-7B",
+  "body_sha256": "3279079770acc247327403c7bfed80ff581bdc705792c8358c1c234e1220fac6"
+ },
+ "Qwen/Qwen2.5-7B-Instruct": {
+  "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct/resolve/a09a35458c702b33eeacc393d103063234e8bc28/README.md",
+  "fetched_at": "2026-10-22T14:12:44+09:00",
+  "status": "ok",
+  "body_chars": 6015,
+  "has_front_matter": true,
+  "card_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "body_sha256": "fe7cb4d48a9cc8c6eb6d99e895aec1144bc835ae79772aa6b024ac05978519b0"
+ },
+ "Qwen/Qwen2.5-7B-Instruct-1M": {
+  "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-1M/resolve/e28526f7bb80e2a9c8af03b831a9af3812f18fba/README.md",
+  "fetched_at": "2026-10-22T14:12:45+09:00",
+  "status": "ok",
+  "body_chars": 9048,
+  "has_front_matter": true,
+  "card_revision": "e28526f7bb80e2a9c8af03b831a9af3812f18fba",
+  "model_id": "Qwen/Qwen2.5-7B-Instruct-1M",
+  "body_sha256": "846e334e95caedbbcf0a93bd98a4b9805be02d2e48d12430c4108ab94733fada"
+ },
+ "Qwen/Qwen2.5-Coder-1.5B": {
+  "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B/resolve/df3ce67c0e24480f20468b6ef2894622d69eb73b/README.md",
+  "fetched_at": "2026-10-22T14:11:51+09:00",
+  "status": "ok",
+  "body_chars": 3794,
+  "has_front_matter": true,
+  "card_revision": "df3ce67c0e24480f20468b6ef2894622d69eb73b",
+  "model_id": "Qwen/Qwen2.5-Coder-1.5B",
+  "body_sha256": "f75c7a780d98286bd39a3aeb5e8a7f72d4c9a643760738fd14ac5018535cc729"
+ },
+ "Qwen/Qwen2.5-Coder-1.5B-Instruct": {
+  "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct/resolve/2e1fd397ee46e1388853d2af2c993145b0f1098a/README.md",
+  "fetched_at": "2026-10-22T14:11:52+09:00",
+  "status": "ok",
+  "body_chars": 4976,
+  "has_front_matter": true,
+  "card_revision": "2e1fd397ee46e1388853d2af2c993145b0f1098a",
+  "model_id": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "body_sha256": "265182be2fa95f1898b7edb68ddf8e48e1985864441915003b808fbd933e9f57"
+ },
+ "Qwen/Qwen2.5-Coder-14B-Instruct": {
+  "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct/resolve/aedcc2d42b622764e023cf882b6652e646b95671/README.md",
+  "fetched_at": "2026-10-22T14:11:53+09:00",
+  "status": "ok",
+  "body_chars": 6117,
+  "has_front_matter": true,
+  "card_revision": "aedcc2d42b622764e023cf882b6652e646b95671",
+  "model_id": "Qwen/Qwen2.5-Coder-14B-Instruct",
+  "body_sha256": "3e021b109cd836168cd5e72effe216576913b4a291c569fbfbc2498cced2aa36"
+ },
+ "Qwen/Qwen2.5-Coder-3B": {
+  "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-3B/resolve/09d9bc5d376b0cfa0100a0694ea7de7232525803/README.md",
+  "fetched_at": "2026-10-22T14:11:54+09:00",
+  "status": "ok",
+  "body_chars": 3790,
+  "has_front_matter": true,
+  "card_revision": "09d9bc5d376b0cfa0100a0694ea7de7232525803",
+  "model_id": "Qwen/Qwen2.5-Coder-3B",
+  "body_sha256": "2315710d02da3965bdb7fed6c761c69cb1dfafba341264e0c10d967efb7d3202"
+ },
+ "Qwen/Qwen2.5-Coder-3B-Instruct": {
+  "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct/resolve/488639f1ff808d1d3d0ba301aef8c11461451ec5/README.md",
+  "fetched_at": "2026-10-22T14:11:55+09:00",
+  "status": "ok",
+  "body_chars": 4970,
+  "has_front_matter": true,
+  "card_revision": "488639f1ff808d1d3d0ba301aef8c11461451ec5",
+  "model_id": "Qwen/Qwen2.5-Coder-3B-Instruct",
+  "body_sha256": "7fe2a9684372a39f1870ed19c430d20bd853aba32b00911f8652915e04202e7d"
+ },
+ "Qwen/Qwen2.5-Coder-7B": {
+  "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B/resolve/0396a76181e127dfc13e5c5ec48a8cee09938b02/README.md",
+  "fetched_at": "2026-10-22T14:11:56+09:00",
+  "status": "ok",
+  "body_chars": 4934,
+  "has_front_matter": true,
+  "card_revision": "0396a76181e127dfc13e5c5ec48a8cee09938b02",
+  "model_id": "Qwen/Qwen2.5-Coder-7B",
+  "body_sha256": "f7e993e82e714ad66b808ef24c3d669316d2b5e0f8d77bfeb336c8e27be328f5"
+ },
+ "Qwen/Qwen2.5-Coder-7B-Instruct": {
+  "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct/resolve/c03e6d358207e414f1eca0bb1891e29f1db0e242/README.md",
+  "fetched_at": "2026-10-22T14:11:57+09:00",
+  "status": "ok",
+  "body_chars": 6114,
+  "has_front_matter": true,
+  "card_revision": "c03e6d358207e414f1eca0bb1891e29f1db0e242",
+  "model_id": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "body_sha256": "712653c2f99077ec93046e59db882117e164444dc1527f385205ec6f0f5f4a96"
+ },
+ "Qwen/Qwen2.5-Math-1.5B": {
+  "url": "https://huggingface.co/Qwen/Qwen2.5-Math-1.5B/resolve/4a83ca6e4526a4f2da3aa259ec36c259f66b2ab2/README.md",
+  "fetched_at": "2026-10-22T14:14:44+09:00",
+  "status": "ok",
+  "body_chars": 3211,
+  "has_front_matter": true,
+  "card_revision": "4a83ca6e4526a4f2da3aa259ec36c259f66b2ab2",
+  "model_id": "Qwen/Qwen2.5-Math-1.5B",
+  "body_sha256": "aa31248414a061d17d5d703ca085e5d835614f06f55017df587d76bdf361eec2"
+ },
+ "Qwen/Qwen2.5-Math-1.5B-Instruct": {
+  "url": "https://huggingface.co/Qwen/Qwen2.5-Math-1.5B-Instruct/resolve/aafeb0fc6f22cbf0eaeed126eff8be45b0360a35/README.md",
+  "fetched_at": "2026-10-22T14:14:45+09:00",
+  "status": "ok",
+  "body_chars": 4723,
+  "has_front_matter": true,
+  "card_revision": "aafeb0fc6f22cbf0eaeed126eff8be45b0360a35",
+  "model_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+  "body_sha256": "1c2ab8961049ed944b40f7c8a710d8f44e66b10903f69e791609a6a9bc678b53"
+ },
+ "Qwen/Qwen2.5-Math-7B": {
+  "url": "https://huggingface.co/Qwen/Qwen2.5-Math-7B/resolve/b101308fe89651ea5ce025f25317fea6fc07e96e/README.md",
+  "fetched_at": "2026-10-22T14:14:46+09:00",
+  "status": "ok",
+  "body_chars": 3209,
+  "has_front_matter": true,
+  "card_revision": "b101308fe89651ea5ce025f25317fea6fc07e96e",
+  "model_id": "Qwen/Qwen2.5-Math-7B",
+  "body_sha256": "dc456045c4e90d03e5943ca63ee25cfdb78de23bb29928e6c09755da68e054f4"
+ },
+ "Qwen/Qwen2.5-Math-7B-Instruct": {
+  "url": "https://huggingface.co/Qwen/Qwen2.5-Math-7B-Instruct/resolve/ef9926d75ab1d54532f6a30dd5e760355eb9aa4d/README.md",
+  "fetched_at": "2026-10-22T14:14:47+09:00",
+  "status": "ok",
+  "body_chars": 4715,
+  "has_front_matter": true,
+  "card_revision": "ef9926d75ab1d54532f6a30dd5e760355eb9aa4d",
+  "model_id": "Qwen/Qwen2.5-Math-7B-Instruct",
+  "body_sha256": "b376168950fcbeef1cb7afdbf7fa957e2cac61d21bb43abd2e987f8d0bd12833"
+ },
+ "Qwen/Qwen2.5-VL-3B-Instruct": {
+  "url": "https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct/resolve/66285546d2b821cf421d4f5eb2576359d3770cd3/README.md",
+  "fetched_at": "2026-10-22T14:12:46+09:00",
+  "status": "ok",
+  "body_chars": 18250,
+  "has_front_matter": false,
+  "card_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+  "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "body_sha256": "0b6da5a154b923da4dc66e416140c9b7f235f9b08fbbcc27fd9df7b586e3150d"
+ },
+ "Qwen/Qwen2.5-VL-7B-Instruct": {
+  "url": "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/resolve/cc594898137f460bfe9f0759e9844b3ce807cfb5/README.md",
+  "fetched_at": "2026-10-22T14:12:47+09:00",
+  "status": "ok",
+  "body_chars": 18548,
+  "has_front_matter": false,
+  "card_revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+  "model_id": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "body_sha256": "1fa65dbb08bc9ffe0b020409c8686f08b23008c5a68554353305fd2de6f2b81e"
+ },
+ "Qwen/Qwen3-1.7B": {
+  "url": "https://huggingface.co/Qwen/Qwen3-1.7B/resolve/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e/README.md",
+  "fetched_at": "2026-10-22T14:12:48+09:00",
+  "status": "ok",
+  "body_chars": 13771,
+  "has_front_matter": true,
+  "card_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+  "model_id": "Qwen/Qwen3-1.7B",
+  "body_sha256": "161f98841f2bed2f7b50b213f8bde97987d3fdbd5e6e8c3cdcaf0800c949b66e"
+ },
+ "Qwen/Qwen3-1.7B-Base": {
+  "url": "https://huggingface.co/Qwen/Qwen3-1.7B-Base/resolve/ea980cb0a6c2ae4b936e82123acc929f1cec04c1/README.md",
+  "fetched_at": "2026-10-22T14:12:49+09:00",
+  "status": "ok",
+  "body_chars": 2875,
+  "has_front_matter": true,
+  "card_revision": "ea980cb0a6c2ae4b936e82123acc929f1cec04c1",
+  "model_id": "Qwen/Qwen3-1.7B-Base",
+  "body_sha256": "9b45cc5f3980cdc46e35a850a978561b113cce0df48a44f81894c18681824919"
+ },
+ "Qwen/Qwen3-14B": {
+  "url": "https://huggingface.co/Qwen/Qwen3-14B/resolve/40c069824f4251a91eefaf281ebe4c544efd3e18/README.md",
+  "fetched_at": "2026-10-22T14:12:50+09:00",
+  "status": "ok",
+  "body_chars": 16480,
+  "has_front_matter": true,
+  "card_revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+  "model_id": "Qwen/Qwen3-14B",
+  "body_sha256": "aad87535d7b56e3ac1b6ad7c0fe17462f17e86693d9ea90ea6ad7a09c8e12012"
+ },
+ "Qwen/Qwen3-14B-Base": {
+  "url": "https://huggingface.co/Qwen/Qwen3-14B-Base/resolve/0b0bd3732e2c374d483664439ea334928b65f304/README.md",
+  "fetched_at": "2026-10-22T14:12:52+09:00",
+  "status": "ok",
+  "body_chars": 2875,
+  "has_front_matter": true,
+  "card_revision": "0b0bd3732e2c374d483664439ea334928b65f304",
+  "model_id": "Qwen/Qwen3-14B-Base",
+  "body_sha256": "bc802227d2271d41af15329473ba430fb1a033b378d23a0b7228a2ec8cf207d3"
+ },
+ "Qwen/Qwen3-4B": {
+  "url": "https://huggingface.co/Qwen/Qwen3-4B/resolve/1cfa9a7208912126459214e8b04321603b3df60c/README.md",
+  "fetched_at": "2026-10-22T14:12:53+09:00",
+  "status": "ok",
+  "body_chars": 16669,
+  "has_front_matter": true,
+  "card_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+  "model_id": "Qwen/Qwen3-4B",
+  "body_sha256": "c1195c0918a30efd2e1c814ba6200895fc16eb790a5f0d351d5e3076e7ed9049"
+ },
+ "Qwen/Qwen3-4B-Base": {
+  "url": "https://huggingface.co/Qwen/Qwen3-4B-Base/resolve/906bfd4b4dc7f14ee4320094d8b41684abff8539/README.md",
+  "fetched_at": "2026-10-22T14:12:54+09:00",
+  "status": "ok",
+  "body_chars": 2871,
+  "has_front_matter": true,
+  "card_revision": "906bfd4b4dc7f14ee4320094d8b41684abff8539",
+  "model_id": "Qwen/Qwen3-4B-Base",
+  "body_sha256": "ed360589d37a11e3c1c718447e4cfce517b7033b58a46d4eeb9a800277fff13c"
+ },
+ "Qwen/Qwen3-4B-Instruct-2507": {
+  "url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/resolve/cdbee75f17c01a7cc42f958dc650907174af0554/README.md",
+  "fetched_at": "2026-10-22T14:12:55+09:00",
+  "status": "ok",
+  "body_chars": 7999,
+  "has_front_matter": true,
+  "card_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+  "body_sha256": "6096f86756043918131b49753aa1192097a395124e13bc718b87a644c5897bd6"
+ },
+ "Qwen/Qwen3-4B-Thinking-2507": {
+  "url": "https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507/resolve/768f209d9ea81521153ed38c47d515654e938aea/README.md",
+  "fetched_at": "2026-10-22T14:12:56+09:00",
+  "status": "ok",
+  "body_chars": 9894,
+  "has_front_matter": true,
+  "card_revision": "768f209d9ea81521153ed38c47d515654e938aea",
+  "model_id": "Qwen/Qwen3-4B-Thinking-2507",
+  "body_sha256": "7c02fab55ac9e95bd6f8448b996ad20b891ab3321e0fbabf5d0355a3b418a175"
+ },
+ "Qwen/Qwen3-8B": {
+  "url": "https://huggingface.co/Qwen/Qwen3-8B/resolve/b968826d9c46dd6066d109eabc6255188de91218/README.md",
+  "fetched_at": "2026-10-22T14:12:57+09:00",
+  "status": "ok",
+  "body_chars": 16472,
+  "has_front_matter": true,
+  "card_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "model_id": "Qwen/Qwen3-8B",
+  "body_sha256": "5c89c2c08c726a7af59b0470683863936c93ccb924e5d5c5ec0b3a62f5f5c73c"
+ },
+ "Qwen/Qwen3-8B-Base": {
+  "url": "https://huggingface.co/Qwen/Qwen3-8B-Base/resolve/49e3418fbbbca6ecbdf9608b4d22e5a407081db4/README.md",
+  "fetched_at": "2026-10-22T14:12:58+09:00",
+  "status": "ok",
+  "body_chars": 2872,
+  "has_front_matter": true,
+  "card_revision": "49e3418fbbbca6ecbdf9608b4d22e5a407081db4",
+  "model_id": "Qwen/Qwen3-8B-Base",
+  "body_sha256": "47a62e0b5c3c557b54cfa7698ef5cff0a252398bec0ba51022b7fd01bd33f49d"
+ },
+ "Qwen/Qwen3-VL-2B-Instruct": {
+  "url": "https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct/resolve/89644892e4d85e24eaac8bacfd4f463576704203/README.md",
+  "fetched_at": "2026-10-22T14:12:59+09:00",
+  "status": "ok",
+  "body_chars": 7005,
+  "has_front_matter": true,
+  "card_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+  "model_id": "Qwen/Qwen3-VL-2B-Instruct",
+  "body_sha256": "db48d7e90fbf8f4b4f3b2e5d44d36af31b0e080dd66f3fae04bcbe3f9c92fcd2"
+ },
+ "Qwen/Qwen3-VL-2B-Thinking": {
+  "url": "https://huggingface.co/Qwen/Qwen3-VL-2B-Thinking/resolve/33e0ad94c327808ebc7d3bbc97e78e600f1eeecd/README.md",
+  "fetched_at": "2026-10-22T14:13:00+09:00",
+  "status": "ok",
+  "body_chars": 7071,
+  "has_front_matter": true,
+  "card_revision": "33e0ad94c327808ebc7d3bbc97e78e600f1eeecd",
+  "model_id": "Qwen/Qwen3-VL-2B-Thinking",
+  "body_sha256": "fbcd4e9b481bf0392accf02eb2c51694d3d55b17c255a2371d61c1858f3445fb"
+ },
+ "Qwen/Qwen3-VL-4B-Instruct": {
+  "url": "https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct/resolve/ebb281ec70b05090aa6165b016eac8ec08e71b17/README.md",
+  "fetched_at": "2026-10-22T14:13:01+09:00",
+  "status": "ok",
+  "body_chars": 7002,
+  "has_front_matter": true,
+  "card_revision": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+  "model_id": "Qwen/Qwen3-VL-4B-Instruct",
+  "body_sha256": "576390d1c9f10ca52485797400842f2247a26e1cc48d69d2dc051b8a76a6aa71"
+ },
+ "Qwen/Qwen3-VL-8B-Instruct": {
+  "url": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct/resolve/0c351dd01ed87e9c1b53cbc748cba10e6187ff3b/README.md",
+  "fetched_at": "2026-10-22T14:13:02+09:00",
+  "status": "ok",
+  "body_chars": 7002,
+  "has_front_matter": true,
+  "card_revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+  "model_id": "Qwen/Qwen3-VL-8B-Instruct",
+  "body_sha256": "84596fc35c96198a944636b3112599e6e05760dee742fc1ad3c6befefad7d029"
+ },
+ "Qwen/Qwen3-VL-8B-Thinking": {
+  "url": "https://huggingface.co/Qwen/Qwen3-VL-8B-Thinking/resolve/92f3c4b4feadd3a016ef468d103bb5f58b2a2c6b/README.md",
+  "fetched_at": "2026-10-22T14:13:04+09:00",
+  "status": "ok",
+  "body_chars": 7070,
+  "has_front_matter": true,
+  "card_revision": "92f3c4b4feadd3a016ef468d103bb5f58b2a2c6b",
+  "model_id": "Qwen/Qwen3-VL-8B-Thinking",
+  "body_sha256": "e1a604ca7309db325e3c96843e3eabf399a91bbd21a63dd0686d2ac64b9ffbe3"
+ },
+ "Qwen/Qwen3.5-2B": {
+  "url": "https://huggingface.co/Qwen/Qwen3.5-2B/resolve/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md",
+  "fetched_at": "2026-10-22T14:13:05+09:00",
+  "status": "ok",
+  "body_chars": 62594,
+  "has_front_matter": true,
+  "card_revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "model_id": "Qwen/Qwen3.5-2B",
+  "body_sha256": "b35b12ea83c525b15ddffb0092635f3f4e65ebb36d4c290cce4ebbfcd8374bc9"
+ },
+ "Qwen/Qwen3.5-2B-Base": {
+  "url": "https://huggingface.co/Qwen/Qwen3.5-2B-Base/resolve/b1485b2fa6dfa1287294f269f5fb618e03d52d7c/README.md",
+  "fetched_at": "2026-10-22T14:13:06+09:00",
+  "status": "ok",
+  "body_chars": 3547,
+  "has_front_matter": true,
+  "card_revision": "b1485b2fa6dfa1287294f269f5fb618e03d52d7c",
+  "model_id": "Qwen/Qwen3.5-2B-Base",
+  "body_sha256": "18a832dce558427a7f5f3b2515a22aafade83f228d53f2e788392f2de57d30b1"
+ },
+ "Qwen/Qwen3.5-4B": {
+  "url": "https://huggingface.co/Qwen/Qwen3.5-4B/resolve/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/README.md",
+  "fetched_at": "2026-10-22T14:13:07+09:00",
+  "status": "ok",
+  "body_chars": 77451,
+  "has_front_matter": true,
+  "card_revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "model_id": "Qwen/Qwen3.5-4B",
+  "body_sha256": "71a1731c21d9c0af1233301e6f002a5d19c513baffefb4d3b986558120019ef9"
+ },
+ "Qwen/Qwen3.5-4B-Base": {
+  "url": "https://huggingface.co/Qwen/Qwen3.5-4B-Base/resolve/1001bb4d826a52d1f399e183466143f4da7b741b/README.md",
+  "fetched_at": "2026-10-22T14:13:08+09:00",
+  "status": "ok",
+  "body_chars": 3548,
+  "has_front_matter": true,
+  "card_revision": "1001bb4d826a52d1f399e183466143f4da7b741b",
+  "model_id": "Qwen/Qwen3.5-4B-Base",
+  "body_sha256": "064e8c8b630f06459b1c29a840665f559a6d15058421cb7dd7f4d57278c6e7a9"
+ },
+ "Qwen/Qwen3.5-9B": {
+  "url": "https://huggingface.co/Qwen/Qwen3.5-9B/resolve/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md",
+  "fetched_at": "2026-10-22T14:13:09+09:00",
+  "status": "ok",
+  "body_chars": 77433,
+  "has_front_matter": true,
+  "card_revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+  "model_id": "Qwen/Qwen3.5-9B",
+  "body_sha256": "b3bb779a1c585e463bf1d6639b5b2c0a98e48a0fed4747bede0e11190a05fd29"
+ },
+ "Qwen/Qwen3.5-9B-Base": {
+  "url": "https://huggingface.co/Qwen/Qwen3.5-9B-Base/resolve/68c46c4b3498877f3ef123c856ecfde50c39f404/README.md",
+  "fetched_at": "2026-10-22T14:13:10+09:00",
+  "status": "ok",
+  "body_chars": 3531,
+  "has_front_matter": true,
+  "card_revision": "68c46c4b3498877f3ef123c856ecfde50c39f404",
+  "model_id": "Qwen/Qwen3.5-9B-Base",
+  "body_sha256": "f85babcc0a02d52b26a269f7b02c97c323f878fe46042265c2a9ae0e1ebd4008"
+ },
+ "allenai/OLMo-2-0425-1B": {
+  "url": "https://huggingface.co/allenai/OLMo-2-0425-1B/resolve/a1847dff35000b4271fa70afc5db10fd29fedbdf/README.md",
+  "fetched_at": "2026-10-22T14:12:17+09:00",
+  "status": "ok",
+  "body_chars": 12818,
+  "has_front_matter": true,
+  "card_revision": "a1847dff35000b4271fa70afc5db10fd29fedbdf",
+  "model_id": "allenai/OLMo-2-0425-1B",
+  "body_sha256": "d5ab85d4a6306d59a63e7d8640613a9e043d7875df101b30074b31c962530775"
+ },
+ "allenai/OLMoE-1B-7B-0125-Instruct": {
+  "url": "https://huggingface.co/allenai/OLMoE-1B-7B-0125-Instruct/resolve/b89a7c4bc24fb9e55ce2543c9458ce0ca5c4650e/README.md",
+  "fetched_at": "2026-10-22T14:12:18+09:00",
+  "status": "ok",
+  "body_chars": 8649,
+  "has_front_matter": true,
+  "card_revision": "b89a7c4bc24fb9e55ce2543c9458ce0ca5c4650e",
+  "model_id": "allenai/OLMoE-1B-7B-0125-Instruct",
+  "body_sha256": "2600adf4b97963a616dd119fe1e87e01bd12282322f028ffac7a56ddab1e4c2c"
+ },
+ "allenai/OLMoE-1B-7B-0924": {
+  "url": "https://huggingface.co/allenai/OLMoE-1B-7B-0924/resolve/6d84c48581ece794365f2b8e9cfb043c68ade9c5/README.md",
+  "fetched_at": "2026-10-22T14:12:19+09:00",
+  "status": "ok",
+  "body_chars": 7077,
+  "has_front_matter": true,
+  "card_revision": "6d84c48581ece794365f2b8e9cfb043c68ade9c5",
+  "model_id": "allenai/OLMoE-1B-7B-0924",
+  "body_sha256": "1f736033dd2c576c0b25d29d5d81d5337b8f836476e5415a19640fa720c8d899"
+ },
+ "allenai/Olmo-3-1025-7B": {
+  "url": "https://huggingface.co/allenai/Olmo-3-1025-7B/resolve/a81bae42db3975be1671e27b9c9a56da1a9f980f/README.md",
+  "fetched_at": "2026-10-22T14:12:20+09:00",
+  "status": "ok",
+  "body_chars": 12112,
+  "has_front_matter": true,
+  "card_revision": "a81bae42db3975be1671e27b9c9a56da1a9f980f",
+  "model_id": "allenai/Olmo-3-1025-7B",
+  "body_sha256": "279d3e24f2c1759750f92d0c30337c0553e24f3e8929341ed0c4f275440f8ebf"
+ },
+ "allenai/Olmo-3-7B-Instruct": {
+  "url": "https://huggingface.co/allenai/Olmo-3-7B-Instruct/resolve/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md",
+  "fetched_at": "2026-10-22T14:12:22+09:00",
+  "status": "ok",
+  "body_chars": 12289,
+  "has_front_matter": true,
+  "card_revision": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc",
+  "model_id": "allenai/Olmo-3-7B-Instruct",
+  "body_sha256": "0061c34e75571b4a33e7258f36ded473f63384b1162103363956082bccfdbda0"
+ },
+ "allenai/Olmo-3-7B-RL-Zero-Math": {
+  "url": "https://huggingface.co/allenai/Olmo-3-7B-RL-Zero-Math/resolve/dee26a4074b88215cd1326472e1ab14d0259d892/README.md",
+  "fetched_at": "2026-10-22T14:14:41+09:00",
+  "status": "ok",
+  "body_chars": 8493,
+  "has_front_matter": true,
+  "card_revision": "dee26a4074b88215cd1326472e1ab14d0259d892",
+  "model_id": "allenai/Olmo-3-7B-RL-Zero-Math",
+  "body_sha256": "b53ec73480544a0ce3ba4e3a73371c25a84ed93b6094bc4c8dd78cf3e33094c8"
+ },
+ "allenai/Olmo-3-7B-Think": {
+  "url": "https://huggingface.co/allenai/Olmo-3-7B-Think/resolve/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md",
+  "fetched_at": "2026-10-22T14:12:23+09:00",
+  "status": "ok",
+  "body_chars": 11686,
+  "has_front_matter": true,
+  "card_revision": "d97e442d7cc678210054dbcc9b440894d62c89a4",
+  "model_id": "allenai/Olmo-3-7B-Think",
+  "body_sha256": "a9611e88d631a138936af07da02157fcc6ee7cb9f5c543588227af28c3327b83"
+ },
+ "allenai/Olmo-3.1-7B-RL-Zero-Math": {
+  "url": "https://huggingface.co/allenai/Olmo-3.1-7B-RL-Zero-Math/resolve/364820b002fc8e81d11a81c7fc9dd6b49c83cd05/README.md",
+  "fetched_at": "2026-10-22T14:14:42+09:00",
+  "status": "ok",
+  "body_chars": 8943,
+  "has_front_matter": true,
+  "card_revision": "364820b002fc8e81d11a81c7fc9dd6b49c83cd05",
+  "model_id": "allenai/Olmo-3.1-7B-RL-Zero-Math",
+  "body_sha256": "f9ffbb09c9239e0ff8f5740ac35b85c70043b45c6d1c054093aa8ea72d186364"
+ },
+ "baidu/ERNIE-4.5-21B-A3B-Thinking": {
+  "url": "https://huggingface.co/baidu/ERNIE-4.5-21B-A3B-Thinking/resolve/4341bb42644d5422859509fa25d41544c57181f8/README.md",
+  "fetched_at": "2026-10-22T14:13:11+09:00",
+  "status": "ok",
+  "body_chars": 7075,
+  "has_front_matter": true,
+  "card_revision": "4341bb42644d5422859509fa25d41544c57181f8",
+  "model_id": "baidu/ERNIE-4.5-21B-A3B-Thinking",
+  "body_sha256": "8a320ec03e71b6122a003dc6a2ded69c9fed6587f681b7ce3479ae23457ccd41"
+ },
+ "baidu/Unlimited-OCR": {
+  "url": "https://huggingface.co/baidu/Unlimited-OCR/resolve/8249d20b2822a7d8a4c22c8d8c9069b5ac36bda3/README.md",
+  "fetched_at": "2026-10-22T14:12:12+09:00",
+  "status": "ok",
+  "body_chars": 10903,
+  "has_front_matter": true,
+  "card_revision": "8249d20b2822a7d8a4c22c8d8c9069b5ac36bda3",
+  "model_id": "baidu/Unlimited-OCR",
+  "body_sha256": "e88642f711e3685dc1e219eb4e62623fddd4a2a034284f39d3178fb197eca681"
+ },
+ "deepseek-ai/DeepSeek-Coder-V2-Lite-Base": {
+  "url": "https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Lite-Base/resolve/ea9b066cee82f82906fdd58898cb3788b1c5d770/README.md",
+  "fetched_at": "2026-10-22T14:11:59+09:00",
+  "status": "ok",
+  "body_chars": 11167,
+  "has_front_matter": true,
+  "card_revision": "ea9b066cee82f82906fdd58898cb3788b1c5d770",
+  "model_id": "deepseek-ai/DeepSeek-Coder-V2-Lite-Base",
+  "body_sha256": "22faa6f2d7e9c205a341bd0ce2a0d53ebdf439226a0ef2b8e64e361ef33b0c35"
+ },
+ "deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct": {
+  "url": "https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct/resolve/e434a23f91ba5b4923cf6c9d9a238eb4a08e3a11/README.md",
+  "fetched_at": "2026-10-22T14:12:00+09:00",
+  "status": "ok",
+  "body_chars": 11166,
+  "has_front_matter": true,
+  "card_revision": "e434a23f91ba5b4923cf6c9d9a238eb4a08e3a11",
+  "model_id": "deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct",
+  "body_sha256": "b7b50ecc859be437b75a607dbe17c3fd532be8b554cfaf733204013aca18702b"
+ },
+ "deepseek-ai/DeepSeek-OCR": {
+  "url": "https://huggingface.co/deepseek-ai/DeepSeek-OCR/resolve/9f30c71f441d010e5429c532364a86705536c53a/README.md",
+  "fetched_at": "2026-10-22T14:12:13+09:00",
+  "status": "ok",
+  "body_chars": 6121,
+  "has_front_matter": true,
+  "card_revision": "9f30c71f441d010e5429c532364a86705536c53a",
+  "model_id": "deepseek-ai/DeepSeek-OCR",
+  "body_sha256": "100b4eaad1f3121c561a64555610a0f0fe13ce2671fa7b627784eacdd0d1cc1d"
+ },
+ "deepseek-ai/DeepSeek-OCR-2": {
+  "url": "https://huggingface.co/deepseek-ai/DeepSeek-OCR-2/resolve/aaa02f3811945a91062062994c5c4a3f4c0af2b0/README.md",
+  "fetched_at": "2026-10-22T14:12:15+09:00",
+  "status": "ok",
+  "body_chars": 3949,
+  "has_front_matter": true,
+  "card_revision": "aaa02f3811945a91062062994c5c4a3f4c0af2b0",
+  "model_id": "deepseek-ai/DeepSeek-OCR-2",
+  "body_sha256": "57ad19190eaa12e7b2c212e8fd7c3f9f81071f75adbf7b019bb135087d6c5342"
+ },
+ "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B": {
+  "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/resolve/6e8885a6ff5c1dc5201574c8fd700323f23c25fa/README.md",
+  "fetched_at": "2026-10-22T14:13:12+09:00",
+  "status": "ok",
+  "body_chars": 13189,
+  "has_front_matter": true,
+  "card_revision": "6e8885a6ff5c1dc5201574c8fd700323f23c25fa",
+  "model_id": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+  "body_sha256": "8cc105ac1fc09edbcf8f6e9ed683d240199ffed42f9f2ddaaf3d945f5da27b1f"
+ },
+ "deepseek-ai/DeepSeek-R1-Distill-Llama-8B": {
+  "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B/resolve/6a6f4aa4197940add57724a7707d069478df56b1/README.md",
+  "fetched_at": "2026-10-22T14:13:13+09:00",
+  "status": "ok",
+  "body_chars": 15914,
+  "has_front_matter": true,
+  "card_revision": "6a6f4aa4197940add57724a7707d069478df56b1",
+  "model_id": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+  "body_sha256": "dfa5c11da04062649b1eeb701905e45269fb9eed5679f1e21a674ede6fb91c0a"
+ },
+ "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B": {
+  "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B/resolve/ad9f0ae0864d7fbcd1cd905e3c6c5b069cc8b562/README.md",
+  "fetched_at": "2026-10-22T14:13:15+09:00",
+  "status": "ok",
+  "body_chars": 15914,
+  "has_front_matter": true,
+  "card_revision": "ad9f0ae0864d7fbcd1cd905e3c6c5b069cc8b562",
+  "model_id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "body_sha256": "dfa5c11da04062649b1eeb701905e45269fb9eed5679f1e21a674ede6fb91c0a"
+ },
+ "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B": {
+  "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B/resolve/1df8507178afcc1bef68cd8c393f61a886323761/README.md",
+  "fetched_at": "2026-10-22T14:13:16+09:00",
+  "status": "ok",
+  "body_chars": 15914,
+  "has_front_matter": true,
+  "card_revision": "1df8507178afcc1bef68cd8c393f61a886323761",
+  "model_id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "body_sha256": "dfa5c11da04062649b1eeb701905e45269fb9eed5679f1e21a674ede6fb91c0a"
+ },
+ "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B": {
+  "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B/resolve/916b56a44061fd5cd7d6a8fb632557ed4f724f60/README.md",
+  "fetched_at": "2026-10-22T14:13:17+09:00",
+  "status": "ok",
+  "body_chars": 15914,
+  "has_front_matter": true,
+  "card_revision": "916b56a44061fd5cd7d6a8fb632557ed4f724f60",
+  "model_id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+  "body_sha256": "dfa5c11da04062649b1eeb701905e45269fb9eed5679f1e21a674ede6fb91c0a"
+ },
+ "deepseek-ai/DeepSeek-V2-Lite": {
+  "url": "https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite/resolve/604d5664dddd88a0433dbae533b7fe9472482de0/README.md",
+  "fetched_at": "2026-10-22T14:13:18+09:00",
+  "status": "ok",
+  "body_chars": 15316,
+  "has_front_matter": true,
+  "card_revision": "604d5664dddd88a0433dbae533b7fe9472482de0",
+  "model_id": "deepseek-ai/DeepSeek-V2-Lite",
+  "body_sha256": "80aae158b46d4d5e877fce4f810a05e77686410a7c15cdd2d8399c33f30838d0"
+ },
+ "deepseek-ai/DeepSeek-V2-Lite-Chat": {
+  "url": "https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/resolve/85864749cd611b4353ce1decdb286193298f64c7/README.md",
+  "fetched_at": "2026-10-22T14:13:19+09:00",
+  "status": "ok",
+  "body_chars": 15318,
+  "has_front_matter": true,
+  "card_revision": "85864749cd611b4353ce1decdb286193298f64c7",
+  "model_id": "deepseek-ai/DeepSeek-V2-Lite-Chat",
+  "body_sha256": "f618858ebfacf7ef93895449ad2664081b1aa6601d39f9e289ab5bb8d60db825"
+ },
+ "deepseek-ai/deepseek-coder-1.3b-instruct": {
+  "url": "https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-instruct/resolve/e063262dac8366fc1f28a4da0ff3c50ea66259ca/README.md",
+  "fetched_at": "2026-10-22T14:12:01+09:00",
+  "status": "ok",
+  "body_chars": 3493,
+  "has_front_matter": true,
+  "card_revision": "e063262dac8366fc1f28a4da0ff3c50ea66259ca",
+  "model_id": "deepseek-ai/deepseek-coder-1.3b-instruct",
+  "body_sha256": "308d2331c4959287570c59f893dd482035120ba9f50659bc950051c29fe0e4dd"
+ },
+ "deepseek-ai/deepseek-coder-6.7b-base": {
+  "url": "https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-base/resolve/ce2207a8bfef3ee92bd7dd4cc31c52cfa0046912/README.md",
+  "fetched_at": "2026-10-22T14:12:02+09:00",
+  "status": "ok",
+  "body_chars": 6750,
+  "has_front_matter": true,
+  "card_revision": "ce2207a8bfef3ee92bd7dd4cc31c52cfa0046912",
+  "model_id": "deepseek-ai/deepseek-coder-6.7b-base",
+  "body_sha256": "125b0494767f3dabd62eb84f9afa59f533548cefc77e5a705c0f476160a6ad5d"
+ },
+ "deepseek-ai/deepseek-coder-6.7b-instruct": {
+  "url": "https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-instruct/resolve/e5d64addd26a6a1db0f9b863abf6ee3141936807/README.md",
+  "fetched_at": "2026-10-22T14:12:03+09:00",
+  "status": "ok",
+  "body_chars": 3495,
+  "has_front_matter": true,
+  "card_revision": "e5d64addd26a6a1db0f9b863abf6ee3141936807",
+  "model_id": "deepseek-ai/deepseek-coder-6.7b-instruct",
+  "body_sha256": "bde61e4753292250fcc9e1b223958553d19ea9d4c68deebedbce483512db4ace"
+ },
+ "deepseek-ai/deepseek-coder-7b-instruct-v1.5": {
+  "url": "https://huggingface.co/deepseek-ai/deepseek-coder-7b-instruct-v1.5/resolve/2a050a4c59d687a85324d32e147517992117ed30/README.md",
+  "fetched_at": "2026-10-22T14:12:04+09:00",
+  "status": "ok",
+  "body_chars": 2411,
+  "has_front_matter": true,
+  "card_revision": "2a050a4c59d687a85324d32e147517992117ed30",
+  "model_id": "deepseek-ai/deepseek-coder-7b-instruct-v1.5",
+  "body_sha256": "19894d84b9790474af86d1fd0b46ba266b8749b752f7143c2d51219c0207848f"
+ },
+ "deepseek-ai/deepseek-math-7b-rl": {
+  "url": "https://huggingface.co/deepseek-ai/deepseek-math-7b-rl/resolve/f3cd419a172ff5a100e9a563ebfe7900d78e9740/README.md",
+  "fetched_at": "2026-10-22T14:14:48+09:00",
+  "status": "ok",
+  "body_chars": 3016,
+  "has_front_matter": true,
+  "card_revision": "f3cd419a172ff5a100e9a563ebfe7900d78e9740",
+  "model_id": "deepseek-ai/deepseek-math-7b-rl",
+  "body_sha256": "b0922f5d1748925153c0efd3d9185ab33cb9ee9df48b5012b9b3010fe04f22b9"
+ },
+ "deepseek-ai/deepseek-vl2-tiny": {
+  "url": "https://huggingface.co/deepseek-ai/deepseek-vl2-tiny/resolve/66c54660eae7e90c9ba259bfdf92d07d6e3ce8aa/README.md",
+  "fetched_at": "2026-10-22T14:13:20+09:00",
+  "status": "ok",
+  "body_chars": 5638,
+  "has_front_matter": true,
+  "card_revision": "66c54660eae7e90c9ba259bfdf92d07d6e3ce8aa",
+  "model_id": "deepseek-ai/deepseek-vl2-tiny",
+  "body_sha256": "75ab79b554a1918d2873717cd53ac9d4b23735d375a7bda127c9898145742ec5"
+ },
+ "google/codegemma-7b-it": {
+  "url": "https://huggingface.co/google/codegemma-7b-it/resolve/078cdc51070553d1636d645c9a238f3b0914459a/README.md",
+  "fetched_at": "2026-10-22T14:12:05+09:00",
+  "status": "ok",
+  "body_chars": 12094,
+  "has_front_matter": true,
+  "card_revision": "078cdc51070553d1636d645c9a238f3b0914459a",
+  "model_id": "google/codegemma-7b-it",
+  "body_sha256": "571a734346b9efe00ff48419283d7b52a1927b27c95fe54999bf96358c036edb"
+ },
+ "google/gemma-2-2b": {
+  "url": "https://huggingface.co/google/gemma-2-2b/resolve/c5ebcd40d208330abc697524c919956e692655cf/README.md",
+  "fetched_at": "2026-10-22T14:13:21+09:00",
+  "status": "ok",
+  "body_chars": 25328,
+  "has_front_matter": true,
+  "card_revision": "c5ebcd40d208330abc697524c919956e692655cf",
+  "model_id": "google/gemma-2-2b",
+  "body_sha256": "b8af56a3632ac564bfedb44baf0294c95dd79a1604845bce4fc6acf7777227be"
+ },
+ "google/gemma-2-2b-it": {
+  "url": "https://huggingface.co/google/gemma-2-2b-it/resolve/299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8/README.md",
+  "fetched_at": "2026-10-22T14:13:22+09:00",
+  "status": "ok",
+  "body_chars": 28611,
+  "has_front_matter": true,
+  "card_revision": "299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8",
+  "model_id": "google/gemma-2-2b-it",
+  "body_sha256": "3070c18ca88791b4c080ff7ca652cdeb4adfbf5bf756317f02055a80973e44ab"
+ },
+ "google/gemma-2-9b-it": {
+  "url": "https://huggingface.co/google/gemma-2-9b-it/resolve/11c9b309abf73637e4b6f9a3fa1e92e615547819/README.md",
+  "fetched_at": "2026-10-22T14:13:23+09:00",
+  "status": "ok",
+  "body_chars": 25310,
+  "has_front_matter": true,
+  "card_revision": "11c9b309abf73637e4b6f9a3fa1e92e615547819",
+  "model_id": "google/gemma-2-9b-it",
+  "body_sha256": "53cf9fe129580423d08b953d809884c85cc61debe0f91f468ddf373144c72311"
+ },
+ "google/gemma-2b": {
+  "url": "https://huggingface.co/google/gemma-2b/resolve/9cf48e52b224239de00d483ec8eb84fb8d0f3a3a/README.md",
+  "fetched_at": "2026-10-22T14:13:24+09:00",
+  "status": "ok",
+  "body_chars": 21087,
+  "has_front_matter": true,
+  "card_revision": "9cf48e52b224239de00d483ec8eb84fb8d0f3a3a",
+  "model_id": "google/gemma-2b",
+  "body_sha256": "9a0b9d3eb5ae92c746bd59412cd5c8425e4c2a3a392171ef98fc32167a98f468"
+ },
+ "google/gemma-3-12b-it": {
+  "url": "https://huggingface.co/google/gemma-3-12b-it/resolve/96b6f1eccf38110c56df3a15bffe176da04bfd80/README.md",
+  "fetched_at": "2026-10-22T14:13:25+09:00",
+  "status": "ok",
+  "body_chars": 24672,
+  "has_front_matter": true,
+  "card_revision": "96b6f1eccf38110c56df3a15bffe176da04bfd80",
+  "model_id": "google/gemma-3-12b-it",
+  "body_sha256": "5d633f724bd9f39b61b17b0ee38520cd26e3ee5f8d94127ab9ce0c625d46a6eb"
+ },
+ "google/gemma-3-4b-it": {
+  "url": "https://huggingface.co/google/gemma-3-4b-it/resolve/093f9f388b31de276ce2de164bdc2081324b9767/README.md",
+  "fetched_at": "2026-10-22T14:13:26+09:00",
+  "status": "ok",
+  "body_chars": 24669,
+  "has_front_matter": true,
+  "card_revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+  "model_id": "google/gemma-3-4b-it",
+  "body_sha256": "dc74fe23cf99572c5d1b6c1b485937a2977002c0daf82c6305f41d614c79f49d"
+ },
+ "google/gemma-3-4b-pt": {
+  "url": "https://huggingface.co/google/gemma-3-4b-pt/resolve/cc012e0a6d0787b4adcc0fa2c4da74402494554d/README.md",
+  "fetched_at": "2026-10-22T14:13:27+09:00",
+  "status": "ok",
+  "body_chars": 23586,
+  "has_front_matter": true,
+  "card_revision": "cc012e0a6d0787b4adcc0fa2c4da74402494554d",
+  "model_id": "google/gemma-3-4b-pt",
+  "body_sha256": "0b460874fb03cf1d46720338ac6be818aeb5bed2202bc733d9767f6f7f4d2cc3"
+ },
+ "google/gemma-3n-E2B-it": {
+  "url": "https://huggingface.co/google/gemma-3n-E2B-it/resolve/5e092ebca197cdcd8d8b195040accf22693501bc/README.md",
+  "fetched_at": "2026-10-22T14:13:28+09:00",
+  "status": "ok",
+  "body_chars": 23936,
+  "has_front_matter": true,
+  "card_revision": "5e092ebca197cdcd8d8b195040accf22693501bc",
+  "model_id": "google/gemma-3n-E2B-it",
+  "body_sha256": "8f12efdd5708d11bf06e0bb48cdbde0eedda1f217d7edbef35d7cc5b01ffcc21"
+ },
+ "google/medgemma-1.5-4b-it": {
+  "url": "https://huggingface.co/google/medgemma-1.5-4b-it/resolve/91850547d9f0b2fdd21aa7c5f4f3d1a8a52c243b/README.md",
+  "fetched_at": "2026-10-22T14:14:53+09:00",
+  "status": "ok",
+  "body_chars": 40727,
+  "has_front_matter": true,
+  "card_revision": "91850547d9f0b2fdd21aa7c5f4f3d1a8a52c243b",
+  "model_id": "google/medgemma-1.5-4b-it",
+  "body_sha256": "07e5abe7b8a8c229125ee166d70c005a94275d98503b241c7a0ed979d3069401"
+ },
+ "google/medgemma-4b-it": {
+  "url": "https://huggingface.co/google/medgemma-4b-it/resolve/290cda5eeccbee130f987c4ad74a59ae6f196408/README.md",
+  "fetched_at": "2026-10-22T14:14:54+09:00",
+  "status": "ok",
+  "body_chars": 34262,
+  "has_front_matter": true,
+  "card_revision": "290cda5eeccbee130f987c4ad74a59ae6f196408",
+  "model_id": "google/medgemma-4b-it",
+  "body_sha256": "df16a57167830cbb79feaa4edcdd2fb0e358b6131a51c0d6f498fa46b485a2dc"
+ },
+ "google/paligemma-3b-mix-224": {
+  "url": "https://huggingface.co/google/paligemma-3b-mix-224/resolve/d1d8734c9c3ad0ccfeea4afc270faa356c2ba515/README.md",
+  "fetched_at": "2026-10-22T14:13:28+09:00",
+  "status": "ok",
+  "body_chars": 28286,
+  "has_front_matter": true,
+  "card_revision": "d1d8734c9c3ad0ccfeea4afc270faa356c2ba515",
+  "model_id": "google/paligemma-3b-mix-224",
+  "body_sha256": "ea75f93b2224b31ef09bf351aa39852f5be4d8d4acf2103adefb2af13d6e0e4d"
+ },
+ "google/paligemma-3b-pt-224": {
+  "url": "https://huggingface.co/google/paligemma-3b-pt-224/resolve/35e4f46485b4d07967e7e9935bc3786aad50687c/README.md",
+  "fetched_at": "2026-10-22T14:13:29+09:00",
+  "status": "ok",
+  "body_chars": 28240,
+  "has_front_matter": true,
+  "card_revision": "35e4f46485b4d07967e7e9935bc3786aad50687c",
+  "model_id": "google/paligemma-3b-pt-224",
+  "body_sha256": "a825c19cb1048ba00a8ea791cf0b091e24cefbb6e2d2ed6360522da0973583b0"
+ },
+ "google/t5gemma-2b-2b-ul2-it": {
+  "url": "https://huggingface.co/google/t5gemma-2b-2b-ul2-it/resolve/6a196a58ce2786cd139a1217a85d1f7b9984e330/README.md",
+  "fetched_at": "2026-10-22T14:13:30+09:00",
+  "status": "ok",
+  "body_chars": 18255,
+  "has_front_matter": true,
+  "card_revision": "6a196a58ce2786cd139a1217a85d1f7b9984e330",
+  "model_id": "google/t5gemma-2b-2b-ul2-it",
+  "body_sha256": "ff232945ad52acd87f7642901383670c242ef332e383d24d6be81ca6cd076129"
+ },
+ "google/translategemma-12b-it": {
+  "url": "https://huggingface.co/google/translategemma-12b-it/resolve/d1b225e1caa17f1ddc7e62065d8637d0923f34e2/README.md",
+  "fetched_at": "2026-10-22T14:15:25+09:00",
+  "status": "ok",
+  "body_chars": 17066,
+  "has_front_matter": true,
+  "card_revision": "d1b225e1caa17f1ddc7e62065d8637d0923f34e2",
+  "model_id": "google/translategemma-12b-it",
+  "body_sha256": "82ba6326499c1a5c9cd6ae0c186f7686332db1014c469ba1964e8c2d342130ec"
+ },
+ "google/translategemma-4b-it": {
+  "url": "https://huggingface.co/google/translategemma-4b-it/resolve/10042cb0e6e7fdce748996a71dc3dc432a4e0c89/README.md",
+  "fetched_at": "2026-10-22T14:15:26+09:00",
+  "status": "ok",
+  "body_chars": 17064,
+  "has_front_matter": true,
+  "card_revision": "10042cb0e6e7fdce748996a71dc3dc432a4e0c89",
+  "model_id": "google/translategemma-4b-it",
+  "body_sha256": "db11ba9851b599ccb583fa79d719ea3cd010731781f353aa6859cea3f604e2fe"
+ },
+ "ibm-granite/granite-3.0-1b-a400m-instruct": {
+  "url": "https://huggingface.co/ibm-granite/granite-3.0-1b-a400m-instruct/resolve/ffec3c35bdfd97a06f0b4cd5fcc92cd9b1584445/README.md",
+  "fetched_at": "2026-10-22T14:13:35+09:00",
+  "status": "ok",
+  "body_chars": 6664,
+  "has_front_matter": true,
+  "card_revision": "ffec3c35bdfd97a06f0b4cd5fcc92cd9b1584445",
+  "model_id": "ibm-granite/granite-3.0-1b-a400m-instruct",
+  "body_sha256": "874fb36cd69bab754c095fffc0a67985f28bfca593c75c91abdb6dd184719401"
+ },
+ "ibm-granite/granite-3.3-2b-instruct": {
+  "url": "https://huggingface.co/ibm-granite/granite-3.3-2b-instruct/resolve/707f574c62054322f6b5b04b6d075f0a8f05e0f0/README.md",
+  "fetched_at": "2026-10-22T14:13:37+09:00",
+  "status": "ok",
+  "body_chars": 36836,
+  "has_front_matter": true,
+  "card_revision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0",
+  "model_id": "ibm-granite/granite-3.3-2b-instruct",
+  "body_sha256": "449768762021ee85038742515f6fdd716d57678d0293f84dfc23c46475fcf24f"
+ },
+ "ibm-granite/granite-3.3-8b-instruct": {
+  "url": "https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/resolve/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md",
+  "fetched_at": "2026-10-22T14:13:38+09:00",
+  "status": "ok",
+  "body_chars": 27418,
+  "has_front_matter": true,
+  "card_revision": "51dd4bc2ade4059a6bd87649d68aa11e4fb2529b",
+  "model_id": "ibm-granite/granite-3.3-8b-instruct",
+  "body_sha256": "6dde6c5132c07d111ac41ef3216751648af1b98cbf21b2a1de9d9ffb51d937cb"
+ },
+ "ibm-granite/granite-3b-code-base-2k": {
+  "url": "https://huggingface.co/ibm-granite/granite-3b-code-base-2k/resolve/b67f3dabc0b6d00ae477bd76732c7f3458a2caf3/README.md",
+  "fetched_at": "2026-10-22T14:12:06+09:00",
+  "status": "ok",
+  "body_chars": 5948,
+  "has_front_matter": true,
+  "card_revision": "b67f3dabc0b6d00ae477bd76732c7f3458a2caf3",
+  "model_id": "ibm-granite/granite-3b-code-base-2k",
+  "body_sha256": "557309d8586d9ec4d87e23cbcaac7e267570c47ebdb8468c7eeabe43b70d6988"
+ },
+ "ibm-granite/granite-4.0-3b-vision": {
+  "url": "https://huggingface.co/ibm-granite/granite-4.0-3b-vision/resolve/bf108f36960fb4df79bf035e506c592f4ee3c2d3/README.md",
+  "fetched_at": "2026-10-22T14:13:39+09:00",
+  "status": "ok",
+  "body_chars": 17901,
+  "has_front_matter": true,
+  "card_revision": "bf108f36960fb4df79bf035e506c592f4ee3c2d3",
+  "model_id": "ibm-granite/granite-4.0-3b-vision",
+  "body_sha256": "4aec5483bcd8eb78cf2ae1d52452f268ebc63dc83b555b544fe02c062f62b854"
+ },
+ "ibm-granite/granite-4.1-3b": {
+  "url": "https://huggingface.co/ibm-granite/granite-4.1-3b/resolve/c0650403e44e78ec0262dab1c90914c65b196c4e/README.md",
+  "fetched_at": "2026-10-22T14:13:40+09:00",
+  "status": "ok",
+  "body_chars": 32377,
+  "has_front_matter": true,
+  "card_revision": "c0650403e44e78ec0262dab1c90914c65b196c4e",
+  "model_id": "ibm-granite/granite-4.1-3b",
+  "body_sha256": "2552c274ee58034dcd10880b5bfd85197ec102c828ffaf6653dd2e122067a7c9"
+ },
+ "ibm-granite/granite-4.1-8b": {
+  "url": "https://huggingface.co/ibm-granite/granite-4.1-8b/resolve/1504002f650e656a0a3789d99574df12e3e94ed0/README.md",
+  "fetched_at": "2026-10-22T14:13:41+09:00",
+  "status": "ok",
+  "body_chars": 32232,
+  "has_front_matter": true,
+  "card_revision": "1504002f650e656a0a3789d99574df12e3e94ed0",
+  "model_id": "ibm-granite/granite-4.1-8b",
+  "body_sha256": "d704d3816161ad9355e8724102d812213a2dc8644624b5fd060e6829bf36d3d3"
+ },
+ "ibm-granite/granite-4.2-8b": {
+  "url": "https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/README.md",
+  "fetched_at": "2026-10-22T14:13:42+09:00",
+  "status": "ok",
+  "body_chars": 38307,
+  "has_front_matter": true,
+  "card_revision": "a7042144125ce5ae64f89610e8289647fc000b9a",
+  "model_id": "ibm-granite/granite-4.2-8b",
+  "body_sha256": "3199def8fb9e32ae59afc9ee89f6f9d3f79b9171d77d9f31d3140f37281bb0bd"
+ },
+ "ibm-granite/granite-vision-4.1-4b": {
+  "url": "https://huggingface.co/ibm-granite/granite-vision-4.1-4b/resolve/37d591f06319e8f1638b5adcf58bdf50e0f84f7a/README.md",
+  "fetched_at": "2026-10-22T14:13:43+09:00",
+  "status": "ok",
+  "body_chars": 18029,
+  "has_front_matter": true,
+  "card_revision": "37d591f06319e8f1638b5adcf58bdf50e0f84f7a",
+  "model_id": "ibm-granite/granite-vision-4.1-4b",
+  "body_sha256": "ee1f07e6d80f25b2a96fd9eb29664d877dc9a82774736c3b792d08d209f7cdbe"
+ },
+ "internlm/internlm2-chat-7b": {
+  "url": "https://huggingface.co/internlm/internlm2-chat-7b/resolve/c2ba64483dc50b3f8eb2d8271c4b9877a79ed2e2/README.md",
+  "fetched_at": "2026-10-22T14:14:34+09:00",
+  "status": "ok",
+  "body_chars": 15897,
+  "has_front_matter": true,
+  "card_revision": "c2ba64483dc50b3f8eb2d8271c4b9877a79ed2e2",
+  "model_id": "internlm/internlm2-chat-7b",
+  "body_sha256": "dffd770b15b5aa86816d6e8a0bf07ca3ee5417a6dfe4e38c3b5445cceedece1e"
+ },
+ "internlm/internlm2-math-plus-7b": {
+  "url": "https://huggingface.co/internlm/internlm2-math-plus-7b/resolve/2565e424cc6f83358e7a5aa19b639205fcdd173d/README.md",
+  "fetched_at": "2026-10-22T14:14:52+09:00",
+  "status": "ok",
+  "body_chars": 5941,
+  "has_front_matter": true,
+  "card_revision": "2565e424cc6f83358e7a5aa19b639205fcdd173d",
+  "model_id": "internlm/internlm2-math-plus-7b",
+  "body_sha256": "43e4d52b6b849cb70fcc410b16408482a26883a8fe0eb2d87409156970777f88"
+ },
+ "kakaocorp/kanana-1.5-2.1b-base": {
+  "url": "https://huggingface.co/kakaocorp/kanana-1.5-2.1b-base/resolve/83fdd4426138b2becb3b33197126de2e4f5dfcd3/README.md",
+  "fetched_at": "2026-10-22T14:14:57+09:00",
+  "status": "ok",
+  "body_chars": 5770,
+  "has_front_matter": true,
+  "card_revision": "83fdd4426138b2becb3b33197126de2e4f5dfcd3",
+  "model_id": "kakaocorp/kanana-1.5-2.1b-base",
+  "body_sha256": "deee0f7331e906a1b28c2522839d7212cb85fe1853a2bd3efbd5f320de5ad812"
+ },
+ "kakaocorp/kanana-1.5-2.1b-instruct-2505": {
+  "url": "https://huggingface.co/kakaocorp/kanana-1.5-2.1b-instruct-2505/resolve/7df4bc35ccd610e451809d7106e1c3cf82bfd44c/README.md",
+  "fetched_at": "2026-10-22T14:14:58+09:00",
+  "status": "ok",
+  "body_chars": 5771,
+  "has_front_matter": true,
+  "card_revision": "7df4bc35ccd610e451809d7106e1c3cf82bfd44c",
+  "model_id": "kakaocorp/kanana-1.5-2.1b-instruct-2505",
+  "body_sha256": "67931219277d7b7aad3c2c02301d50c101ab5de9846c16384d8eaf5204c6b524"
+ },
+ "kakaocorp/kanana-1.5-8b-base": {
+  "url": "https://huggingface.co/kakaocorp/kanana-1.5-8b-base/resolve/5a5aad571a4e651a916d0bc74a768bb9f9ef05f3/README.md",
+  "fetched_at": "2026-10-22T14:14:59+09:00",
+  "status": "ok",
+  "body_chars": 6289,
+  "has_front_matter": true,
+  "card_revision": "5a5aad571a4e651a916d0bc74a768bb9f9ef05f3",
+  "model_id": "kakaocorp/kanana-1.5-8b-base",
+  "body_sha256": "99279d1dde91652b01f970a3ab5719aaf2491203ae7ae409c46a23acb64175f1"
+ },
+ "kakaocorp/kanana-1.5-8b-instruct-2505": {
+  "url": "https://huggingface.co/kakaocorp/kanana-1.5-8b-instruct-2505/resolve/c963a5f4f6496c749f94064a20b33028b0db9f19/README.md",
+  "fetched_at": "2026-10-22T14:15:00+09:00",
+  "status": "ok",
+  "body_chars": 6288,
+  "has_front_matter": true,
+  "card_revision": "c963a5f4f6496c749f94064a20b33028b0db9f19",
+  "model_id": "kakaocorp/kanana-1.5-8b-instruct-2505",
+  "body_sha256": "036247a9fa6fa204279fbfc4bec7629f936f4eea618bf3ac790069c9a1f44ac3"
+ },
+ "kakaocorp/kanana-1.5-v-3b-instruct": {
+  "url": "https://huggingface.co/kakaocorp/kanana-1.5-v-3b-instruct/resolve/2e00ef13ccec2e99459a8eada18a1bfd05bff44b/README.md",
+  "fetched_at": "2026-10-22T14:15:01+09:00",
+  "status": "ok",
+  "body_chars": 11281,
+  "has_front_matter": true,
+  "card_revision": "2e00ef13ccec2e99459a8eada18a1bfd05bff44b",
+  "model_id": "kakaocorp/kanana-1.5-v-3b-instruct",
+  "body_sha256": "fdd6b0cf72a0c662fc5de086e42438533df5200e158e1324bac797f0ae222119"
+ },
+ "kakaocorp/kanana-2-1.3b-instruct": {
+  "url": "https://huggingface.co/kakaocorp/kanana-2-1.3b-instruct/resolve/bf4786aa2a1908adce942d53976270132732f720/README.md",
+  "fetched_at": "2026-10-22T14:15:02+09:00",
+  "status": "ok",
+  "body_chars": 12200,
+  "has_front_matter": true,
+  "card_revision": "bf4786aa2a1908adce942d53976270132732f720",
+  "model_id": "kakaocorp/kanana-2-1.3b-instruct",
+  "body_sha256": "73497f3f8869c61fba58f343426fff31df0093473f0a2f6d1f59a793e796b993"
+ },
+ "kakaocorp/kanana-2-3b-instruct": {
+  "url": "https://huggingface.co/kakaocorp/kanana-2-3b-instruct/resolve/6a5d7889964c4c590299d16e309eabab1f73f8a9/README.md",
+  "fetched_at": "2026-10-22T14:15:03+09:00",
+  "status": "ok",
+  "body_chars": 9793,
+  "has_front_matter": true,
+  "card_revision": "6a5d7889964c4c590299d16e309eabab1f73f8a9",
+  "model_id": "kakaocorp/kanana-2-3b-instruct",
+  "body_sha256": "6d312cc669625bac809f31548652e5368bdb5cd7052d5469eab45b54200b6827"
+ },
+ "kakaocorp/kanana-nano-2.1b-instruct": {
+  "url": "https://huggingface.co/kakaocorp/kanana-nano-2.1b-instruct/resolve/e12a48d5386ceb7dd608533e8ffaea82d6070554/README.md",
+  "fetched_at": "2026-10-22T14:15:04+09:00",
+  "status": "ok",
+  "body_chars": 24511,
+  "has_front_matter": true,
+  "card_revision": "e12a48d5386ceb7dd608533e8ffaea82d6070554",
+  "model_id": "kakaocorp/kanana-nano-2.1b-instruct",
+  "body_sha256": "9edbab0a01e45d5c98ea6d129e3a8e0be811c99ba3ba6de8f6df59c6659d10bd"
+ },
+ "meta-llama/CodeLlama-7b-Python-hf": {
+  "url": "https://huggingface.co/meta-llama/CodeLlama-7b-Python-hf/resolve/b97340ccba60c3ccaf91882ffe470a1bbc32e32c/README.md",
+  "fetched_at": "2026-10-22T14:12:08+09:00",
+  "status": "ok",
+  "body_chars": 6296,
+  "has_front_matter": true,
+  "card_revision": "b97340ccba60c3ccaf91882ffe470a1bbc32e32c",
+  "model_id": "meta-llama/CodeLlama-7b-Python-hf",
+  "body_sha256": "b12b08e5747ba70946d0dd1fb7a1d1fc8128e0824b492e7673f862efc0a5fd14"
+ },
+ "meta-llama/Llama-2-13b-chat-hf": {
+  "url": "https://huggingface.co/meta-llama/Llama-2-13b-chat-hf/resolve/a2cb7a712bb6e5e736ca7f8cd98167f81a0b5bd8/README.md",
+  "fetched_at": "2026-10-22T14:13:46+09:00",
+  "status": "ok",
+  "body_chars": 9522,
+  "has_front_matter": true,
+  "card_revision": "a2cb7a712bb6e5e736ca7f8cd98167f81a0b5bd8",
+  "model_id": "meta-llama/Llama-2-13b-chat-hf",
+  "body_sha256": "653d370ee918ca50de40c2fc91c0db951acf88293cddc4b55c39e98cd0f805af"
+ },
+ "meta-llama/Llama-2-7b-chat-hf": {
+  "url": "https://huggingface.co/meta-llama/Llama-2-7b-chat-hf/resolve/f5db02db724555f92da89c216ac04704f23d4590/README.md",
+  "fetched_at": "2026-10-22T14:13:47+09:00",
+  "status": "ok",
+  "body_chars": 9521,
+  "has_front_matter": true,
+  "card_revision": "f5db02db724555f92da89c216ac04704f23d4590",
+  "model_id": "meta-llama/Llama-2-7b-chat-hf",
+  "body_sha256": "78363d66e90e808921c9cf2c8c9e3ae771b9e6199cb4eb760343b77031fc6487"
+ },
+ "meta-llama/Llama-2-7b-hf": {
+  "url": "https://huggingface.co/meta-llama/Llama-2-7b-hf/resolve/01c7f73d771dfac7d292323805ebc428287df4f9/README.md",
+  "fetched_at": "2026-10-22T14:13:48+09:00",
+  "status": "ok",
+  "body_chars": 9484,
+  "has_front_matter": true,
+  "card_revision": "01c7f73d771dfac7d292323805ebc428287df4f9",
+  "model_id": "meta-llama/Llama-2-7b-hf",
+  "body_sha256": "01b381fcd8f8077fc103084984fc6d3e17b1b9a9516319f4036aadfb4ddad9b7"
+ },
+ "meta-llama/Llama-3.1-8B": {
+  "url": "https://huggingface.co/meta-llama/Llama-3.1-8B/resolve/d04e592bb4f6aa9cfee91e2e20afa771667e1d4b/README.md",
+  "fetched_at": "2026-10-22T14:13:49+09:00",
+  "status": "ok",
+  "body_chars": 27465,
+  "has_front_matter": true,
+  "card_revision": "d04e592bb4f6aa9cfee91e2e20afa771667e1d4b",
+  "model_id": "meta-llama/Llama-3.1-8B",
+  "body_sha256": "ea723c6eecde6fc5bad9b0931058929495f6ab26e7026c4dc453f6a597746ec3"
+ },
+ "meta-llama/Llama-3.1-8B-Instruct": {
+  "url": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/0e9e39f249a16976918f6564b8830bc894c89659/README.md",
+  "fetched_at": "2026-10-22T14:13:50+09:00",
+  "status": "ok",
+  "body_chars": 30149,
+  "has_front_matter": true,
+  "card_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+  "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+  "body_sha256": "41e36d2d812da8cf7bb0bfe4e2c03618d8ff468ba2e58efda60b225c3cef3756"
+ },
+ "meta-llama/Llama-3.2-11B-Vision-Instruct": {
+  "url": "https://huggingface.co/meta-llama/Llama-3.2-11B-Vision-Instruct/resolve/9eb2daaa8597bf192a8b0e73f848f3a102794df5/README.md",
+  "fetched_at": "2026-10-22T14:13:51+09:00",
+  "status": "ok",
+  "body_chars": 22255,
+  "has_front_matter": true,
+  "card_revision": "9eb2daaa8597bf192a8b0e73f848f3a102794df5",
+  "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+  "body_sha256": "fd1f233ebd063dbc9e38f62ca22d60b9bbe8a9458fe6c19671bff5b466534290"
+ },
+ "meta-llama/Llama-3.2-1B": {
+  "url": "https://huggingface.co/meta-llama/Llama-3.2-1B/resolve/4e20de362430cd3b72f300e6b0f18e50e7166e08/README.md",
+  "fetched_at": "2026-10-22T14:13:52+09:00",
+  "status": "ok",
+  "body_chars": 26298,
+  "has_front_matter": true,
+  "card_revision": "4e20de362430cd3b72f300e6b0f18e50e7166e08",
+  "model_id": "meta-llama/Llama-3.2-1B",
+  "body_sha256": "fdeb9c2a7d4c32e19a8ef2d57e44b0493bf5cca934859b30c7d0d74613a412ad"
+ },
+ "meta-llama/Llama-3.2-1B-Instruct": {
+  "url": "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct/resolve/9213176726f574b556790deb65791e0c5aa438b6/README.md",
+  "fetched_at": "2026-10-22T14:13:53+09:00",
+  "status": "ok",
+  "body_chars": 26801,
+  "has_front_matter": true,
+  "card_revision": "9213176726f574b556790deb65791e0c5aa438b6",
+  "model_id": "meta-llama/Llama-3.2-1B-Instruct",
+  "body_sha256": "e66667ba69fb3f4b74ba4b60f90868f22c49e953c32901b62937e216f495eb11"
+ },
+ "meta-llama/Llama-3.2-3B": {
+  "url": "https://huggingface.co/meta-llama/Llama-3.2-3B/resolve/13afe5124825b4f3751f836b40dafda64c1ed062/README.md",
+  "fetched_at": "2026-10-22T14:13:54+09:00",
+  "status": "ok",
+  "body_chars": 26298,
+  "has_front_matter": true,
+  "card_revision": "13afe5124825b4f3751f836b40dafda64c1ed062",
+  "model_id": "meta-llama/Llama-3.2-3B",
+  "body_sha256": "7f5524cc5a85fe5395463828a0588aab93d5b9ff31fa1a8f7fd3f25866f10c4e"
+ },
+ "meta-llama/Llama-3.2-3B-Instruct": {
+  "url": "https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/resolve/0cb88a4f764b7a12671c53f0838cd831a0843b95/README.md",
+  "fetched_at": "2026-10-22T14:13:55+09:00",
+  "status": "ok",
+  "body_chars": 26803,
+  "has_front_matter": true,
+  "card_revision": "0cb88a4f764b7a12671c53f0838cd831a0843b95",
+  "model_id": "meta-llama/Llama-3.2-3B-Instruct",
+  "body_sha256": "a054ab722ccc2f4925425216ecc47b1f83bd9acc5ba6f52073be7919ff2c3da1"
+ },
+ "meta-llama/Meta-Llama-3-8B": {
+  "url": "https://huggingface.co/meta-llama/Meta-Llama-3-8B/resolve/8cde5ca8380496c9a6cc7ef3a8b46a0372a1d920/README.md",
+  "fetched_at": "2026-10-22T14:13:55+09:00",
+  "status": "ok",
+  "body_chars": 23236,
+  "has_front_matter": true,
+  "card_revision": "8cde5ca8380496c9a6cc7ef3a8b46a0372a1d920",
+  "model_id": "meta-llama/Meta-Llama-3-8B",
+  "body_sha256": "449ee33eccf4b5079b078fb0c6db9c1ce339f432c1e255a7816f30ec259c53c7"
+ },
+ "meta-llama/Meta-Llama-3-8B-Instruct": {
+  "url": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct/resolve/8afb486c1db24fe5011ec46dfbe5b5dccdb575c2/README.md",
+  "fetched_at": "2026-10-22T14:13:56+09:00",
+  "status": "ok",
+  "body_chars": 24846,
+  "has_front_matter": true,
+  "card_revision": "8afb486c1db24fe5011ec46dfbe5b5dccdb575c2",
+  "model_id": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "body_sha256": "03962964ff2a7eb0565f1712f5c24e4db7ea623bb07fe7b72a144d7048edb5c9"
+ },
+ "microsoft/Phi-3-mini-128k-instruct": {
+  "url": "https://huggingface.co/microsoft/Phi-3-mini-128k-instruct/resolve/f3c06aed622e14ca0abf5115094e4fc9a9948f36/README.md",
+  "fetched_at": "2026-10-22T14:13:57+09:00",
+  "status": "ok",
+  "body_chars": 23647,
+  "has_front_matter": true,
+  "card_revision": "f3c06aed622e14ca0abf5115094e4fc9a9948f36",
+  "model_id": "microsoft/Phi-3-mini-128k-instruct",
+  "body_sha256": "ba1e5954c6704fb14409588b9be562b0f8ae26cf53dab1a7176f71c766894d7a"
+ },
+ "microsoft/Phi-3-mini-4k-instruct": {
+  "url": "https://huggingface.co/microsoft/Phi-3-mini-4k-instruct/resolve/f39ac1d28e925b323eae81227eaba4464caced4e/README.md",
+  "fetched_at": "2026-10-22T14:13:58+09:00",
+  "status": "ok",
+  "body_chars": 21348,
+  "has_front_matter": true,
+  "card_revision": "f39ac1d28e925b323eae81227eaba4464caced4e",
+  "model_id": "microsoft/Phi-3-mini-4k-instruct",
+  "body_sha256": "eb09e97f2c9d8a602e58c8a38ab19064a9d4a0680b03cc8ea21f3cbe0753ab2f"
+ },
+ "microsoft/Phi-3.5-mini-instruct": {
+  "url": "https://huggingface.co/microsoft/Phi-3.5-mini-instruct/resolve/2fe192450127e6a83f7441aef6e3ca586c338b77/README.md",
+  "fetched_at": "2026-10-22T14:14:00+09:00",
+  "status": "ok",
+  "body_chars": 48319,
+  "has_front_matter": true,
+  "card_revision": "2fe192450127e6a83f7441aef6e3ca586c338b77",
+  "model_id": "microsoft/Phi-3.5-mini-instruct",
+  "body_sha256": "bb7c6453bcd31a767f0c71f5670d7db0e1dad7d1cdc1a28246148ddab9879efa"
+ },
+ "microsoft/Phi-3.5-vision-instruct": {
+  "url": "https://huggingface.co/microsoft/Phi-3.5-vision-instruct/resolve/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md",
+  "fetched_at": "2026-10-22T14:14:01+09:00",
+  "status": "ok",
+  "body_chars": 18463,
+  "has_front_matter": true,
+  "card_revision": "12b77fb40b63a2c73c68243d3f767aab688a1b2a",
+  "model_id": "microsoft/Phi-3.5-vision-instruct",
+  "body_sha256": "6c831f091f431e07cd67c5bcf25140ac05dc1fb6dd6222a7be2d8cdf93730c15"
+ },
+ "microsoft/Phi-4-mini-instruct": {
+  "url": "https://huggingface.co/microsoft/Phi-4-mini-instruct/resolve/cfbefacb99257ffa30c83adab238a50856ac3083/README.md",
+  "fetched_at": "2026-10-22T14:14:02+09:00",
+  "status": "ok",
+  "body_chars": 28737,
+  "has_front_matter": true,
+  "card_revision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+  "model_id": "microsoft/Phi-4-mini-instruct",
+  "body_sha256": "85c34e386d66aa5f503ed4bb8639abc9261ad27a0707c1929b5034508d7eca06"
+ },
+ "microsoft/phi-2": {
+  "url": "https://huggingface.co/microsoft/phi-2/resolve/810d367871c1d460086d9f82db8696f2e0a0fcd0/README.md",
+  "fetched_at": "2026-10-22T14:14:03+09:00",
+  "status": "ok",
+  "body_chars": 7718,
+  "has_front_matter": true,
+  "card_revision": "810d367871c1d460086d9f82db8696f2e0a0fcd0",
+  "model_id": "microsoft/phi-2",
+  "body_sha256": "9228446250b0c4863d3056af9c255af379d328638f7cd69f49229c6c5b054728"
+ },
+ "microsoft/phi-4": {
+  "url": "https://huggingface.co/microsoft/phi-4/resolve/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md",
+  "fetched_at": "2026-10-22T14:14:04+09:00",
+  "status": "ok",
+  "body_chars": 13396,
+  "has_front_matter": true,
+  "card_revision": "2db69c1c3e91a05d2c64a3185acfbaf36f744e25",
+  "model_id": "microsoft/phi-4",
+  "body_sha256": "c3d2aa001961b141c2e2e8a95ccec9e2d17e17a2f440ec5a597f55a302a298a7"
+ },
+ "mistralai/Devstral-Small-2-24B-Instruct-2512": {
+  "url": "https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/resolve/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md",
+  "fetched_at": "2026-10-22T14:12:09+09:00",
+  "status": "ok",
+  "body_chars": 61226,
+  "has_front_matter": true,
+  "card_revision": "55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128",
+  "model_id": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "body_sha256": "a5f0bb29343bd9db57cb189c630f2ce24f6a5547620bd4a7f66d8b8332b56b69"
+ },
+ "mistralai/Devstral-Small-2507": {
+  "url": "https://huggingface.co/mistralai/Devstral-Small-2507/resolve/bd165ab26cebbcc2eea2c4ecbfc07f3ac42b3c39/README.md",
+  "fetched_at": "2026-10-22T14:12:10+09:00",
+  "status": "ok",
+  "body_chars": 18301,
+  "has_front_matter": true,
+  "card_revision": "bd165ab26cebbcc2eea2c4ecbfc07f3ac42b3c39",
+  "model_id": "mistralai/Devstral-Small-2507",
+  "body_sha256": "35a24ead5849cc175c93527fd942a218dfab34ef7cf3031f50258a866b12bab8"
+ },
+ "mistralai/Magistral-Small-2506": {
+  "url": "https://huggingface.co/mistralai/Magistral-Small-2506/resolve/ad2fce5b4113139e1877dcadfd826c9262ad8e8c/README.md",
+  "fetched_at": "2026-10-22T14:14:05+09:00",
+  "status": "ok",
+  "body_chars": 7938,
+  "has_front_matter": true,
+  "card_revision": "ad2fce5b4113139e1877dcadfd826c9262ad8e8c",
+  "model_id": "mistralai/Magistral-Small-2506",
+  "body_sha256": "8e35c69422492a2b1782be2dd21164a9201d29106bd90e3d9a0a12d4cf83a14d"
+ },
+ "mistralai/Mamba-Codestral-7B-v0.1": {
+  "url": "https://huggingface.co/mistralai/Mamba-Codestral-7B-v0.1/resolve/4f086c08c1e0f07bdc50ca25125dbbf7475d21da/README.md",
+  "fetched_at": "2026-10-22T14:12:11+09:00",
+  "status": "ok",
+  "body_chars": 3304,
+  "has_front_matter": true,
+  "card_revision": "4f086c08c1e0f07bdc50ca25125dbbf7475d21da",
+  "model_id": "mistralai/Mamba-Codestral-7B-v0.1",
+  "body_sha256": "537890142454482ea78033056d118ce07a02a40019d51287dc9ae71bef0464ee",
+  "verified_at": "2026-10-22T14:31:09+09:00"
+ },
+ "mistralai/Mathstral-7B-v0.1": {
+  "url": "https://huggingface.co/mistralai/Mathstral-7B-v0.1/resolve/ec3a48484ef241dfe03282edcb0f25e564923823/README.md",
+  "fetched_at": "2026-10-22T14:14:49+09:00",
+  "status": "ok",
+  "body_chars": 4962,
+  "has_front_matter": true,
+  "card_revision": "ec3a48484ef241dfe03282edcb0f25e564923823",
+  "model_id": "mistralai/Mathstral-7B-v0.1",
+  "body_sha256": "a0fe71a70d22efde8055859ff50e472febff3d6f1e7e5c1a54ce0254029af86c"
+ },
+ "mistralai/Ministral-3-14B-Instruct-2512": {
+  "url": "https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/resolve/29439f81c2be264d8d393273f99e7db9c0961120/README.md",
+  "fetched_at": "2026-10-22T14:14:06+09:00",
+  "status": "ok",
+  "body_chars": 19946,
+  "has_front_matter": true,
+  "card_revision": "29439f81c2be264d8d393273f99e7db9c0961120",
+  "model_id": "mistralai/Ministral-3-14B-Instruct-2512",
+  "body_sha256": "e3190d8a93298af0f58c2f2c6503d06294384c3301bb4f306175646db68606d0"
+ },
+ "mistralai/Ministral-3-14B-Reasoning-2512": {
+  "url": "https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512/resolve/51f9210f3cd20f3452a80d5819d15dc61cc50630/README.md",
+  "fetched_at": "2026-10-22T14:14:07+09:00",
+  "status": "ok",
+  "body_chars": 22704,
+  "has_front_matter": true,
+  "card_revision": "51f9210f3cd20f3452a80d5819d15dc61cc50630",
+  "model_id": "mistralai/Ministral-3-14B-Reasoning-2512",
+  "body_sha256": "baaa2df6256a0b49862bb1a3421a6f7912ad3d3ba481810588901d9c2ef10643"
+ },
+ "mistralai/Ministral-3-3B-Instruct-2512": {
+  "url": "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512/resolve/b35d4dfe56c142746f54dbd64f579faab2744308/README.md",
+  "fetched_at": "2026-10-22T14:14:08+09:00",
+  "status": "ok",
+  "body_chars": 19988,
+  "has_front_matter": true,
+  "card_revision": "b35d4dfe56c142746f54dbd64f579faab2744308",
+  "model_id": "mistralai/Ministral-3-3B-Instruct-2512",
+  "body_sha256": "700bc5e987aed12269fec4926a6243e029b0c63edf799b2a295cf3ff589543c4"
+ },
+ "mistralai/Ministral-3-8B-Instruct-2512": {
+  "url": "https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512/resolve/5b26027e7b19eeb4b7352e1fed3926375dd2cb4d/README.md",
+  "fetched_at": "2026-10-22T14:14:10+09:00",
+  "status": "ok",
+  "body_chars": 19936,
+  "has_front_matter": true,
+  "card_revision": "5b26027e7b19eeb4b7352e1fed3926375dd2cb4d",
+  "model_id": "mistralai/Ministral-3-8B-Instruct-2512",
+  "body_sha256": "8b4fea7cf7ae63092714e0b7e10dfa08fb00a8a59c09184730f24fa25454a6bb"
+ },
+ "mistralai/Ministral-8B-Instruct-2410": {
+  "url": "https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/resolve/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md",
+  "fetched_at": "2026-10-22T14:14:11+09:00",
+  "status": "ok",
+  "body_chars": 15941,
+  "has_front_matter": true,
+  "card_revision": "2f494a194c5b980dfb9772cb92d26cbb671fce5a",
+  "model_id": "mistralai/Ministral-8B-Instruct-2410",
+  "body_sha256": "7a8a35da79a7e87549074ecd3c1edf258a7820bace939c0356e7a0286907cc7f"
+ },
+ "mistralai/Mistral-7B-Instruct-v0.1": {
+  "url": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.1/resolve/ec5deb64f2c6e6fa90c1abf74a91d5c93a9669ca/README.md",
+  "fetched_at": "2026-10-22T14:14:12+09:00",
+  "status": "ok",
+  "body_chars": 5244,
+  "has_front_matter": true,
+  "card_revision": "ec5deb64f2c6e6fa90c1abf74a91d5c93a9669ca",
+  "model_id": "mistralai/Mistral-7B-Instruct-v0.1",
+  "body_sha256": "4bd4e788e522e554c5cf647fdfd7ecedb065f80d29e6713a0e48384e2d12a1b1"
+ },
+ "mistralai/Mistral-7B-Instruct-v0.2": {
+  "url": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2/resolve/63a8b081895390a26e140280378bc85ec8bce07a/README.md",
+  "fetched_at": "2026-10-22T14:14:13+09:00",
+  "status": "ok",
+  "body_chars": 5129,
+  "has_front_matter": true,
+  "card_revision": "63a8b081895390a26e140280378bc85ec8bce07a",
+  "model_id": "mistralai/Mistral-7B-Instruct-v0.2",
+  "body_sha256": "ee5ad6c9980c21d1e33d844184994ac1b669808414f06404bfb51951318c8b0e"
+ },
+ "mistralai/Mistral-7B-Instruct-v0.3": {
+  "url": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/c170c708c41dac9275d15a8fff4eca08d52bab71/README.md",
+  "fetched_at": "2026-10-22T14:14:14+09:00",
+  "status": "ok",
+  "body_chars": 7586,
+  "has_front_matter": true,
+  "card_revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+  "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+  "body_sha256": "0ea5a35d1a9727e8e48371697f795c8833bee9fcf8f64dba7390ffd097789a03"
+ },
+ "mistralai/Mistral-7B-v0.1": {
+  "url": "https://huggingface.co/mistralai/Mistral-7B-v0.1/resolve/27d67f1b5f57dc0953326b2601d68371d40ea8da/README.md",
+  "fetched_at": "2026-10-22T14:14:15+09:00",
+  "status": "ok",
+  "body_chars": 1249,
+  "has_front_matter": true,
+  "card_revision": "27d67f1b5f57dc0953326b2601d68371d40ea8da",
+  "model_id": "mistralai/Mistral-7B-v0.1",
+  "body_sha256": "3cd2adc530b7c7704169c60b1a96abd9f496d010b43e3f5ade29d33f0576a580"
+ },
+ "mistralai/Mistral-7B-v0.3": {
+  "url": "https://huggingface.co/mistralai/Mistral-7B-v0.3/resolve/caa1feb0e54d415e2df31207e5f4e273e33509b1/README.md",
+  "fetched_at": "2026-10-22T14:14:16+09:00",
+  "status": "ok",
+  "body_chars": 3318,
+  "has_front_matter": true,
+  "card_revision": "caa1feb0e54d415e2df31207e5f4e273e33509b1",
+  "model_id": "mistralai/Mistral-7B-v0.3",
+  "body_sha256": "a635ba6b50df79fe4374ea922d933229d6e1bf1c57881a6fc51608e3b6eff8b6"
+ },
+ "mistralai/Mistral-Nemo-Base-2407": {
+  "url": "https://huggingface.co/mistralai/Mistral-Nemo-Base-2407/resolve/a4477a2f977929a969745b69bbd62e03043551a5/README.md",
+  "fetched_at": "2026-10-22T14:14:17+09:00",
+  "status": "ok",
+  "body_chars": 4874,
+  "has_front_matter": true,
+  "card_revision": "a4477a2f977929a969745b69bbd62e03043551a5",
+  "model_id": "mistralai/Mistral-Nemo-Base-2407",
+  "body_sha256": "92a8fcfa013e607830a5c3013f1a7cd4c4a6dde10ba617186e5258d32523eb64"
+ },
+ "mistralai/Mistral-Nemo-Instruct-2407": {
+  "url": "https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407/resolve/04d8a90549d23fc6bd7f642064003592df51e9b3/README.md",
+  "fetched_at": "2026-10-22T14:14:18+09:00",
+  "status": "ok",
+  "body_chars": 10172,
+  "has_front_matter": true,
+  "card_revision": "04d8a90549d23fc6bd7f642064003592df51e9b3",
+  "model_id": "mistralai/Mistral-Nemo-Instruct-2407",
+  "body_sha256": "607bfd0c248eecf544361facfc37da4a7be5b20c5bcc60a67ff7987620a694d0"
+ },
+ "mistralai/Mistral-Small-24B-Instruct-2501": {
+  "url": "https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501/resolve/9527884be6e5616bdd54de542f9ae13384489724/README.md",
+  "fetched_at": "2026-10-22T14:14:19+09:00",
+  "status": "ok",
+  "body_chars": 14390,
+  "has_front_matter": true,
+  "card_revision": "9527884be6e5616bdd54de542f9ae13384489724",
+  "model_id": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "body_sha256": "bba2f485c04091004983df0b54673f6dc0c954db28ad84add57ad53907c120a2"
+ },
+ "mistralai/Mistral-Small-3.1-24B-Instruct-2503": {
+  "url": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/resolve/68faf511d618ef198fef186659617cfd2eb8e33a/README.md",
+  "fetched_at": "2026-10-22T14:14:21+09:00",
+  "status": "ok",
+  "body_chars": 18571,
+  "has_front_matter": true,
+  "card_revision": "68faf511d618ef198fef186659617cfd2eb8e33a",
+  "model_id": "mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+  "body_sha256": "e39cb77b0d1d72cadf161c331804f51071c7f809e5d15bf1a5ca74f69d422244"
+ },
+ "mistralai/Mistral-Small-3.2-24B-Instruct-2506": {
+  "url": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/resolve/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md",
+  "fetched_at": "2026-10-22T14:14:22+09:00",
+  "status": "ok",
+  "body_chars": 24902,
+  "has_front_matter": true,
+  "card_revision": "95a6d26c4bfb886c58daf9d3f7332c857cb27b43",
+  "model_id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "body_sha256": "49513ad7bf6fff3fbc553624dd234ef65ad25425a3797ca0778aa8ed39dcf871"
+ },
+ "moonshotai/Kimi-VL-A3B-Instruct": {
+  "url": "https://huggingface.co/moonshotai/Kimi-VL-A3B-Instruct/resolve/398eede0903cd983a2bfa0cc634e9ac1d843f375/README.md",
+  "fetched_at": "2026-10-22T14:14:23+09:00",
+  "status": "ok",
+  "body_chars": 14419,
+  "has_front_matter": true,
+  "card_revision": "398eede0903cd983a2bfa0cc634e9ac1d843f375",
+  "model_id": "moonshotai/Kimi-VL-A3B-Instruct",
+  "body_sha256": "7f7595e541003b523f0e6eeb9248753104608614f65ccaeb7361bed6be7271a1"
+ },
+ "naver-hyperclovax/HyperCLOVAX-SEED-Omni-8B": {
+  "url": "https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Omni-8B/resolve/f1240321d60576b3917ad5a64e363f3555d1a4b8/README.md",
+  "fetched_at": "2026-10-22T14:15:12+09:00",
+  "status": "ok",
+  "body_chars": 15415,
+  "has_front_matter": true,
+  "card_revision": "f1240321d60576b3917ad5a64e363f3555d1a4b8",
+  "model_id": "naver-hyperclovax/HyperCLOVAX-SEED-Omni-8B",
+  "body_sha256": "43eaff17add1e7c8115fc814c967c77cfc7a04100a5836c44759e1edc450384b"
+ },
+ "naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-1.5B": {
+  "url": "https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-1.5B/resolve/0728a47d632019a8da5f53b663db1c175dc04115/README.md",
+  "fetched_at": "2026-10-22T14:15:13+09:00",
+  "status": "ok",
+  "body_chars": 3334,
+  "has_front_matter": true,
+  "card_revision": "0728a47d632019a8da5f53b663db1c175dc04115",
+  "model_id": "naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-1.5B",
+  "body_sha256": "0ccb9ad7ff8daf73347bff3601c43d078bdb00f945c0f32b4ddbedca19c5bf41"
+ },
+ "naver-hyperclovax/HyperCLOVAX-SEED-Think-14B": {
+  "url": "https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-14B/resolve/9b74e35d4c7e4ffec489f4171273caca8948a2b9/README.md",
+  "fetched_at": "2026-10-22T14:15:14+09:00",
+  "status": "ok",
+  "body_chars": 28816,
+  "has_front_matter": true,
+  "card_revision": "9b74e35d4c7e4ffec489f4171273caca8948a2b9",
+  "model_id": "naver-hyperclovax/HyperCLOVAX-SEED-Think-14B",
+  "body_sha256": "fc0c838880a98b16e54e720e77afe000d409b3db78e7ae6dadebfeb985cc4b7d"
+ },
+ "naver-hyperclovax/HyperCLOVAX-SEED-Vision-Instruct-3B": {
+  "url": "https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Vision-Instruct-3B/resolve/a78900bdac94cabc4648fe42c9ed31c3f4d522bd/README.md",
+  "fetched_at": "2026-10-22T14:15:15+09:00",
+  "status": "ok",
+  "body_chars": 20616,
+  "has_front_matter": true,
+  "card_revision": "a78900bdac94cabc4648fe42c9ed31c3f4d522bd",
+  "model_id": "naver-hyperclovax/HyperCLOVAX-SEED-Vision-Instruct-3B",
+  "body_sha256": "ae004a345b03fcb9052d7cbacf2af2f79d74792a9e90cb9bc54aab1ed6c26843"
+ },
+ "nvidia/Cosmos-Reason2-2B": {
+  "url": "https://huggingface.co/nvidia/Cosmos-Reason2-2B/resolve/9ce19a195e423419c349abfc86fd07178b230561/README.md",
+  "fetched_at": "2026-10-22T14:14:24+09:00",
+  "status": "ok",
+  "body_chars": 28099,
+  "has_front_matter": true,
+  "card_revision": "9ce19a195e423419c349abfc86fd07178b230561",
+  "model_id": "nvidia/Cosmos-Reason2-2B",
+  "body_sha256": "2c0a7216ee4da20e375bac0bc5d5ab8612f275e3af5f4d95b3da793b6bc69782"
+ },
+ "nvidia/Cosmos-Reason2-8B": {
+  "url": "https://huggingface.co/nvidia/Cosmos-Reason2-8B/resolve/a9fae2cf89dc64db96b12860417f0eb403013bb9/README.md",
+  "fetched_at": "2026-10-22T14:14:25+09:00",
+  "status": "ok",
+  "body_chars": 28158,
+  "has_front_matter": true,
+  "card_revision": "a9fae2cf89dc64db96b12860417f0eb403013bb9",
+  "model_id": "nvidia/Cosmos-Reason2-8B",
+  "body_sha256": "e3dde51dc535ea43bdcc90026789c3e2a1b0d12803a7389006749b403292245e"
+ },
+ "nvidia/Cosmos3-Nano": {
+  "url": "https://huggingface.co/nvidia/Cosmos3-Nano/resolve/e59a53c25979a090fa8706c9acc0c254a6e89b92/README.md",
+  "fetched_at": "2026-10-22T14:14:26+09:00",
+  "status": "ok",
+  "body_chars": 42809,
+  "has_front_matter": true,
+  "card_revision": "e59a53c25979a090fa8706c9acc0c254a6e89b92",
+  "model_id": "nvidia/Cosmos3-Nano",
+  "body_sha256": "34b72d744d9e0fa037bc12ba35b7723ca2a99c1dfed5fefa9c456659596ec608"
+ },
+ "nvidia/Llama-3.1-Nemotron-Nano-VL-8B-V1": {
+  "url": "https://huggingface.co/nvidia/Llama-3.1-Nemotron-Nano-VL-8B-V1/resolve/437f4e28b989cc2d9a16b6767cc930cdf48797ff/README.md",
+  "fetched_at": "2026-10-22T14:14:27+09:00",
+  "status": "ok",
+  "body_chars": 7258,
+  "has_front_matter": true,
+  "card_revision": "437f4e28b989cc2d9a16b6767cc930cdf48797ff",
+  "model_id": "nvidia/Llama-3.1-Nemotron-Nano-VL-8B-V1",
+  "body_sha256": "7f3aeacb7129628887d70b2d4671f975f556b3bed481bf45969bff99fc9ae2d5"
+ },
+ "nvidia/LocateAnything-3B": {
+  "url": "https://huggingface.co/nvidia/LocateAnything-3B/resolve/c32291ca5e996f5a7a485845b4f57a233936bba0/README.md",
+  "fetched_at": "2026-10-22T14:14:28+09:00",
+  "status": "ok",
+  "body_chars": 26672,
+  "has_front_matter": true,
+  "card_revision": "c32291ca5e996f5a7a485845b4f57a233936bba0",
+  "model_id": "nvidia/LocateAnything-3B",
+  "body_sha256": "c6d4ed4b552bd36e10a12b7f1c42a7b6a1d4fd6c6208dfc09c426184885fb06b"
+ },
+ "nvidia/NVIDIA-Nemotron-Nano-9B-v2": {
+  "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/resolve/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md",
+  "fetched_at": "2026-10-22T14:14:29+09:00",
+  "status": "ok",
+  "body_chars": 46687,
+  "has_front_matter": true,
+  "card_revision": "6533e8de2c68e4536bf7c411d7a3ce5734111476",
+  "model_id": "nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+  "body_sha256": "dc7f4e1ae764970c304a723a8c38db329d5f5d9f708c1dfd78cb3ade0a520056"
+ },
+ "nvidia/Nemotron-H-8B-Base-8K": {
+  "url": "https://huggingface.co/nvidia/Nemotron-H-8B-Base-8K/resolve/94ea861e008c2dfced3e8e1302094024077aa04e/README.md",
+  "fetched_at": "2026-10-22T14:14:30+09:00",
+  "status": "ok",
+  "body_chars": 9619,
+  "has_front_matter": true,
+  "card_revision": "94ea861e008c2dfced3e8e1302094024077aa04e",
+  "model_id": "nvidia/Nemotron-H-8B-Base-8K",
+  "body_sha256": "c2f98ae708c407fdae692ef287b8c63846231eb280ca1123a920b5184398b35e"
+ },
+ "nvidia/Nemotron-Labs-Diffusion-3B": {
+  "url": "https://huggingface.co/nvidia/Nemotron-Labs-Diffusion-3B/resolve/0d51902da1f8869f83413ce642fab402fa5641e0/README.md",
+  "fetched_at": "2026-10-22T14:14:31+09:00",
+  "status": "ok",
+  "body_chars": 7722,
+  "has_front_matter": true,
+  "card_revision": "0d51902da1f8869f83413ce642fab402fa5641e0",
+  "model_id": "nvidia/Nemotron-Labs-Diffusion-3B",
+  "body_sha256": "6f817eca5e1c9d43d6d158ea765209eb32228819f243cc43ab9abeafe098400b"
+ },
+ "nvidia/Nemotron-Labs-Diffusion-8B-Base": {
+  "url": "https://huggingface.co/nvidia/Nemotron-Labs-Diffusion-8B-Base/resolve/59ff0ffee284112fc6ccf37493ced41a11031434/README.md",
+  "fetched_at": "2026-10-22T14:14:32+09:00",
+  "status": "ok",
+  "body_chars": 7737,
+  "has_front_matter": true,
+  "card_revision": "59ff0ffee284112fc6ccf37493ced41a11031434",
+  "model_id": "nvidia/Nemotron-Labs-Diffusion-8B-Base",
+  "body_sha256": "7961460bbe234de5909470483b2fd4b4c1df0375a4f04fb64ed8f2d4b49f63dc"
+ },
+ "nvidia/OpenMath-Nemotron-14B": {
+  "url": "https://huggingface.co/nvidia/OpenMath-Nemotron-14B/resolve/b7eeebb07482085ca137c5c9111efb2bc277e5df/README.md",
+  "fetched_at": "2026-10-22T14:14:51+09:00",
+  "status": "ok",
+  "body_chars": 8575,
+  "has_front_matter": true,
+  "card_revision": "b7eeebb07482085ca137c5c9111efb2bc277e5df",
+  "model_id": "nvidia/OpenMath-Nemotron-14B",
+  "body_sha256": "4611ff5833590deae7a3e14123009eb8279859abcbe2eee54e5f461d571550aa"
+ },
+ "openai/gpt-oss-20b": {
+  "url": "https://huggingface.co/openai/gpt-oss-20b/resolve/6cee5e81ee83917806bbde320786a8fb61efebee/README.md",
+  "fetched_at": "2026-10-22T14:14:33+09:00",
+  "status": "ok",
+  "body_chars": 6977,
+  "has_front_matter": true,
+  "card_revision": "6cee5e81ee83917806bbde320786a8fb61efebee",
+  "model_id": "openai/gpt-oss-20b",
+  "body_sha256": "2941103ca26711e02c20e0ab3176aac2e291430c1929f83df497abce3ba4f6e7"
+ },
+ "skt/A.X-4.0-Light": {
+  "url": "https://huggingface.co/skt/A.X-4.0-Light/resolve/ba21c20ea1b31ded1ec3e2fb432335077dc4be98/README.md",
+  "fetched_at": "2026-10-22T14:15:18+09:00",
+  "status": "ok",
+  "body_chars": 13148,
+  "has_front_matter": true,
+  "card_revision": "ba21c20ea1b31ded1ec3e2fb432335077dc4be98",
+  "model_id": "skt/A.X-4.0-Light",
+  "body_sha256": "573078d729e81472276b39ffdacd0b26ba85c2745e96152b06c991f9c3de46c1"
+ },
+ "skt/ko-gpt-trinity-1.2B-v0.5": {
+  "url": "https://huggingface.co/skt/ko-gpt-trinity-1.2B-v0.5/resolve/2c9a93e78a61a52de058b66246f6acbd7b7c33b0/README.md",
+  "fetched_at": "2026-10-22T14:15:19+09:00",
+  "status": "ok",
+  "body_chars": 3023,
+  "has_front_matter": true,
+  "card_revision": "2c9a93e78a61a52de058b66246f6acbd7b7c33b0",
+  "model_id": "skt/ko-gpt-trinity-1.2B-v0.5",
+  "body_sha256": "6e6d591338ffbd5a37d84f804d2a8f190d0f5a4d86deb86aeb8185ae6b428f71"
+ },
+ "swiss-ai/Apertus-8B-Instruct-2509": {
+  "url": "https://huggingface.co/swiss-ai/Apertus-8B-Instruct-2509/resolve/b946d40447b2b597999b9c86d44bee0b452c919f/README.md",
+  "fetched_at": "2026-10-22T14:14:35+09:00",
+  "status": "ok",
+  "body_chars": 9367,
+  "has_front_matter": true,
+  "card_revision": "b946d40447b2b597999b9c86d44bee0b452c919f",
+  "model_id": "swiss-ai/Apertus-8B-Instruct-2509",
+  "body_sha256": "eee135991182575d93deb740cab0ad83a29210f19c6c04c6e92cea75c332d101"
+ },
+ "swiss-ai/Apertus-v1.5-8B": {
+  "url": "https://huggingface.co/swiss-ai/Apertus-v1.5-8B/resolve/ef4bbc54d6fe658bc782280ff9f3b53a10a9758f/README.md",
+  "fetched_at": "2026-10-22T14:14:37+09:00",
+  "status": "ok",
+  "body_chars": 21134,
+  "has_front_matter": true,
+  "card_revision": "ef4bbc54d6fe658bc782280ff9f3b53a10a9758f",
+  "model_id": "swiss-ai/Apertus-v1.5-8B",
+  "body_sha256": "3faff596b2715a67f4918e9cab49494dc32d684a58126ad6316e9c76d79a1a08"
+ },
+ "tencent/HunyuanOCR": {
+  "url": "https://huggingface.co/tencent/HunyuanOCR/resolve/47644ecc4fc854efa4f505155158831f36773ee4/README.md",
+  "fetched_at": "2026-10-22T14:12:16+09:00",
+  "status": "ok",
+  "body_chars": 13360,
+  "has_front_matter": true,
+  "card_revision": "47644ecc4fc854efa4f505155158831f36773ee4",
+  "model_id": "tencent/HunyuanOCR",
+  "body_sha256": "cc72a1d521f38c01623d0b3aafdda7853be518fc38d20efbaa7e7e3e4ffd568f"
+ },
+ "tiiuae/falcon-7b": {
+  "url": "https://huggingface.co/tiiuae/falcon-7b/resolve/ec89142b67d748a1865ea4451372db8313ada0d8/README.md",
+  "fetched_at": "2026-10-22T14:14:37+09:00",
+  "status": "ok",
+  "body_chars": 10194,
+  "has_front_matter": true,
+  "card_revision": "ec89142b67d748a1865ea4451372db8313ada0d8",
+  "model_id": "tiiuae/falcon-7b",
+  "body_sha256": "4e2fd9c73388cbb5a10243200c77f1041f317e56ad1cbff8dfec16277a61e541"
+ },
+ "trillionlabs/Tri-7B": {
+  "url": "https://huggingface.co/trillionlabs/Tri-7B/resolve/94e2cc881102428ab9be3df2366a09ac928c2c82/README.md",
+  "fetched_at": "2026-10-22T14:15:21+09:00",
+  "status": "ok",
+  "body_chars": 6749,
+  "has_front_matter": true,
+  "card_revision": "94e2cc881102428ab9be3df2366a09ac928c2c82",
+  "model_id": "trillionlabs/Tri-7B",
+  "body_sha256": "8d0e46f54835bcbcbca7224a094b37adb5e8cceb36d06b021fb34d7f818a049f"
+ },
+ "upstage/SOLAR-10.7B-Instruct-v1.0": {
+  "url": "https://huggingface.co/upstage/SOLAR-10.7B-Instruct-v1.0/resolve/090d405e6fe7b4c7b0b999a67f5c6dee0514a7ad/README.md",
+  "fetched_at": "2026-10-22T14:15:22+09:00",
+  "status": "ok",
+  "body_chars": 8154,
+  "has_front_matter": true,
+  "card_revision": "090d405e6fe7b4c7b0b999a67f5c6dee0514a7ad",
+  "model_id": "upstage/SOLAR-10.7B-Instruct-v1.0",
+  "body_sha256": "8368de3a40697a8b50854970e53a5b0865b90507e70ce24160494573b1483580"
+ },
+ "upstage/SOLAR-10.7B-v1.0": {
+  "url": "https://huggingface.co/upstage/SOLAR-10.7B-v1.0/resolve/5a06298f374dae1fb918d73fba72c7722ce71d36/README.md",
+  "fetched_at": "2026-10-22T14:15:23+09:00",
+  "status": "ok",
+  "body_chars": 4799,
+  "has_front_matter": true,
+  "card_revision": "5a06298f374dae1fb918d73fba72c7722ce71d36",
+  "model_id": "upstage/SOLAR-10.7B-v1.0",
+  "body_sha256": "b353b14bf8901bfbaf52854239231de57e1d5343b92d0107c555f6d77bf04d4c"
+ },
+ "upstage/solar-pro-preview-instruct": {
+  "url": "https://huggingface.co/upstage/solar-pro-preview-instruct/resolve/dd4bcf7006df9b1ce3f87711e702e4063832aae3/README.md",
+  "fetched_at": "2026-10-22T14:15:24+09:00",
+  "status": "ok",
+  "body_chars": 13661,
+  "has_front_matter": true,
+  "card_revision": "dd4bcf7006df9b1ce3f87711e702e4063832aae3",
+  "model_id": "upstage/solar-pro-preview-instruct",
+  "body_sha256": "8aa774cc31ddc91beb42e4089fb0b5402366d787b1492e388ea75e521cd1c1d1"
+ },
+ "zai-org/GLM-4.1V-9B-Thinking": {
+  "url": "https://huggingface.co/zai-org/GLM-4.1V-9B-Thinking/resolve/3c1471e51dc811b589d4d12b1c1c7c1c941267c2/README.md",
+  "fetched_at": "2026-10-22T14:14:39+09:00",
+  "status": "ok",
+  "body_chars": 4151,
+  "has_front_matter": true,
+  "card_revision": "3c1471e51dc811b589d4d12b1c1c7c1c941267c2",
+  "model_id": "zai-org/GLM-4.1V-9B-Thinking",
+  "body_sha256": "6b7f076980a3166fc510ba83d9eaa535aa7d66454405c427d3bc6eb2db400c6c"
+ },
+ "zai-org/GLM-4.6V-Flash": {
+  "url": "https://huggingface.co/zai-org/GLM-4.6V-Flash/resolve/411bb4d77144a3f03accbf4b780f5acb8b7cde4e/README.md",
+  "fetched_at": "2026-10-22T14:14:40+09:00",
+  "status": "ok",
+  "body_chars": 8251,
+  "has_front_matter": true,
+  "card_revision": "411bb4d77144a3f03accbf4b780f5acb8b7cde4e",
+  "model_id": "zai-org/GLM-4.6V-Flash",
+  "body_sha256": "888e7222a59b2d9bb0399cdca45e86815bfb7c2e877a54e89e8eeff85fd8a3e7"
+ }
+}

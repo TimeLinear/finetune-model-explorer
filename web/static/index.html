@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>파인튜닝 모델 탐색기</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%276%27 fill=%27%232b4a8b%27/%3E%3Ctext x=%2716%27 y=%2722%27 font-family=%27monospace%27 font-size=%2715%27 font-weight=%27700%27 text-anchor=%27middle%27 fill=%27%23fff%27%3EFT%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar" aria-label="모델 선택">
+      <div>
+        <h2 id="sidebar-title"></h2>
+        <label class="label" for="model-search" id="select-label"></label>
+        <input type="search" id="model-search" autocomplete="off">
+        <div class="filters" style="margin-top:6px">
+          <select id="f-size" aria-label="크기">
+            <option value="">크기 전체</option>
+            <option value="0-4">4B 이하</option>
+            <option value="4-10">4~10B</option>
+            <option value="10-100">10B 초과</option>
+          </select>
+          <select id="f-stage" aria-label="학습 단계"></select>
+          <label class="check"><input type="checkbox" id="f-image"> <span id="f-image-label"></span></label>
+        </div>
+        <ul class="model-list" id="model-list" role="listbox" aria-labelledby="select-label"></ul>
+        <div class="caption" id="model-count"></div>
+      </div>
+      <div id="model-card"></div>
+      <div class="footer">
+        <div class="caption num" id="index-counts"></div>
+        <div class="caption" id="disclaimer"></div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <h1 id="app-title"></h1>
+      <div class="caption" id="app-caption"></div>
+      <div id="notices"></div>
+      <div id="no-model" class="notice info hidden"></div>
+
+      <section id="workspace" class="hidden">
+        <div class="model-id" id="current-model" style="margin-top:12px"></div>
+        <div class="tabs" role="tablist">
+          <button role="tab" id="tab-chat-btn" aria-selected="true" aria-controls="tab-chat"></button>
+          <button role="tab" id="tab-usage-btn" aria-selected="false" aria-controls="tab-usage"></button>
+        </div>
+
+        <div id="tab-chat" role="tabpanel">
+          <div class="messages" id="messages" aria-live="polite"></div>
+          <form class="ask" id="ask-form">
+            <textarea id="question" rows="2" maxlength="2000"></textarea>
+            <button type="submit" id="ask-btn">질문</button>
+          </form>
+          <button type="button" class="secondary" id="clear-chat"></button>
+        </div>
+
+        <div id="tab-usage" role="tabpanel" class="hidden">
+          <p class="caption" id="usage-intro"></p>
+          <button type="button" id="usage-btn"></button>
+          <div id="usage-status" class="caption"></div>
+          <div id="usage-result"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="js/common.js"></script>
+  <script src="js/chat.js"></script>
+</body>
+</html>

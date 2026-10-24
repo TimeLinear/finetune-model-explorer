@@ -1,0 +1,3434 @@
+{
+ "summary": {
+  "label": "haiku_v04",
+  "chroma_dir": "data/chroma",
+  "p1_cache": "p1_cache_haiku_v04.jsonl",
+  "overrides": [],
+  "card_k": 6,
+  "card_query_mode": "single",
+  "chunk_header": false,
+  "phrasings": 198,
+  "hits": 188,
+  "hit_at_k": 0.9495,
+  "cases": 33,
+  "stable_cases": 28,
+  "stability": 0.8485,
+  "search_ms_median": 65.7,
+  "search_ms_max": 76.7,
+  "query_words_median": 5.0,
+  "hits_by_case": {
+   "c01": "6/6",
+   "c02": "6/6",
+   "c03": "6/6",
+   "c04": "6/6",
+   "c05": "6/6",
+   "c06": "4/6",
+   "c07": "6/6",
+   "c08": "6/6",
+   "c09": "4/6",
+   "c10": "6/6",
+   "c11": "6/6",
+   "c12": "6/6",
+   "c13": "6/6",
+   "c14": "6/6",
+   "c15": "6/6",
+   "c16": "6/6",
+   "c17": "6/6",
+   "c18": "6/6",
+   "c19": "6/6",
+   "c20": "5/6",
+   "c21": "6/6",
+   "c22": "5/6",
+   "c23": "6/6",
+   "c24": "6/6",
+   "c25": "6/6",
+   "c26": "6/6",
+   "c27": "6/6",
+   "c28": "6/6",
+   "c29": "6/6",
+   "c30": "6/6",
+   "c31": "6/6",
+   "c32": "6/6",
+   "c33": "2/6"
+  },
+  "hit_by_topic": {
+   "commercial": "12/12",
+   "context": "34/36",
+   "intended_use": "14/18",
+   "languages": "35/36",
+   "license": "36/36",
+   "limitations": "16/18",
+   "modality": "11/12",
+   "region": "6/6",
+   "usage_policy": "24/24"
+  }
+ },
+ "rows": [
+  {
+   "case_id": "c01",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "license",
+   "question": "이 모델의 라이선스는 뭐야?",
+   "rep": 0,
+   "card_query_en": "license terms acceptable use policy",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:11",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:25",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:4",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:0",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:8",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:5"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c01",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "license",
+   "question": "이 모델의 라이선스는 뭐야?",
+   "rep": 1,
+   "card_query_en": "license acceptable use policy terms",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:11",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:25",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:4",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:0",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:5",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:8"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c01",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "license",
+   "question": "이 모델은 어떤 라이선스로 배포돼?",
+   "rep": 0,
+   "card_query_en": "license acceptable use policy terms",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:11",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:25",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:4",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:0",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:5",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:8"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c01",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "license",
+   "question": "이 모델은 어떤 라이선스로 배포돼?",
+   "rep": 1,
+   "card_query_en": "license acceptable use policy terms",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:11",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:25",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:4",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:0",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:5",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:8"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c01",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "license",
+   "question": "이 모델의 사용 허가 조건, 라이선스 이름을 알려줘",
+   "rep": 0,
+   "card_query_en": "license terms acceptable use policy llama 3.2 community license",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:0",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:11",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:4",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:25",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:5",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:52"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c01",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "license",
+   "question": "이 모델의 사용 허가 조건, 라이선스 이름을 알려줘",
+   "rep": 1,
+   "card_query_en": "license acceptable use policy terms",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:11",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:25",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:4",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:0",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:5",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:8"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c02",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "commercial",
+   "question": "이 모델을 상업적으로 쓸 수 있는 조건이 있어?",
+   "rep": 0,
+   "card_query_en": "commercial use license conditions acceptable use policy terms",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:25",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:11",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:10",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:5",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:4",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:8"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c02",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "commercial",
+   "question": "이 모델을 상업적으로 쓸 수 있는 조건이 있어?",
+   "rep": 1,
+   "card_query_en": "commercial use license terms acceptable use policy",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:25",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:11",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:10",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:8",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:4",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:5"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c02",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "commercial",
+   "question": "회사 제품에 이 모델을 넣어도 되는지 라이선스 조건을 알려줘",
+   "rep": 0,
+   "card_query_en": "license commercial use conditions acceptable use policy terms",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:25",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:11",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:10",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:5",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:4",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:8"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c02",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "commercial",
+   "question": "회사 제품에 이 모델을 넣어도 되는지 라이선스 조건을 알려줘",
+   "rep": 1,
+   "card_query_en": "license commercial use acceptable use policy terms",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:25",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:11",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:8",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:10",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:5",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:4"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c02",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "commercial",
+   "question": "이 모델의 상업 이용 관련 규정이 뭐야?",
+   "rep": 0,
+   "card_query_en": "commercial use license acceptable use policy terms",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:25",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:11",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:10",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:8",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:4",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:5"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c02",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "commercial",
+   "question": "이 모델의 상업 이용 관련 규정이 뭐야?",
+   "rep": 1,
+   "card_query_en": "commercial use license acceptable use policy terms",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:25",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:11",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:10",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:8",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:4",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:5"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c03",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "usage_policy",
+   "question": "이 모델로 하면 안 되는 용도가 뭐야?",
+   "rep": 0,
+   "card_query_en": "prohibited uses acceptable use policy license restrictions",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:25",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:11",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:15",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:14",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:8",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:4"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c03",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "usage_policy",
+   "question": "이 모델로 하면 안 되는 용도가 뭐야?",
+   "rep": 1,
+   "card_query_en": "prohibited uses acceptable use policy license restrictions",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:25",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:11",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:15",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:14",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:8",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:4"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c03",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "usage_policy",
+   "question": "이 모델의 사용 금지 사항(이용 정책)을 알려줘",
+   "rep": 0,
+   "card_query_en": "prohibited uses acceptable use policy license terms",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:25",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:11",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:4",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:8",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:10",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:15"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c03",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "usage_policy",
+   "question": "이 모델의 사용 금지 사항(이용 정책)을 알려줘",
+   "rep": 1,
+   "card_query_en": "prohibited uses acceptable use policy license terms",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:25",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:11",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:4",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:8",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:10",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:15"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c03",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "usage_policy",
+   "question": "이 모델을 쓸 때 금지된 사용 사례가 있어?",
+   "rep": 0,
+   "card_query_en": "prohibited uses license acceptable use policy terms",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:25",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:11",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:4",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:10",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:15",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:8"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c03",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "usage_policy",
+   "question": "이 모델을 쓸 때 금지된 사용 사례가 있어?",
+   "rep": 1,
+   "card_query_en": "prohibited uses acceptable use policy license restrictions",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:25",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:11",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:15",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:14",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:8",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:4"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c04",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "region",
+   "question": "이 모델을 이미지 입력용으로 쓸 때 지역 제한이 있어?",
+   "rep": 0,
+   "card_query_en": "image input restrictions geographic region license acceptable use policy terms",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:25",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:11",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:17",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:44",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:0",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:4"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c04",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "region",
+   "question": "이 모델을 이미지 입력용으로 쓸 때 지역 제한이 있어?",
+   "rep": 1,
+   "card_query_en": "image input region restriction territory excluded license acceptable use policy",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:25",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:11",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:17",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:44",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:23",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:4"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c04",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "region",
+   "question": "Llama 3.2 11B Vision을 이미지 입력용으로 쓸 때 지역 제한이 있나?",
+   "rep": 0,
+   "card_query_en": "region restriction territory EU multimodal image input license acceptable use policy",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:17",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:25",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:44",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:11",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:23",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:19"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c04",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "region",
+   "question": "Llama 3.2 11B Vision을 이미지 입력용으로 쓸 때 지역 제한이 있나?",
+   "rep": 1,
+   "card_query_en": "geographic restriction region EU multimodal use license acceptable use policy terms",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:17",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:25",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:11",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:10",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:4",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:15"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c04",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "region",
+   "question": "특정 국가나 지역에서는 이 모델을 쓸 수 없는 조건이 있어?",
+   "rep": 0,
+   "card_query_en": "geographic restrictions territory excluded countries license acceptable use policy terms",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:25",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:17",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:11",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:10",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:14",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:8"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c04",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "region",
+   "question": "특정 국가나 지역에서는 이 모델을 쓸 수 없는 조건이 있어?",
+   "rep": 1,
+   "card_query_en": "territory restriction EU multimodal exclusion license acceptable use policy",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:17",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:25",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:11",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:10",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:8",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:4"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c05",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "languages",
+   "question": "이 모델이 지원하는 언어는?",
+   "rep": 0,
+   "card_query_en": "supported languages multilingual text languages",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:19",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:21",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:24",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:23",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:41",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:44"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c05",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "languages",
+   "question": "이 모델이 지원하는 언어는?",
+   "rep": 1,
+   "card_query_en": "supported languages multilingual text",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:21",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:19",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:44",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:37",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:23",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:20"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c05",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "languages",
+   "question": "이 모델은 어떤 언어들을 다룰 수 있어?",
+   "rep": 0,
+   "card_query_en": "supported languages multilingual text languages",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:19",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:21",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:24",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:23",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:41",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:44"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c05",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "languages",
+   "question": "이 모델은 어떤 언어들을 다룰 수 있어?",
+   "rep": 1,
+   "card_query_en": "supported languages multilingual text languages",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:19",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:21",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:24",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:23",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:41",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:44"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c05",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "languages",
+   "question": "한국어나 다른 언어도 이 모델이 지원해?",
+   "rep": 0,
+   "card_query_en": "supported languages multilingual text image",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:21",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:19",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:20",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:44",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:23",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:24"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c05",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "languages",
+   "question": "한국어나 다른 언어도 이 모델이 지원해?",
+   "rep": 1,
+   "card_query_en": "supported languages multilingual languages",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:19",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:43",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:23",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:24",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:21",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:45"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c06",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "context",
+   "question": "이 모델의 컨텍스트 길이는 얼마야?",
+   "rep": 0,
+   "card_query_en": "context length",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:36",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:35",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:0",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:37",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:19",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:32"
+   ],
+   "hit": false
+  },
+  {
+   "case_id": "c06",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "context",
+   "question": "이 모델의 컨텍스트 길이는 얼마야?",
+   "rep": 1,
+   "card_query_en": "context length",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:36",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:35",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:0",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:37",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:19",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:32"
+   ],
+   "hit": false
+  },
+  {
+   "case_id": "c06",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "context",
+   "question": "이 모델은 한 번에 몇 토큰까지 입력받을 수 있어?",
+   "rep": 0,
+   "card_query_en": "context length maximum input tokens",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:22",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:36",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:37",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:21",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:19",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:35"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c06",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "context",
+   "question": "이 모델은 한 번에 몇 토큰까지 입력받을 수 있어?",
+   "rep": 1,
+   "card_query_en": "context length maximum input tokens",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:22",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:36",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:37",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:21",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:19",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:35"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c06",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "context",
+   "question": "이 모델의 최대 입력 길이를 알려줘",
+   "rep": 0,
+   "card_query_en": "maximum input length context length tokens",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:22",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:36",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:37",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:19",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:21",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:35"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c06",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "context",
+   "question": "이 모델의 최대 입력 길이를 알려줘",
+   "rep": 1,
+   "card_query_en": "maximum input length context length tokens",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:22",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:36",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:37",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:19",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:21",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:35"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c07",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "modality",
+   "question": "이 모델은 이미지 입력도 받아?",
+   "rep": 0,
+   "card_query_en": "image input vision modality multimodal input",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:44",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:19",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:23",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:24",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:36",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:27"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c07",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "modality",
+   "question": "이 모델은 이미지 입력도 받아?",
+   "rep": 1,
+   "card_query_en": "image input vision modality multimodal",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:44",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:19",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:23",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:36",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:20",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:24"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c07",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "modality",
+   "question": "이 모델에 어떤 형태의 입력을 넣을 수 있어?",
+   "rep": 0,
+   "card_query_en": "input modalities text and image input format",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:44",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:36",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:28",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:24",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:19",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:21"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c07",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "modality",
+   "question": "이 모델에 어떤 형태의 입력을 넣을 수 있어?",
+   "rep": 1,
+   "card_query_en": "supported input modalities text and image input format",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:21",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:19",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:23",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:44",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:36",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:20"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c07",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "modality",
+   "question": "텍스트 말고 이미지도 이 모델에 넣을 수 있어?",
+   "rep": 0,
+   "card_query_en": "image input multimodal vision modality",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:44",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:19",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:23",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:20",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:36",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:27"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c07",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "modality",
+   "question": "텍스트 말고 이미지도 이 모델에 넣을 수 있어?",
+   "rep": 1,
+   "card_query_en": "input modalities image text supported inputs",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:24",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:44",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:23",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:19",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:27",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:36"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c08",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "intended_use",
+   "question": "이 모델의 의도된 용도는 뭐야?",
+   "rep": 0,
+   "card_query_en": "intended use direct use out-of-scope use",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:25",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:23",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:15",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:14",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:11",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:13"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c08",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "intended_use",
+   "question": "이 모델의 의도된 용도는 뭐야?",
+   "rep": 1,
+   "card_query_en": "intended use direct use out-of-scope use",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:25",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:23",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:15",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:14",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:11",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:13"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c08",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "intended_use",
+   "question": "이 모델은 어떤 작업에 쓰라고 만든 거야?",
+   "rep": 0,
+   "card_query_en": "intended use direct use use cases",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:23",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:25",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:39",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:45",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:11",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:15"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c08",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "intended_use",
+   "question": "이 모델은 어떤 작업에 쓰라고 만든 거야?",
+   "rep": 1,
+   "card_query_en": "intended use direct use downstream use use cases",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:23",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:25",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:45",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:39",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:46",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:18"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c08",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "intended_use",
+   "question": "개발사가 권장하는 이 모델의 사용 목적은?",
+   "rep": 0,
+   "card_query_en": "intended use direct use out-of-scope uses",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:25",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:23",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:15",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:14",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:11",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:13"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c08",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "intended_use",
+   "question": "개발사가 권장하는 이 모델의 사용 목적은?",
+   "rep": 1,
+   "card_query_en": "intended use direct use out-of-scope use",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:25",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:23",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:15",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:14",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:11",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:13"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c09",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "limitations",
+   "question": "이 모델의 한계나 제한 사항은 뭐야?",
+   "rep": 0,
+   "card_query_en": "limitations out-of-scope uses license acceptable use policy restrictions",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:25",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:11",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:15",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:14",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:13",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:4"
+   ],
+   "hit": false
+  },
+  {
+   "case_id": "c09",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "limitations",
+   "question": "이 모델의 한계나 제한 사항은 뭐야?",
+   "rep": 1,
+   "card_query_en": "limitations out-of-scope uses prohibited uses license acceptable use policy restrictions",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:25",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:15",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:11",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:14",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:13",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:12"
+   ],
+   "hit": false
+  },
+  {
+   "case_id": "c09",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "limitations",
+   "question": "이 모델을 쓸 때 주의해야 할 약점은?",
+   "rep": 0,
+   "card_query_en": "limitations bias risks out-of-scope use English-only image text languages",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:25",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:44",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:21",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:20",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:23",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:53"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c09",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "limitations",
+   "question": "이 모델을 쓸 때 주의해야 할 약점은?",
+   "rep": 1,
+   "card_query_en": "limitations out-of-scope use bias risks",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:25",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:47",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:53",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:44",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:14",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:13"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c09",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "limitations",
+   "question": "이 모델이 잘 못하는 부분이나 위험 요소를 알려줘",
+   "rep": 0,
+   "card_query_en": "limitations risks out-of-scope uses bias misuse",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:25",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:47",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:53",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:14",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:16",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:13"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c09",
+   "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+   "topic": "limitations",
+   "question": "이 모델이 잘 못하는 부분이나 위험 요소를 알려줘",
+   "rep": 1,
+   "card_query_en": "limitations risks out-of-scope uses languages supported",
+   "retrieved": [
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:25",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:53",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:47",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:48",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:44",
+    "meta-llama/Llama-3.2-11B-Vision-Instruct:hf_card:meta-llama/Llama-3.2-11B-Vision-Instruct:11"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c10",
+   "model_id": "kakaocorp/kanana-1.5-8b-instruct-2505",
+   "topic": "license",
+   "question": "이 모델의 라이선스는 뭐야?",
+   "rep": 0,
+   "card_query_en": "license terms conditions",
+   "retrieved": [
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:0",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:6",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:7",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:4",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:1",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:3"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c10",
+   "model_id": "kakaocorp/kanana-1.5-8b-instruct-2505",
+   "topic": "license",
+   "question": "이 모델의 라이선스는 뭐야?",
+   "rep": 1,
+   "card_query_en": "license terms use restrictions apache-2.0",
+   "retrieved": [
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:0",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:6",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:3",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:7",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:2",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:4"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c10",
+   "model_id": "kakaocorp/kanana-1.5-8b-instruct-2505",
+   "topic": "license",
+   "question": "이 모델은 어떤 라이선스로 배포돼?",
+   "rep": 0,
+   "card_query_en": "license apache-2.0 terms",
+   "retrieved": [
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:0",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:6",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:3",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:4",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:7",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:2"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c10",
+   "model_id": "kakaocorp/kanana-1.5-8b-instruct-2505",
+   "topic": "license",
+   "question": "이 모델은 어떤 라이선스로 배포돼?",
+   "rep": 1,
+   "card_query_en": "license terms Apache-2.0 distribution",
+   "retrieved": [
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:0",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:6",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:2",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:4",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:1",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:3"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c10",
+   "model_id": "kakaocorp/kanana-1.5-8b-instruct-2505",
+   "topic": "license",
+   "question": "이 모델의 사용 허가 조건, 라이선스 이름을 알려줘",
+   "rep": 0,
+   "card_query_en": "license terms apache-2.0 usage conditions acceptable use policy",
+   "retrieved": [
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:0",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:6",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:7",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:4",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:3",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:1"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c10",
+   "model_id": "kakaocorp/kanana-1.5-8b-instruct-2505",
+   "topic": "license",
+   "question": "이 모델의 사용 허가 조건, 라이선스 이름을 알려줘",
+   "rep": 1,
+   "card_query_en": "license terms of use usage restrictions acceptable use policy",
+   "retrieved": [
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:0",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:7",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:6",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:4",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:3",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:1"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c11",
+   "model_id": "kakaocorp/kanana-1.5-8b-instruct-2505",
+   "topic": "languages",
+   "question": "이 모델이 지원하는 언어는?",
+   "rep": 0,
+   "card_query_en": "supported languages multilingual English Korean",
+   "retrieved": [
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:0",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:4",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:3",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:6",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:1",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:5"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c11",
+   "model_id": "kakaocorp/kanana-1.5-8b-instruct-2505",
+   "topic": "languages",
+   "question": "이 모델이 지원하는 언어는?",
+   "rep": 1,
+   "card_query_en": "supported languages multilingual English Korean",
+   "retrieved": [
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:0",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:4",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:3",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:6",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:1",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:5"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c11",
+   "model_id": "kakaocorp/kanana-1.5-8b-instruct-2505",
+   "topic": "languages",
+   "question": "이 모델은 어떤 언어들을 다룰 수 있어?",
+   "rep": 0,
+   "card_query_en": "supported languages multilingual English Korean",
+   "retrieved": [
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:0",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:4",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:3",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:6",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:1",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:5"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c11",
+   "model_id": "kakaocorp/kanana-1.5-8b-instruct-2505",
+   "topic": "languages",
+   "question": "이 모델은 어떤 언어들을 다룰 수 있어?",
+   "rep": 1,
+   "card_query_en": "supported languages multilingual English Korean",
+   "retrieved": [
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:0",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:4",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:3",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:6",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:1",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:5"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c11",
+   "model_id": "kakaocorp/kanana-1.5-8b-instruct-2505",
+   "topic": "languages",
+   "question": "한국어나 다른 언어도 이 모델이 지원해?",
+   "rep": 0,
+   "card_query_en": "supported languages multilingual language support",
+   "retrieved": [
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:0",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:4",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:6",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:3",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:5",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:7"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c11",
+   "model_id": "kakaocorp/kanana-1.5-8b-instruct-2505",
+   "topic": "languages",
+   "question": "한국어나 다른 언어도 이 모델이 지원해?",
+   "rep": 1,
+   "card_query_en": "supported languages multilingual language support",
+   "retrieved": [
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:0",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:4",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:6",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:3",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:5",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:7"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c12",
+   "model_id": "kakaocorp/kanana-1.5-8b-instruct-2505",
+   "topic": "context",
+   "question": "이 모델의 컨텍스트 길이는 얼마야?",
+   "rep": 0,
+   "card_query_en": "context length",
+   "retrieved": [
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:7",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:3",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:5",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:6",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:4",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:1"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c12",
+   "model_id": "kakaocorp/kanana-1.5-8b-instruct-2505",
+   "topic": "context",
+   "question": "이 모델의 컨텍스트 길이는 얼마야?",
+   "rep": 1,
+   "card_query_en": "context length",
+   "retrieved": [
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:7",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:3",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:5",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:6",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:4",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:1"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c12",
+   "model_id": "kakaocorp/kanana-1.5-8b-instruct-2505",
+   "topic": "context",
+   "question": "이 모델은 한 번에 몇 토큰까지 입력받을 수 있어?",
+   "rep": 0,
+   "card_query_en": "context length maximum input tokens",
+   "retrieved": [
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:7",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:3",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:5",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:1",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:0",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:6"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c12",
+   "model_id": "kakaocorp/kanana-1.5-8b-instruct-2505",
+   "topic": "context",
+   "question": "이 모델은 한 번에 몇 토큰까지 입력받을 수 있어?",
+   "rep": 1,
+   "card_query_en": "input context length maximum tokens",
+   "retrieved": [
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:7",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:3",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:5",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:1",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:0",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:4"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c12",
+   "model_id": "kakaocorp/kanana-1.5-8b-instruct-2505",
+   "topic": "context",
+   "question": "이 모델의 최대 입력 길이를 알려줘",
+   "rep": 0,
+   "card_query_en": "maximum input length context length tokens",
+   "retrieved": [
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:7",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:3",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:5",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:1",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:0",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:4"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c12",
+   "model_id": "kakaocorp/kanana-1.5-8b-instruct-2505",
+   "topic": "context",
+   "question": "이 모델의 최대 입력 길이를 알려줘",
+   "rep": 1,
+   "card_query_en": "maximum input length context length tokens",
+   "retrieved": [
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:7",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:3",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:5",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:1",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:0",
+    "kakaocorp/kanana-1.5-8b-instruct-2505:hf_card:kakaocorp/kanana-1.5-8b-instruct-2505:4"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c13",
+   "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+   "topic": "license",
+   "question": "이 모델의 라이선스는 뭐야?",
+   "rep": 0,
+   "card_query_en": "license terms acceptable use policy",
+   "retrieved": [
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:13",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:0",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:6",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:11",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:12",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:9"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c13",
+   "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+   "topic": "license",
+   "question": "이 모델의 라이선스는 뭐야?",
+   "rep": 1,
+   "card_query_en": "license terms acceptable use policy",
+   "retrieved": [
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:13",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:0",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:6",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:11",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:12",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:9"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c13",
+   "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+   "topic": "license",
+   "question": "이 모델은 어떤 라이선스로 배포돼?",
+   "rep": 0,
+   "card_query_en": "license acceptable use policy terms",
+   "retrieved": [
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:13",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:0",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:6",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:11",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:12",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:9"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c13",
+   "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+   "topic": "license",
+   "question": "이 모델은 어떤 라이선스로 배포돼?",
+   "rep": 1,
+   "card_query_en": "license terms acceptable use policy",
+   "retrieved": [
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:13",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:0",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:6",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:11",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:12",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:9"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c13",
+   "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+   "topic": "license",
+   "question": "이 모델의 사용 허가 조건, 라이선스 이름을 알려줘",
+   "rep": 0,
+   "card_query_en": "license acceptable use policy terms",
+   "retrieved": [
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:13",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:0",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:6",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:11",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:12",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:9"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c13",
+   "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+   "topic": "license",
+   "question": "이 모델의 사용 허가 조건, 라이선스 이름을 알려줘",
+   "rep": 1,
+   "card_query_en": "license acceptable use policy terms",
+   "retrieved": [
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:13",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:0",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:6",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:11",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:12",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:9"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c14",
+   "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+   "topic": "usage_policy",
+   "question": "이 모델로 하면 안 되는 용도가 뭐야?",
+   "rep": 0,
+   "card_query_en": "prohibited uses restrictions license acceptable use policy terms",
+   "retrieved": [
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:0",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:13",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:11",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:12",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:6",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:1"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c14",
+   "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+   "topic": "usage_policy",
+   "question": "이 모델로 하면 안 되는 용도가 뭐야?",
+   "rep": 1,
+   "card_query_en": "prohibited uses restrictions license acceptable use policy terms",
+   "retrieved": [
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:0",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:13",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:11",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:12",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:6",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:1"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c14",
+   "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+   "topic": "usage_policy",
+   "question": "이 모델의 사용 금지 사항(이용 정책)을 알려줘",
+   "rep": 0,
+   "card_query_en": "prohibited uses restrictions license acceptable use policy terms",
+   "retrieved": [
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:0",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:13",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:11",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:12",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:6",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:1"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c14",
+   "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+   "topic": "usage_policy",
+   "question": "이 모델의 사용 금지 사항(이용 정책)을 알려줘",
+   "rep": 1,
+   "card_query_en": "prohibited uses restrictions license acceptable use policy terms",
+   "retrieved": [
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:0",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:13",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:11",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:12",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:6",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:1"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c14",
+   "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+   "topic": "usage_policy",
+   "question": "이 모델을 쓸 때 금지된 사용 사례가 있어?",
+   "rep": 0,
+   "card_query_en": "prohibited uses license acceptable use policy terms",
+   "retrieved": [
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:0",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:13",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:11",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:12",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:6",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:1"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c14",
+   "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+   "topic": "usage_policy",
+   "question": "이 모델을 쓸 때 금지된 사용 사례가 있어?",
+   "rep": 1,
+   "card_query_en": "prohibited uses license acceptable use policy terms",
+   "retrieved": [
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:0",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:13",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:11",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:12",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:6",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:1"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c15",
+   "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+   "topic": "languages",
+   "question": "이 모델이 지원하는 언어는?",
+   "rep": 0,
+   "card_query_en": "supported languages English Korean multilingual",
+   "retrieved": [
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:2",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:0",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:10",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:9",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:8",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:6"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c15",
+   "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+   "topic": "languages",
+   "question": "이 모델이 지원하는 언어는?",
+   "rep": 1,
+   "card_query_en": "supported languages English Korean multilingual",
+   "retrieved": [
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:2",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:0",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:10",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:9",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:8",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:6"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c15",
+   "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+   "topic": "languages",
+   "question": "이 모델은 어떤 언어들을 다룰 수 있어?",
+   "rep": 0,
+   "card_query_en": "supported languages English Korean multilingual",
+   "retrieved": [
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:2",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:0",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:10",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:9",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:8",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:6"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c15",
+   "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+   "topic": "languages",
+   "question": "이 모델은 어떤 언어들을 다룰 수 있어?",
+   "rep": 1,
+   "card_query_en": "supported languages English Korean multilingual",
+   "retrieved": [
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:2",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:0",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:10",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:9",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:8",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:6"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c15",
+   "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+   "topic": "languages",
+   "question": "한국어나 다른 언어도 이 모델이 지원해?",
+   "rep": 0,
+   "card_query_en": "supported languages multilingual English Korean",
+   "retrieved": [
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:2",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:0",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:8",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:10",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:6",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:12"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c15",
+   "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+   "topic": "languages",
+   "question": "한국어나 다른 언어도 이 모델이 지원해?",
+   "rep": 1,
+   "card_query_en": "supported languages multilingual Korean English",
+   "retrieved": [
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:0",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:2",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:8",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:10",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:9",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:6"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c16",
+   "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+   "topic": "context",
+   "question": "이 모델의 컨텍스트 길이는 얼마야?",
+   "rep": 0,
+   "card_query_en": "context length",
+   "retrieved": [
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:3",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:11",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:4",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:8",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:2",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:6"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c16",
+   "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+   "topic": "context",
+   "question": "이 모델의 컨텍스트 길이는 얼마야?",
+   "rep": 1,
+   "card_query_en": "context length",
+   "retrieved": [
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:3",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:11",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:4",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:8",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:2",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:6"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c16",
+   "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+   "topic": "context",
+   "question": "이 모델은 한 번에 몇 토큰까지 입력받을 수 있어?",
+   "rep": 0,
+   "card_query_en": "context length maximum input tokens",
+   "retrieved": [
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:3",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:5",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:4",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:11",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:2",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:6"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c16",
+   "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+   "topic": "context",
+   "question": "이 모델은 한 번에 몇 토큰까지 입력받을 수 있어?",
+   "rep": 1,
+   "card_query_en": "context length maximum input tokens 32K",
+   "retrieved": [
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:3",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:2",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:5",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:8",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:4",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:11"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c16",
+   "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+   "topic": "context",
+   "question": "이 모델의 최대 입력 길이를 알려줘",
+   "rep": 0,
+   "card_query_en": "maximum input length context length tokens",
+   "retrieved": [
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:3",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:4",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:5",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:11",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:2",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:6"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c16",
+   "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+   "topic": "context",
+   "question": "이 모델의 최대 입력 길이를 알려줘",
+   "rep": 1,
+   "card_query_en": "maximum input length context length tokens",
+   "retrieved": [
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:3",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:4",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:5",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:11",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:2",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:6"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c17",
+   "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+   "topic": "limitations",
+   "question": "이 모델의 한계나 제한 사항은 뭐야?",
+   "rep": 0,
+   "card_query_en": "limitations limitations and risks bias restrictions license acceptable use policy terms",
+   "retrieved": [
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:11",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:0",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:12",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:13",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:1",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:6"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c17",
+   "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+   "topic": "limitations",
+   "question": "이 모델의 한계나 제한 사항은 뭐야?",
+   "rep": 1,
+   "card_query_en": "limitations risks bias out-of-scope use restrictions license",
+   "retrieved": [
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:11",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:0",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:13",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:12",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:1",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:9"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c17",
+   "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+   "topic": "limitations",
+   "question": "이 모델을 쓸 때 주의해야 할 약점은?",
+   "rep": 0,
+   "card_query_en": "limitations risks biases hallucination out-of-scope use",
+   "retrieved": [
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:11",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:12",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:1",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:0",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:9",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:13"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c17",
+   "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+   "topic": "limitations",
+   "question": "이 모델을 쓸 때 주의해야 할 약점은?",
+   "rep": 1,
+   "card_query_en": "limitations biases risks out-of-scope use",
+   "retrieved": [
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:11",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:12",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:1",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:0",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:9",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:13"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c17",
+   "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+   "topic": "limitations",
+   "question": "이 모델이 잘 못하는 부분이나 위험 요소를 알려줘",
+   "rep": 0,
+   "card_query_en": "limitations risks biases hallucination out-of-scope use",
+   "retrieved": [
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:11",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:12",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:1",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:0",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:9",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:13"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c17",
+   "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+   "topic": "limitations",
+   "question": "이 모델이 잘 못하는 부분이나 위험 요소를 알려줘",
+   "rep": 1,
+   "card_query_en": "limitations risks biases limitations and risks",
+   "retrieved": [
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:11",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:12",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:0",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:1",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:13",
+    "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:hf_card:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct:9"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c18",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "license",
+   "question": "이 모델의 라이선스는 뭐야?",
+   "rep": 0,
+   "card_query_en": "license terms of use acceptable use policy",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:0",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:31",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:39",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:38",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:37",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:40"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c18",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "license",
+   "question": "이 모델의 라이선스는 뭐야?",
+   "rep": 1,
+   "card_query_en": "license terms use restrictions acceptable use policy",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:31",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:38",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:0",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:37",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:40",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:39"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c18",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "license",
+   "question": "이 모델은 어떤 라이선스로 배포돼?",
+   "rep": 0,
+   "card_query_en": "license terms of use acceptable use policy",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:0",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:31",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:39",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:38",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:37",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:40"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c18",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "license",
+   "question": "이 모델은 어떤 라이선스로 배포돼?",
+   "rep": 1,
+   "card_query_en": "license terms of use acceptable use policy",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:0",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:31",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:39",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:38",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:37",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:40"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c18",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "license",
+   "question": "이 모델의 사용 허가 조건, 라이선스 이름을 알려줘",
+   "rep": 0,
+   "card_query_en": "license terms of use acceptable use policy",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:0",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:31",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:39",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:38",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:37",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:40"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c18",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "license",
+   "question": "이 모델의 사용 허가 조건, 라이선스 이름을 알려줘",
+   "rep": 1,
+   "card_query_en": "license terms of use acceptable use policy",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:0",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:31",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:39",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:38",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:37",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:40"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c19",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "usage_policy",
+   "question": "이 모델로 하면 안 되는 용도가 뭐야?",
+   "rep": 0,
+   "card_query_en": "prohibited uses restrictions license acceptable use policy",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:31",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:38",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:40",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:0",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:37",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:36"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c19",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "usage_policy",
+   "question": "이 모델로 하면 안 되는 용도가 뭐야?",
+   "rep": 1,
+   "card_query_en": "prohibited uses restrictions license acceptable use policy terms",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:31",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:38",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:0",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:40",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:37",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:36"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c19",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "usage_policy",
+   "question": "이 모델의 사용 금지 사항(이용 정책)을 알려줘",
+   "rep": 0,
+   "card_query_en": "prohibited uses license acceptable use policy terms",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:0",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:38",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:31",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:40",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:37",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:39"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c19",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "usage_policy",
+   "question": "이 모델의 사용 금지 사항(이용 정책)을 알려줘",
+   "rep": 1,
+   "card_query_en": "prohibited use acceptable use policy license terms",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:0",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:31",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:38",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:40",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:39",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:37"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c19",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "usage_policy",
+   "question": "이 모델을 쓸 때 금지된 사용 사례가 있어?",
+   "rep": 0,
+   "card_query_en": "prohibited uses license acceptable use policy terms",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:0",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:38",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:31",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:40",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:37",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:39"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c19",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "usage_policy",
+   "question": "이 모델을 쓸 때 금지된 사용 사례가 있어?",
+   "rep": 1,
+   "card_query_en": "prohibited use cases license acceptable use policy terms",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:0",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:38",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:31",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:39",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:40",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:37"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c20",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "languages",
+   "question": "이 모델이 지원하는 언어는?",
+   "rep": 0,
+   "card_query_en": "supported languages multilingual",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:33",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:22",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:11",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:14",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:3",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:17"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c20",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "languages",
+   "question": "이 모델이 지원하는 언어는?",
+   "rep": 1,
+   "card_query_en": "supported languages multilingual",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:33",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:22",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:11",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:14",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:3",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:17"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c20",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "languages",
+   "question": "이 모델은 어떤 언어들을 다룰 수 있어?",
+   "rep": 0,
+   "card_query_en": "supported languages multilingual language support",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:33",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:11",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:17",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:32",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:9",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:14"
+   ],
+   "hit": false
+  },
+  {
+   "case_id": "c20",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "languages",
+   "question": "이 모델은 어떤 언어들을 다룰 수 있어?",
+   "rep": 1,
+   "card_query_en": "multilingual support languages supported",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:22",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:3",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:17",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:33",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:14",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:10"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c20",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "languages",
+   "question": "한국어나 다른 언어도 이 모델이 지원해?",
+   "rep": 0,
+   "card_query_en": "multilingual support languages supported",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:22",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:3",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:17",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:33",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:14",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:10"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c20",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "languages",
+   "question": "한국어나 다른 언어도 이 모델이 지원해?",
+   "rep": 1,
+   "card_query_en": "multilingual language support languages",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:33",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:14",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:32",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:22",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:11",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:3"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c21",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "context",
+   "question": "이 모델의 컨텍스트 길이는 얼마야?",
+   "rep": 0,
+   "card_query_en": "context length",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:4",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:18",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:26",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:34",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:22",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:2"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c21",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "context",
+   "question": "이 모델의 컨텍스트 길이는 얼마야?",
+   "rep": 1,
+   "card_query_en": "context length",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:4",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:18",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:26",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:34",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:22",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:2"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c21",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "context",
+   "question": "이 모델은 한 번에 몇 토큰까지 입력받을 수 있어?",
+   "rep": 0,
+   "card_query_en": "context window input token limit context length",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:4",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:8",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:34",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:7",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:6",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:28"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c21",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "context",
+   "question": "이 모델은 한 번에 몇 토큰까지 입력받을 수 있어?",
+   "rep": 1,
+   "card_query_en": "context length input tokens",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:4",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:10",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:8",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:28",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:7",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:2"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c21",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "context",
+   "question": "이 모델의 최대 입력 길이를 알려줘",
+   "rep": 0,
+   "card_query_en": "maximum input length context window tokens",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:4",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:8",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:10",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:7",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:6",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:28"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c21",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "context",
+   "question": "이 모델의 최대 입력 길이를 알려줘",
+   "rep": 1,
+   "card_query_en": "context length maximum input tokens",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:4",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:10",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:8",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:7",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:28",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:6"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c22",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "modality",
+   "question": "이 모델은 이미지 입력도 받아?",
+   "rep": 0,
+   "card_query_en": "image input multimodal vision support",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:11",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:8",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:7",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:14",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:3",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:2"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c22",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "modality",
+   "question": "이 모델은 이미지 입력도 받아?",
+   "rep": 1,
+   "card_query_en": "image input multimodal vision input modalities",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:11",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:33",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:32",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:2",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:17",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:8"
+   ],
+   "hit": false
+  },
+  {
+   "case_id": "c22",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "modality",
+   "question": "이 모델에 어떤 형태의 입력을 넣을 수 있어?",
+   "rep": 0,
+   "card_query_en": "input modalities text image",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:4",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:7",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:8",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:13",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:28",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:6"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c22",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "modality",
+   "question": "이 모델에 어떤 형태의 입력을 넣을 수 있어?",
+   "rep": 1,
+   "card_query_en": "supported input modalities image text input",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:4",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:28",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:7",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:6",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:11",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:8"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c22",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "modality",
+   "question": "텍스트 말고 이미지도 이 모델에 넣을 수 있어?",
+   "rep": 0,
+   "card_query_en": "image input multimodal vision support",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:11",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:8",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:7",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:14",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:3",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:2"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c22",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "modality",
+   "question": "텍스트 말고 이미지도 이 모델에 넣을 수 있어?",
+   "rep": 1,
+   "card_query_en": "input modalities image text multimodal",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:11",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:7",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:4",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:28",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:6",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:8"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c23",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "intended_use",
+   "question": "이 모델의 의도된 용도는 뭐야?",
+   "rep": 0,
+   "card_query_en": "intended use direct use out-of-scope use",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:32",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:31",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:38",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:33",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:36",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:28"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c23",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "intended_use",
+   "question": "이 모델의 의도된 용도는 뭐야?",
+   "rep": 1,
+   "card_query_en": "intended use direct use out-of-scope use",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:32",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:31",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:38",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:33",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:36",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:28"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c23",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "intended_use",
+   "question": "이 모델은 어떤 작업에 쓰라고 만든 거야?",
+   "rep": 0,
+   "card_query_en": "intended use tasks applications",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:32",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:16",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:9",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:39",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:38",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:40"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c23",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "intended_use",
+   "question": "이 모델은 어떤 작업에 쓰라고 만든 거야?",
+   "rep": 1,
+   "card_query_en": "intended use cases applications tasks",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:32",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:38",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:39",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:9",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:13",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:16"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c23",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "intended_use",
+   "question": "개발사가 권장하는 이 모델의 사용 목적은?",
+   "rep": 0,
+   "card_query_en": "intended use direct use recommended use cases",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:32",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:38",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:39",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:31",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:33",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:9"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c23",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "intended_use",
+   "question": "개발사가 권장하는 이 모델의 사용 목적은?",
+   "rep": 1,
+   "card_query_en": "intended use direct use recommended use cases",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:32",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:38",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:39",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:31",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:33",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:9"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c24",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "limitations",
+   "question": "이 모델의 한계나 제한 사항은 뭐야?",
+   "rep": 0,
+   "card_query_en": "limitations known limitations biases risks",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:31",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:34",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:37",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:29",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:36",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:38"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c24",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "limitations",
+   "question": "이 모델의 한계나 제한 사항은 뭐야?",
+   "rep": 1,
+   "card_query_en": "limitations known limitations biases risks out-of-scope use",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:31",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:37",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:34",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:38",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:36",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:29"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c24",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "limitations",
+   "question": "이 모델을 쓸 때 주의해야 할 약점은?",
+   "rep": 0,
+   "card_query_en": "limitations biases risks known issues",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:31",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:34",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:37",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:36",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:29",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:38"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c24",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "limitations",
+   "question": "이 모델을 쓸 때 주의해야 할 약점은?",
+   "rep": 1,
+   "card_query_en": "limitations risks bias known issues out-of-scope use",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:31",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:37",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:34",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:36",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:38",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:29"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c24",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "limitations",
+   "question": "이 모델이 잘 못하는 부분이나 위험 요소를 알려줘",
+   "rep": 0,
+   "card_query_en": "limitations risks bias ethical considerations misuse",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:36",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:31",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:37",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:38",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:34",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:27"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c24",
+   "model_id": "google/gemma-3-4b-it",
+   "topic": "limitations",
+   "question": "이 모델이 잘 못하는 부분이나 위험 요소를 알려줘",
+   "rep": 1,
+   "card_query_en": "limitations risks out-of-scope uses bias safety",
+   "retrieved": [
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:31",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:37",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:29",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:30",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:34",
+    "google/gemma-3-4b-it:hf_card:google/gemma-3-4b-it:36"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c25",
+   "model_id": "Qwen/Qwen3-8B",
+   "topic": "license",
+   "question": "이 모델의 라이선스는 뭐야?",
+   "rep": 0,
+   "card_query_en": "license apache-2.0 terms",
+   "retrieved": [
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:0",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:16",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:3",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:21",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:18",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:20"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c25",
+   "model_id": "Qwen/Qwen3-8B",
+   "topic": "license",
+   "question": "이 모델의 라이선스는 뭐야?",
+   "rep": 1,
+   "card_query_en": "license apache-2.0 terms",
+   "retrieved": [
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:0",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:16",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:3",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:21",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:18",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:20"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c25",
+   "model_id": "Qwen/Qwen3-8B",
+   "topic": "license",
+   "question": "이 모델은 어떤 라이선스로 배포돼?",
+   "rep": 0,
+   "card_query_en": "license apache-2.0 terms",
+   "retrieved": [
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:0",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:16",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:3",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:21",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:18",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:20"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c25",
+   "model_id": "Qwen/Qwen3-8B",
+   "topic": "license",
+   "question": "이 모델은 어떤 라이선스로 배포돼?",
+   "rep": 1,
+   "card_query_en": "license apache-2.0 terms",
+   "retrieved": [
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:0",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:16",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:3",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:21",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:18",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:20"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c25",
+   "model_id": "Qwen/Qwen3-8B",
+   "topic": "license",
+   "question": "이 모델의 사용 허가 조건, 라이선스 이름을 알려줘",
+   "rep": 0,
+   "card_query_en": "license terms apache-2.0",
+   "retrieved": [
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:0",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:16",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:18",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:3",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:21",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:15"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c25",
+   "model_id": "Qwen/Qwen3-8B",
+   "topic": "license",
+   "question": "이 모델의 사용 허가 조건, 라이선스 이름을 알려줘",
+   "rep": 1,
+   "card_query_en": "license terms apache-2.0 usage permission conditions",
+   "retrieved": [
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:0",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:16",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:18",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:21",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:3",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:15"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c26",
+   "model_id": "Qwen/Qwen3-8B",
+   "topic": "languages",
+   "question": "이 모델이 지원하는 언어는?",
+   "rep": 0,
+   "card_query_en": "supported languages multilingual dialects",
+   "retrieved": [
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:3",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:2",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:8",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:15",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:6",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:17"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c26",
+   "model_id": "Qwen/Qwen3-8B",
+   "topic": "languages",
+   "question": "이 모델이 지원하는 언어는?",
+   "rep": 1,
+   "card_query_en": "supported languages multilingual",
+   "retrieved": [
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:3",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:2",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:15",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:17",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:6",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:8"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c26",
+   "model_id": "Qwen/Qwen3-8B",
+   "topic": "languages",
+   "question": "이 모델은 어떤 언어들을 다룰 수 있어?",
+   "rep": 0,
+   "card_query_en": "supported languages multilingual language coverage",
+   "retrieved": [
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:3",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:2",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:17",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:8",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:7",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:6"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c26",
+   "model_id": "Qwen/Qwen3-8B",
+   "topic": "languages",
+   "question": "이 모델은 어떤 언어들을 다룰 수 있어?",
+   "rep": 1,
+   "card_query_en": "multilingual support languages dialects",
+   "retrieved": [
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:3",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:2",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:8",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:6",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:17",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:16"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c26",
+   "model_id": "Qwen/Qwen3-8B",
+   "topic": "languages",
+   "question": "한국어나 다른 언어도 이 모델이 지원해?",
+   "rep": 0,
+   "card_query_en": "supported languages multilingual language support",
+   "retrieved": [
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:3",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:2",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:8",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:6",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:7",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:16"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c26",
+   "model_id": "Qwen/Qwen3-8B",
+   "topic": "languages",
+   "question": "한국어나 다른 언어도 이 모델이 지원해?",
+   "rep": 1,
+   "card_query_en": "supported languages multilingual languages dialects",
+   "retrieved": [
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:3",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:8",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:2",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:15",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:6",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:7"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c27",
+   "model_id": "Qwen/Qwen3-8B",
+   "topic": "context",
+   "question": "이 모델의 컨텍스트 길이는 얼마야?",
+   "rep": 0,
+   "card_query_en": "context length",
+   "retrieved": [
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:17",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:20",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:4",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:22",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:19",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:6"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c27",
+   "model_id": "Qwen/Qwen3-8B",
+   "topic": "context",
+   "question": "이 모델의 컨텍스트 길이는 얼마야?",
+   "rep": 1,
+   "card_query_en": "context length",
+   "retrieved": [
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:17",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:20",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:4",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:22",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:19",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:6"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c27",
+   "model_id": "Qwen/Qwen3-8B",
+   "topic": "context",
+   "question": "이 모델은 한 번에 몇 토큰까지 입력받을 수 있어?",
+   "rep": 0,
+   "card_query_en": "context length maximum input tokens",
+   "retrieved": [
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:17",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:20",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:22",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:13",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:6",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:4"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c27",
+   "model_id": "Qwen/Qwen3-8B",
+   "topic": "context",
+   "question": "이 모델은 한 번에 몇 토큰까지 입력받을 수 있어?",
+   "rep": 1,
+   "card_query_en": "context length maximum input tokens",
+   "retrieved": [
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:17",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:20",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:22",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:13",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:6",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:4"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c27",
+   "model_id": "Qwen/Qwen3-8B",
+   "topic": "context",
+   "question": "이 모델의 최대 입력 길이를 알려줘",
+   "rep": 0,
+   "card_query_en": "maximum input length context length tokens",
+   "retrieved": [
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:17",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:20",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:22",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:13",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:6",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:4"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c27",
+   "model_id": "Qwen/Qwen3-8B",
+   "topic": "context",
+   "question": "이 모델의 최대 입력 길이를 알려줘",
+   "rep": 1,
+   "card_query_en": "context length maximum input tokens",
+   "retrieved": [
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:17",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:20",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:22",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:13",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:6",
+    "Qwen/Qwen3-8B:hf_card:Qwen/Qwen3-8B:4"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c28",
+   "model_id": "mistralai/Ministral-8B-Instruct-2410",
+   "topic": "license",
+   "question": "이 모델의 라이선스는 뭐야?",
+   "rep": 0,
+   "card_query_en": "license Mistral Research License terms use restrictions",
+   "retrieved": [
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:0",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:4",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:1",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:3",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:10",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:2"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c28",
+   "model_id": "mistralai/Ministral-8B-Instruct-2410",
+   "topic": "license",
+   "question": "이 모델의 라이선스는 뭐야?",
+   "rep": 1,
+   "card_query_en": "license terms Mistral Research License",
+   "retrieved": [
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:0",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:1",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:4",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:10",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:3",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:16"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c28",
+   "model_id": "mistralai/Ministral-8B-Instruct-2410",
+   "topic": "license",
+   "question": "이 모델은 어떤 라이선스로 배포돼?",
+   "rep": 0,
+   "card_query_en": "license terms Mistral Research License",
+   "retrieved": [
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:0",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:1",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:4",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:10",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:3",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:16"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c28",
+   "model_id": "mistralai/Ministral-8B-Instruct-2410",
+   "topic": "license",
+   "question": "이 모델은 어떤 라이선스로 배포돼?",
+   "rep": 1,
+   "card_query_en": "license terms Mistral Research License",
+   "retrieved": [
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:0",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:1",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:4",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:10",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:3",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:16"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c28",
+   "model_id": "mistralai/Ministral-8B-Instruct-2410",
+   "topic": "license",
+   "question": "이 모델의 사용 허가 조건, 라이선스 이름을 알려줘",
+   "rep": 0,
+   "card_query_en": "license terms use restrictions Mistral Research License",
+   "retrieved": [
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:0",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:4",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:1",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:3",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:10",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:2"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c28",
+   "model_id": "mistralai/Ministral-8B-Instruct-2410",
+   "topic": "license",
+   "question": "이 모델의 사용 허가 조건, 라이선스 이름을 알려줘",
+   "rep": 1,
+   "card_query_en": "license terms of use Mistral Research License",
+   "retrieved": [
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:0",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:4",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:1",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:10",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:3",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:7"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c29",
+   "model_id": "mistralai/Ministral-8B-Instruct-2410",
+   "topic": "commercial",
+   "question": "이 모델을 상업적으로 쓸 수 있는 조건이 있어?",
+   "rep": 0,
+   "card_query_en": "commercial use license terms restrictions Mistral Research License",
+   "retrieved": [
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:0",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:4",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:12",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:3",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:1",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:2"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c29",
+   "model_id": "mistralai/Ministral-8B-Instruct-2410",
+   "topic": "commercial",
+   "question": "이 모델을 상업적으로 쓸 수 있는 조건이 있어?",
+   "rep": 1,
+   "card_query_en": "license commercial use terms conditions restrictions",
+   "retrieved": [
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:4",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:0",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:3",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:9",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:1",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:8"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c29",
+   "model_id": "mistralai/Ministral-8B-Instruct-2410",
+   "topic": "commercial",
+   "question": "회사 제품에 이 모델을 넣어도 되는지 라이선스 조건을 알려줘",
+   "rep": 0,
+   "card_query_en": "license terms commercial use acceptable use policy",
+   "retrieved": [
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:1",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:0",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:4",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:9",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:8",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:3"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c29",
+   "model_id": "mistralai/Ministral-8B-Instruct-2410",
+   "topic": "commercial",
+   "question": "회사 제품에 이 모델을 넣어도 되는지 라이선스 조건을 알려줘",
+   "rep": 1,
+   "card_query_en": "license commercial use terms acceptable use policy",
+   "retrieved": [
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:1",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:0",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:4",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:9",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:3",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:8"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c29",
+   "model_id": "mistralai/Ministral-8B-Instruct-2410",
+   "topic": "commercial",
+   "question": "이 모델의 상업 이용 관련 규정이 뭐야?",
+   "rep": 0,
+   "card_query_en": "commercial use license terms restrictions Mistral Research License",
+   "retrieved": [
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:0",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:4",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:12",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:3",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:1",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:2"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c29",
+   "model_id": "mistralai/Ministral-8B-Instruct-2410",
+   "topic": "commercial",
+   "question": "이 모델의 상업 이용 관련 규정이 뭐야?",
+   "rep": 1,
+   "card_query_en": "commercial use license terms restrictions Mistral Research License acceptable use policy",
+   "retrieved": [
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:0",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:4",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:1",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:3",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:12",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:2"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c30",
+   "model_id": "mistralai/Ministral-8B-Instruct-2410",
+   "topic": "usage_policy",
+   "question": "이 모델로 하면 안 되는 용도가 뭐야?",
+   "rep": 0,
+   "card_query_en": "prohibited uses license restrictions acceptable use policy terms",
+   "retrieved": [
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:4",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:0",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:1",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:3",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:8",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:14"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c30",
+   "model_id": "mistralai/Ministral-8B-Instruct-2410",
+   "topic": "usage_policy",
+   "question": "이 모델로 하면 안 되는 용도가 뭐야?",
+   "rep": 1,
+   "card_query_en": "prohibited uses restrictions license acceptable use policy terms",
+   "retrieved": [
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:4",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:0",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:1",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:3",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:8",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:10"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c30",
+   "model_id": "mistralai/Ministral-8B-Instruct-2410",
+   "topic": "usage_policy",
+   "question": "이 모델의 사용 금지 사항(이용 정책)을 알려줘",
+   "rep": 0,
+   "card_query_en": "prohibited uses acceptable use policy license terms restrictions",
+   "retrieved": [
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:4",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:0",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:1",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:3",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:8",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:14"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c30",
+   "model_id": "mistralai/Ministral-8B-Instruct-2410",
+   "topic": "usage_policy",
+   "question": "이 모델의 사용 금지 사항(이용 정책)을 알려줘",
+   "rep": 1,
+   "card_query_en": "prohibited uses license acceptable use policy terms",
+   "retrieved": [
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:1",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:4",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:0",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:3",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:8",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:6"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c30",
+   "model_id": "mistralai/Ministral-8B-Instruct-2410",
+   "topic": "usage_policy",
+   "question": "이 모델을 쓸 때 금지된 사용 사례가 있어?",
+   "rep": 0,
+   "card_query_en": "prohibited uses restrictions license acceptable use policy terms",
+   "retrieved": [
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:4",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:0",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:1",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:3",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:8",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:10"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c30",
+   "model_id": "mistralai/Ministral-8B-Instruct-2410",
+   "topic": "usage_policy",
+   "question": "이 모델을 쓸 때 금지된 사용 사례가 있어?",
+   "rep": 1,
+   "card_query_en": "prohibited uses restrictions license acceptable use policy terms",
+   "retrieved": [
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:4",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:0",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:1",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:3",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:8",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:10"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c31",
+   "model_id": "mistralai/Ministral-8B-Instruct-2410",
+   "topic": "languages",
+   "question": "이 모델이 지원하는 언어는?",
+   "rep": 0,
+   "card_query_en": "supported languages multilingual",
+   "retrieved": [
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:16",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:14",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:17",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:15",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:20",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:25"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c31",
+   "model_id": "mistralai/Ministral-8B-Instruct-2410",
+   "topic": "languages",
+   "question": "이 모델이 지원하는 언어는?",
+   "rep": 1,
+   "card_query_en": "supported languages multilingual",
+   "retrieved": [
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:16",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:14",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:17",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:15",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:20",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:25"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c31",
+   "model_id": "mistralai/Ministral-8B-Instruct-2410",
+   "topic": "languages",
+   "question": "이 모델은 어떤 언어들을 다룰 수 있어?",
+   "rep": 0,
+   "card_query_en": "supported languages multilingual",
+   "retrieved": [
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:16",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:14",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:17",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:15",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:20",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:25"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c31",
+   "model_id": "mistralai/Ministral-8B-Instruct-2410",
+   "topic": "languages",
+   "question": "이 모델은 어떤 언어들을 다룰 수 있어?",
+   "rep": 1,
+   "card_query_en": "supported languages multilingual languages",
+   "retrieved": [
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:17",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:16",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:14",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:25",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:26",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:13"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c31",
+   "model_id": "mistralai/Ministral-8B-Instruct-2410",
+   "topic": "languages",
+   "question": "한국어나 다른 언어도 이 모델이 지원해?",
+   "rep": 0,
+   "card_query_en": "supported languages multilingual language support",
+   "retrieved": [
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:17",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:16",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:14",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:25",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:30",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:26"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c31",
+   "model_id": "mistralai/Ministral-8B-Instruct-2410",
+   "topic": "languages",
+   "question": "한국어나 다른 언어도 이 모델이 지원해?",
+   "rep": 1,
+   "card_query_en": "supported languages multilingual language support",
+   "retrieved": [
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:17",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:16",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:14",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:25",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:30",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:26"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c32",
+   "model_id": "mistralai/Ministral-8B-Instruct-2410",
+   "topic": "context",
+   "question": "이 모델의 컨텍스트 길이는 얼마야?",
+   "rep": 0,
+   "card_query_en": "context length",
+   "retrieved": [
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:25",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:16",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:28",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:18",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:27",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:20"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c32",
+   "model_id": "mistralai/Ministral-8B-Instruct-2410",
+   "topic": "context",
+   "question": "이 모델의 컨텍스트 길이는 얼마야?",
+   "rep": 1,
+   "card_query_en": "context length",
+   "retrieved": [
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:25",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:16",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:28",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:18",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:27",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:20"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c32",
+   "model_id": "mistralai/Ministral-8B-Instruct-2410",
+   "topic": "context",
+   "question": "이 모델은 한 번에 몇 토큰까지 입력받을 수 있어?",
+   "rep": 0,
+   "card_query_en": "context length maximum input tokens",
+   "retrieved": [
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:33",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:31",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:32",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:16",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:27",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:17"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c32",
+   "model_id": "mistralai/Ministral-8B-Instruct-2410",
+   "topic": "context",
+   "question": "이 모델은 한 번에 몇 토큰까지 입력받을 수 있어?",
+   "rep": 1,
+   "card_query_en": "context length maximum input tokens",
+   "retrieved": [
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:33",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:31",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:32",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:16",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:27",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:17"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c32",
+   "model_id": "mistralai/Ministral-8B-Instruct-2410",
+   "topic": "context",
+   "question": "이 모델의 최대 입력 길이를 알려줘",
+   "rep": 0,
+   "card_query_en": "context length maximum input tokens",
+   "retrieved": [
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:33",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:31",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:32",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:16",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:27",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:17"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c32",
+   "model_id": "mistralai/Ministral-8B-Instruct-2410",
+   "topic": "context",
+   "question": "이 모델의 최대 입력 길이를 알려줘",
+   "rep": 1,
+   "card_query_en": "context length maximum input tokens",
+   "retrieved": [
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:33",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:31",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:32",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:16",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:27",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:17"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c33",
+   "model_id": "mistralai/Ministral-8B-Instruct-2410",
+   "topic": "intended_use",
+   "question": "이 모델의 의도된 용도는 뭐야?",
+   "rep": 0,
+   "card_query_en": "intended use direct use out-of-scope use",
+   "retrieved": [
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:12",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:5",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:4",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:3",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:34",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:13"
+   ],
+   "hit": false
+  },
+  {
+   "case_id": "c33",
+   "model_id": "mistralai/Ministral-8B-Instruct-2410",
+   "topic": "intended_use",
+   "question": "이 모델의 의도된 용도는 뭐야?",
+   "rep": 1,
+   "card_query_en": "intended use direct use out-of-scope use",
+   "retrieved": [
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:12",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:5",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:4",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:3",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:34",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:13"
+   ],
+   "hit": false
+  },
+  {
+   "case_id": "c33",
+   "model_id": "mistralai/Ministral-8B-Instruct-2410",
+   "topic": "intended_use",
+   "question": "이 모델은 어떤 작업에 쓰라고 만든 거야?",
+   "rep": 0,
+   "card_query_en": "intended use direct use use cases",
+   "retrieved": [
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:12",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:25",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:34",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:3",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:29",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:14"
+   ],
+   "hit": false
+  },
+  {
+   "case_id": "c33",
+   "model_id": "mistralai/Ministral-8B-Instruct-2410",
+   "topic": "intended_use",
+   "question": "이 모델은 어떤 작업에 쓰라고 만든 거야?",
+   "rep": 1,
+   "card_query_en": "intended use direct use applications",
+   "retrieved": [
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:12",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:25",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:29",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:34",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:14",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:3"
+   ],
+   "hit": false
+  },
+  {
+   "case_id": "c33",
+   "model_id": "mistralai/Ministral-8B-Instruct-2410",
+   "topic": "intended_use",
+   "question": "개발사가 권장하는 이 모델의 사용 목적은?",
+   "rep": 0,
+   "card_query_en": "intended use recommended use cases",
+   "retrieved": [
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:12",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:25",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:0",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:29",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:3",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:15"
+   ],
+   "hit": true
+  },
+  {
+   "case_id": "c33",
+   "model_id": "mistralai/Ministral-8B-Instruct-2410",
+   "topic": "intended_use",
+   "question": "개발사가 권장하는 이 모델의 사용 목적은?",
+   "rep": 1,
+   "card_query_en": "intended use recommended use cases",
+   "retrieved": [
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:12",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:25",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:0",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:29",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:3",
+    "mistralai/Ministral-8B-Instruct-2410:hf_card:mistralai/Ministral-8B-Instruct-2410:15"
+   ],
+   "hit": true
+  }
+ ]
+}

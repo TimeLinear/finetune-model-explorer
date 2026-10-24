@@ -1,0 +1,602 @@
+{
+ "note": "채점은 설정 공개 전에 끝냄 (grades 저장 후 key 공개). 블라인드 답변은 근거 번호를 지운 본문",
+ "rule": "정답=핵심 사실 모두, 부분=일부, 오답=사실과 다른 진술, 확인 안 됨=사실 없이 확인되지 않는다고만 함",
+ "grades": {
+  "6c45f2": {
+   "case_id": "c01",
+   "grade": "정답",
+   "note": ""
+  },
+  "48cdfb": {
+   "case_id": "c01",
+   "grade": "정답",
+   "note": ""
+  },
+  "23a707": {
+   "case_id": "c02",
+   "grade": "정답",
+   "note": ""
+  },
+  "6ff326": {
+   "case_id": "c02",
+   "grade": "정답",
+   "note": ""
+  },
+  "ee4883": {
+   "case_id": "c03",
+   "grade": "정답",
+   "note": ""
+  },
+  "42be3b": {
+   "case_id": "c03",
+   "grade": "정답",
+   "note": ""
+  },
+  "094209": {
+   "case_id": "c04",
+   "grade": "정답",
+   "note": ""
+  },
+  "400d65": {
+   "case_id": "c04",
+   "grade": "정답",
+   "note": ""
+  },
+  "fde846": {
+   "case_id": "c05",
+   "grade": "정답",
+   "note": ""
+  },
+  "206518": {
+   "case_id": "c05",
+   "grade": "정답",
+   "note": ""
+  },
+  "c3b959": {
+   "case_id": "c06",
+   "grade": "정답",
+   "note": ""
+  },
+  "daceee": {
+   "case_id": "c06",
+   "grade": "정답",
+   "note": ""
+  },
+  "300325": {
+   "case_id": "c07",
+   "grade": "정답",
+   "note": ""
+  },
+  "09d3e3": {
+   "case_id": "c07",
+   "grade": "정답",
+   "note": ""
+  },
+  "4e47f3": {
+   "case_id": "c08",
+   "grade": "정답",
+   "note": ""
+  },
+  "97b0e3": {
+   "case_id": "c08",
+   "grade": "정답",
+   "note": ""
+  },
+  "9a964e": {
+   "case_id": "c09",
+   "grade": "정답",
+   "note": ""
+  },
+  "273472": {
+   "case_id": "c09",
+   "grade": "정답",
+   "note": ""
+  },
+  "7613cd": {
+   "case_id": "c10",
+   "grade": "정답",
+   "note": ""
+  },
+  "ec1582": {
+   "case_id": "c10",
+   "grade": "정답",
+   "note": ""
+  },
+  "052c23": {
+   "case_id": "c11",
+   "grade": "정답",
+   "note": ""
+  },
+  "0f00bf": {
+   "case_id": "c11",
+   "grade": "정답",
+   "note": ""
+  },
+  "4cb035": {
+   "case_id": "c12",
+   "grade": "정답",
+   "note": ""
+  },
+  "d80f18": {
+   "case_id": "c12",
+   "grade": "정답",
+   "note": ""
+  },
+  "bc6799": {
+   "case_id": "c13",
+   "grade": "정답",
+   "note": ""
+  },
+  "9f10d5": {
+   "case_id": "c13",
+   "grade": "정답",
+   "note": ""
+  },
+  "6ddfd9": {
+   "case_id": "c14",
+   "grade": "정답",
+   "note": ""
+  },
+  "3daa6e": {
+   "case_id": "c14",
+   "grade": "정답",
+   "note": ""
+  },
+  "5b9799": {
+   "case_id": "c15",
+   "grade": "정답",
+   "note": ""
+  },
+  "8cb678": {
+   "case_id": "c15",
+   "grade": "정답",
+   "note": ""
+  },
+  "4ce686": {
+   "case_id": "c16",
+   "grade": "정답",
+   "note": ""
+  },
+  "85d6e9": {
+   "case_id": "c16",
+   "grade": "정답",
+   "note": ""
+  },
+  "aeeb7f": {
+   "case_id": "c17",
+   "grade": "정답",
+   "note": ""
+  },
+  "6d92fb": {
+   "case_id": "c17",
+   "grade": "정답",
+   "note": ""
+  },
+  "7c3023": {
+   "case_id": "c18",
+   "grade": "정답",
+   "note": ""
+  },
+  "c19544": {
+   "case_id": "c18",
+   "grade": "정답",
+   "note": ""
+  },
+  "946a02": {
+   "case_id": "c19",
+   "grade": "정답",
+   "note": ""
+  },
+  "293729": {
+   "case_id": "c19",
+   "grade": "정답",
+   "note": ""
+  },
+  "5b0b7a": {
+   "case_id": "c20",
+   "grade": "정답",
+   "note": ""
+  },
+  "468c61": {
+   "case_id": "c20",
+   "grade": "정답",
+   "note": ""
+  },
+  "874607": {
+   "case_id": "c21",
+   "grade": "정답",
+   "note": ""
+  },
+  "3c49e2": {
+   "case_id": "c21",
+   "grade": "정답",
+   "note": ""
+  },
+  "f4c237": {
+   "case_id": "c22",
+   "grade": "정답",
+   "note": ""
+  },
+  "2c0459": {
+   "case_id": "c22",
+   "grade": "부분",
+   "note": "c22: 이미지 입력은 말했으나 '텍스트를 생성함'(출력) 없음"
+  },
+  "695828": {
+   "case_id": "c23",
+   "grade": "정답",
+   "note": ""
+  },
+  "ce21e6": {
+   "case_id": "c23",
+   "grade": "정답",
+   "note": ""
+  },
+  "3da2fb": {
+   "case_id": "c24",
+   "grade": "정답",
+   "note": ""
+  },
+  "7d70f2": {
+   "case_id": "c24",
+   "grade": "정답",
+   "note": ""
+  },
+  "9a7561": {
+   "case_id": "c25",
+   "grade": "정답",
+   "note": ""
+  },
+  "ca0856": {
+   "case_id": "c25",
+   "grade": "정답",
+   "note": ""
+  },
+  "430a3c": {
+   "case_id": "c26",
+   "grade": "정답",
+   "note": ""
+  },
+  "fa0882": {
+   "case_id": "c26",
+   "grade": "정답",
+   "note": ""
+  },
+  "63a82d": {
+   "case_id": "c27",
+   "grade": "정답",
+   "note": ""
+  },
+  "d9ae73": {
+   "case_id": "c27",
+   "grade": "정답",
+   "note": ""
+  },
+  "bb18e6": {
+   "case_id": "c28",
+   "grade": "정답",
+   "note": ""
+  },
+  "9120e0": {
+   "case_id": "c28",
+   "grade": "정답",
+   "note": ""
+  },
+  "5da8d1": {
+   "case_id": "c29",
+   "grade": "정답",
+   "note": ""
+  },
+  "167ab0": {
+   "case_id": "c29",
+   "grade": "정답",
+   "note": ""
+  },
+  "1660b9": {
+   "case_id": "c30",
+   "grade": "정답",
+   "note": ""
+  },
+  "736206": {
+   "case_id": "c30",
+   "grade": "정답",
+   "note": ""
+  },
+  "161f76": {
+   "case_id": "c31",
+   "grade": "부분",
+   "note": "c31: 10개 중 6개만 제시, 나머지 4개는 확인 안 된다고 함"
+  },
+  "a88cad": {
+   "case_id": "c31",
+   "grade": "정답",
+   "note": ""
+  },
+  "5ed26b": {
+   "case_id": "c32",
+   "grade": "정답",
+   "note": ""
+  },
+  "da95f3": {
+   "case_id": "c32",
+   "grade": "정답",
+   "note": ""
+  },
+  "bcf626": {
+   "case_id": "c33",
+   "grade": "정답",
+   "note": ""
+  },
+  "1761fe": {
+   "case_id": "c33",
+   "grade": "정답",
+   "note": ""
+  }
+ },
+ "key": {
+  "946a02": {
+   "case_id": "c19",
+   "card_k": 6
+  },
+  "c3b959": {
+   "case_id": "c06",
+   "card_k": 6
+  },
+  "1660b9": {
+   "case_id": "c30",
+   "card_k": 6
+  },
+  "7c3023": {
+   "case_id": "c18",
+   "card_k": 4
+  },
+  "c19544": {
+   "case_id": "c18",
+   "card_k": 6
+  },
+  "aeeb7f": {
+   "case_id": "c17",
+   "card_k": 6
+  },
+  "ee4883": {
+   "case_id": "c03",
+   "card_k": 4
+  },
+  "4cb035": {
+   "case_id": "c12",
+   "card_k": 6
+  },
+  "bc6799": {
+   "case_id": "c13",
+   "card_k": 4
+  },
+  "7613cd": {
+   "case_id": "c10",
+   "card_k": 6
+  },
+  "695828": {
+   "case_id": "c23",
+   "card_k": 6
+  },
+  "094209": {
+   "case_id": "c04",
+   "card_k": 4
+  },
+  "9a7561": {
+   "case_id": "c25",
+   "card_k": 4
+  },
+  "bb18e6": {
+   "case_id": "c28",
+   "card_k": 4
+  },
+  "6c45f2": {
+   "case_id": "c01",
+   "card_k": 6
+  },
+  "300325": {
+   "case_id": "c07",
+   "card_k": 4
+  },
+  "ca0856": {
+   "case_id": "c25",
+   "card_k": 6
+  },
+  "874607": {
+   "case_id": "c21",
+   "card_k": 4
+  },
+  "5b0b7a": {
+   "case_id": "c20",
+   "card_k": 6
+  },
+  "3c49e2": {
+   "case_id": "c21",
+   "card_k": 6
+  },
+  "5b9799": {
+   "case_id": "c15",
+   "card_k": 4
+  },
+  "f4c237": {
+   "case_id": "c22",
+   "card_k": 6
+  },
+  "3da2fb": {
+   "case_id": "c24",
+   "card_k": 6
+  },
+  "63a82d": {
+   "case_id": "c27",
+   "card_k": 6
+  },
+  "4ce686": {
+   "case_id": "c16",
+   "card_k": 6
+  },
+  "293729": {
+   "case_id": "c19",
+   "card_k": 4
+  },
+  "9a964e": {
+   "case_id": "c09",
+   "card_k": 6
+  },
+  "fde846": {
+   "case_id": "c05",
+   "card_k": 4
+  },
+  "48cdfb": {
+   "case_id": "c01",
+   "card_k": 4
+  },
+  "9120e0": {
+   "case_id": "c28",
+   "card_k": 6
+  },
+  "ce21e6": {
+   "case_id": "c23",
+   "card_k": 4
+  },
+  "7d70f2": {
+   "case_id": "c24",
+   "card_k": 4
+  },
+  "430a3c": {
+   "case_id": "c26",
+   "card_k": 4
+  },
+  "2c0459": {
+   "case_id": "c22",
+   "card_k": 4
+  },
+  "4e47f3": {
+   "case_id": "c08",
+   "card_k": 6
+  },
+  "bcf626": {
+   "case_id": "c33",
+   "card_k": 6
+  },
+  "d9ae73": {
+   "case_id": "c27",
+   "card_k": 4
+  },
+  "5da8d1": {
+   "case_id": "c29",
+   "card_k": 6
+  },
+  "161f76": {
+   "case_id": "c31",
+   "card_k": 4
+  },
+  "206518": {
+   "case_id": "c05",
+   "card_k": 6
+  },
+  "97b0e3": {
+   "case_id": "c08",
+   "card_k": 4
+  },
+  "fa0882": {
+   "case_id": "c26",
+   "card_k": 6
+  },
+  "052c23": {
+   "case_id": "c11",
+   "card_k": 4
+  },
+  "5ed26b": {
+   "case_id": "c32",
+   "card_k": 4
+  },
+  "0f00bf": {
+   "case_id": "c11",
+   "card_k": 6
+  },
+  "6ddfd9": {
+   "case_id": "c14",
+   "card_k": 6
+  },
+  "ec1582": {
+   "case_id": "c10",
+   "card_k": 4
+  },
+  "a88cad": {
+   "case_id": "c31",
+   "card_k": 6
+  },
+  "da95f3": {
+   "case_id": "c32",
+   "card_k": 6
+  },
+  "9f10d5": {
+   "case_id": "c13",
+   "card_k": 6
+  },
+  "167ab0": {
+   "case_id": "c29",
+   "card_k": 4
+  },
+  "d80f18": {
+   "case_id": "c12",
+   "card_k": 4
+  },
+  "42be3b": {
+   "case_id": "c03",
+   "card_k": 6
+  },
+  "23a707": {
+   "case_id": "c02",
+   "card_k": 6
+  },
+  "85d6e9": {
+   "case_id": "c16",
+   "card_k": 4
+  },
+  "6ff326": {
+   "case_id": "c02",
+   "card_k": 4
+  },
+  "400d65": {
+   "case_id": "c04",
+   "card_k": 6
+  },
+  "09d3e3": {
+   "case_id": "c07",
+   "card_k": 6
+  },
+  "8cb678": {
+   "case_id": "c15",
+   "card_k": 6
+  },
+  "1761fe": {
+   "case_id": "c33",
+   "card_k": 4
+  },
+  "736206": {
+   "case_id": "c30",
+   "card_k": 4
+  },
+  "3daa6e": {
+   "case_id": "c14",
+   "card_k": 4
+  },
+  "6d92fb": {
+   "case_id": "c17",
+   "card_k": 4
+  },
+  "468c61": {
+   "case_id": "c20",
+   "card_k": 4
+  },
+  "daceee": {
+   "case_id": "c06",
+   "card_k": 4
+  },
+  "273472": {
+   "case_id": "c09",
+   "card_k": 4
+  }
+ }
+}

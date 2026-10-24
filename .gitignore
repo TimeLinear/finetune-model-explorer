@@ -1,0 +1,26 @@
+# 비밀 값 (API 키, 토큰, 연락처)
+.env
+
+# 가상 환경
+.venv/
+venv/
+
+# 파이썬 캐시
+__pycache__/
+*.pyc
+
+# 데이터 재생성 중간 파일
+data/raw_models.json
+data/items_base.json
+
+# 모델 카드 원문은 올리지 않고 manifest(모델 ID·리비전·URL·본문 해시·길이)만 올린다
+# (docs/design/decisions.md "저장소에 올리는 데이터 범위")
+data/cards/*
+!data/cards/_manifest.json
+
+# Chroma 색인 (카드 본문 청크가 들어 있어 같은 이유로 제외)
+data/chroma/
+
+# 실행 로그, 로컬 도구 설정
+logs/
+.claude/

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>리서치</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%276%27 fill=%27%232b4a8b%27/%3E%3Ctext x=%2716%27 y=%2722%27 font-family=%27monospace%27 font-size=%2715%27 font-weight=%27700%27 text-anchor=%27middle%27 fill=%27%23fff%27%3EFT%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="page">
+    <h1 id="title"></h1>
+    <div class="notice info" id="notice"></div>
+  </main>
+  <script src="js/common.js"></script>
+  <script>
+    "use strict";
+    loadCommon().then((T) => {
+      renderNav("research");
+      document.title = T.research.title;
+      document.getElementById("title").textContent = T.research.title;
+      document.getElementById("notice").textContent = T.research.notice;
+    }).catch(() => { document.getElementById("notice").textContent = "준비 중입니다."; });
+  </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{"case_id": "c01", "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct", "question": "이 모델의 라이선스는 뭐야?", "key_facts": ["라이선스가 Llama 3.2 Community License(llama3.2)"], "fixed_at": "2026-10-23 (답변 생성 전)"}
+{"case_id": "c02", "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct", "question": "이 모델을 상업적으로 쓸 수 있는 조건이 있어?", "key_facts": ["상업적 이용이 가능하며(상업·연구용) Llama 3.2 Community License 조건을 따름", "추가 상업 조건: 월간 활성 사용자 7억 명 초과 시 Meta에 별도 라이선스를 요청해야 함"], "fixed_at": "2026-10-23 (답변 생성 전)"}
+{"case_id": "c03", "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct", "question": "이 모델로 하면 안 되는 용도가 뭐야?", "key_facts": ["Acceptable Use Policy의 금지 사용 예(괴롭힘, 악성 코드, 무기, 스팸, 허위 참여 등) 중 하나 이상", "관련 법령·규정을 위반하는 사용은 범위 밖(Out of Scope)"], "fixed_at": "2026-10-23 (답변 생성 전)"}
+{"case_id": "c04", "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct", "question": "이 모델을 이미지 입력용으로 쓸 때 지역 제한이 있어?", "key_facts": ["EU에 거주하는 개인이나 EU에 주된 사업장을 둔 회사에는 멀티모달 모델의 권리가 부여되지 않음"], "fixed_at": "2026-10-23 (답변 생성 전)"}
+{"case_id": "c05", "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct", "question": "이 모델이 지원하는 언어는?", "key_facts": ["텍스트 전용 작업 공식 지원 언어: 영어, 독일어, 프랑스어, 이탈리아어, 포르투갈어, 힌디어, 스페인어, 태국어 (8개)"], "fixed_at": "2026-10-23 (답변 생성 전)"}
+{"case_id": "c06", "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct", "question": "이 모델의 컨텍스트 길이는 얼마야?", "key_facts": ["컨텍스트 길이 128k"], "fixed_at": "2026-10-23 (답변 생성 전)"}
+{"case_id": "c07", "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct", "question": "이 모델은 이미지 입력도 받아?", "key_facts": ["텍스트와 이미지를 입력으로 받음 (출력은 텍스트)"], "fixed_at": "2026-10-23 (답변 생성 전)"}
+{"case_id": "c08", "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct", "question": "이 모델의 의도된 용도는 뭐야?", "key_facts": ["상업·연구용으로 의도됨", "이미지 관련 용도(시각 질의응답·이미지 추론, 이미지 캡셔닝, 이미지-텍스트 검색, 시각적 그라운딩 등) 2개 이상"], "fixed_at": "2026-10-23 (답변 생성 전)"}
+{"case_id": "c09", "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct", "question": "이 모델의 한계나 제한 사항은 뭐야?", "key_facts": ["부정확하거나 편향되거나 불쾌한 응답을 낼 수 있음"], "fixed_at": "2026-10-23 (답변 생성 전)"}
+{"case_id": "c10", "model_id": "kakaocorp/kanana-1.5-8b-instruct-2505", "question": "이 모델의 라이선스는 뭐야?", "key_facts": ["라이선스 apache-2.0"], "fixed_at": "2026-10-23 (답변 생성 전)"}
+{"case_id": "c11", "model_id": "kakaocorp/kanana-1.5-8b-instruct-2505", "question": "이 모델이 지원하는 언어는?", "key_facts": ["지원 언어: 영어, 한국어"], "fixed_at": "2026-10-23 (답변 생성 전)"}
+{"case_id": "c12", "model_id": "kakaocorp/kanana-1.5-8b-instruct-2505", "question": "이 모델의 컨텍스트 길이는 얼마야?", "key_facts": ["기본 32K 토큰(32,768)", "YaRN 사용 시 최대 128K 토큰"], "fixed_at": "2026-10-23 (답변 생성 전)"}
+{"case_id": "c13", "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct", "question": "이 모델의 라이선스는 뭐야?", "key_facts": ["EXAONE AI Model License Agreement 1.1 - NC"], "fixed_at": "2026-10-23 (답변 생성 전)"}
+{"case_id": "c14", "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct", "question": "이 모델로 하면 안 되는 용도가 뭐야?", "key_facts": ["악의적 활동(불법·유해 출력 유도 등)에 사용하는 것이 금지됨"], "fixed_at": "2026-10-23 (답변 생성 전)"}
+{"case_id": "c15", "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct", "question": "이 모델이 지원하는 언어는?", "key_facts": ["지원 언어: 영어, 한국어 (이중 언어)"], "fixed_at": "2026-10-23 (답변 생성 전)"}
+{"case_id": "c16", "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct", "question": "이 모델의 컨텍스트 길이는 얼마야?", "key_facts": ["컨텍스트 길이 32K 토큰(32,768)"], "fixed_at": "2026-10-23 (답변 생성 전)"}
+{"case_id": "c17", "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct", "question": "이 모델의 한계나 제한 사항은 뭐야?", "key_facts": ["최신 정보를 반영하지 않아 응답이 틀리거나 모순될 수 있음 (등 한계)"], "fixed_at": "2026-10-23 (답변 생성 전)"}
+{"case_id": "c18", "model_id": "google/gemma-3-4b-it", "question": "이 모델의 라이선스는 뭐야?", "key_facts": ["Gemma 이용 약관(Terms of Use, license: gemma)을 따름"], "fixed_at": "2026-10-23 (답변 생성 전)"}
+{"case_id": "c19", "model_id": "google/gemma-3-4b-it", "question": "이 모델로 하면 안 되는 용도가 뭐야?", "key_facts": ["금지 사용은 Gemma Prohibited Use Policy에 정리돼 있음"], "fixed_at": "2026-10-23 (답변 생성 전)"}
+{"case_id": "c20", "model_id": "google/gemma-3-4b-it", "question": "이 모델이 지원하는 언어는?", "key_facts": ["140개 이상 언어 지원"], "fixed_at": "2026-10-23 (답변 생성 전)"}
+{"case_id": "c21", "model_id": "google/gemma-3-4b-it", "question": "이 모델의 컨텍스트 길이는 얼마야?", "key_facts": ["4B 모델 입력 컨텍스트 128K 토큰"], "fixed_at": "2026-10-23 (답변 생성 전)"}
+{"case_id": "c22", "model_id": "google/gemma-3-4b-it", "question": "이 모델은 이미지 입력도 받아?", "key_facts": ["텍스트와 이미지를 입력으로 받고 텍스트를 생성함"], "fixed_at": "2026-10-23 (답변 생성 전)"}
+{"case_id": "c23", "model_id": "google/gemma-3-4b-it", "question": "이 모델의 의도된 용도는 뭐야?", "key_facts": ["Intended Usage의 용도 예(텍스트 생성·챗봇·요약·이미지 데이터 추출·연구·교육/언어 학습 도구 등) 2개 이상"], "fixed_at": "2026-10-23 (답변 생성 전)"}
+{"case_id": "c24", "model_id": "google/gemma-3-4b-it", "question": "이 모델의 한계나 제한 사항은 뭐야?", "key_facts": ["부정확하거나 오래된 사실을 생성할 수 있음 (등 한계)"], "fixed_at": "2026-10-23 (답변 생성 전)"}
+{"case_id": "c25", "model_id": "Qwen/Qwen3-8B", "question": "이 모델의 라이선스는 뭐야?", "key_facts": ["라이선스 apache-2.0"], "fixed_at": "2026-10-23 (답변 생성 전)"}
+{"case_id": "c26", "model_id": "Qwen/Qwen3-8B", "question": "이 모델이 지원하는 언어는?", "key_facts": ["100개 이상 언어·방언 지원"], "fixed_at": "2026-10-23 (답변 생성 전)"}
+{"case_id": "c27", "model_id": "Qwen/Qwen3-8B", "question": "이 모델의 컨텍스트 길이는 얼마야?", "key_facts": ["기본 32,768 토큰", "YaRN 사용 시 131,072 토큰"], "fixed_at": "2026-10-23 (답변 생성 전)"}
+{"case_id": "c28", "model_id": "mistralai/Ministral-8B-Instruct-2410", "question": "이 모델의 라이선스는 뭐야?", "key_facts": ["Mistral Research License (mrl)"], "fixed_at": "2026-10-23 (답변 생성 전)"}
+{"case_id": "c29", "model_id": "mistralai/Ministral-8B-Instruct-2410", "question": "이 모델을 상업적으로 쓸 수 있는 조건이 있어?", "key_facts": ["연구 목적(비상업)으로만 사용 가능", "상업적 사용은 Mistral AI에 상업 라이선스를 문의해야 함"], "fixed_at": "2026-10-23 (답변 생성 전)"}
+{"case_id": "c30", "model_id": "mistralai/Ministral-8B-Instruct-2410", "question": "이 모델로 하면 안 되는 용도가 뭐야?", "key_facts": ["연구 목적(Research Purposes)으로만 사용하도록 제한됨"], "fixed_at": "2026-10-23 (답변 생성 전)"}
+{"case_id": "c31", "model_id": "mistralai/Ministral-8B-Instruct-2410", "question": "이 모델이 지원하는 언어는?", "key_facts": ["지원 언어 10개: 영어, 프랑스어, 독일어, 스페인어, 이탈리아어, 포르투갈어, 중국어, 일본어, 러시아어, 한국어"], "fixed_at": "2026-10-23 (답변 생성 전)"}
+{"case_id": "c32", "model_id": "mistralai/Ministral-8B-Instruct-2410", "question": "이 모델의 컨텍스트 길이는 얼마야?", "key_facts": ["컨텍스트 128k"], "fixed_at": "2026-10-23 (답변 생성 전)"}
+{"case_id": "c33", "model_id": "mistralai/Ministral-8B-Instruct-2410", "question": "이 모델의 의도된 용도는 뭐야?", "key_facts": ["로컬·온디바이스·엣지 사용 사례용"], "fixed_at": "2026-10-23 (답변 생성 전)"}

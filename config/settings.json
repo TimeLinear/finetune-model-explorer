@@ -1,0 +1,72 @@
+{
+  "chunk": {
+    "splitter": "markdown_then_recursive",
+    "size": 1000,
+    "overlap": 200,
+    "exclude_sections": [
+      "citation",
+      "bibtex",
+      "contributors",
+      "acknowledg",
+      "table of contents",
+      "contact"
+    ]
+  },
+  "card": {
+    "front_matter_keys": [
+      "license",
+      "license_name",
+      "license_link",
+      "extra_gated_heading",
+      "extra_gated_prompt",
+      "extra_gated_description",
+      "language",
+      "base_model",
+      "pipeline_tag",
+      "library_name"
+    ]
+  },
+  "index": {
+    "version": 2,
+    "chunk_header": false
+  },
+  "retrieve": {
+    "item_always": true,
+    "card_k": 6,
+    "wiki_k": 2,
+    "card_query_mode": "single",
+    "rrf_candidates": 10,
+    "rrf_k": 60,
+    "search_type": "similarity",
+    "mmr_fetch_k": 30,
+    "mmr_lambda": 0.5
+  },
+  "condition": {
+    "candidate_k": 30
+  },
+  "usage_check": {
+    "card_k": 8
+  },
+  "summary": {
+    "card_max_chars": 24000
+  },
+  "embedding": {
+    "model": "BAAI/bge-m3"
+  },
+  "wiki": {
+    "lang": "ko",
+    "candidates_per_query": 5,
+    "request_interval_sec": 1.0,
+    "p2_concurrency": 3
+  },
+  "hf": {
+    "request_interval_sec": 0.5
+  },
+  "http": {
+    "max_retries": 3
+  },
+  "answer": {
+    "lang": "ko",
+    "history_turns": 4
+  }
+}

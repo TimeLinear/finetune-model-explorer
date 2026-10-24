@@ -1,0 +1,4 @@
+# 파일 감시 끔: Streamlit 파일 감시가 transformers 지연 모듈을 검사하며 torchvision 오류 추적을 대량으로 남긴다 (5_성능_조사.md).
+# 개발 중 자동 새로고침이 필요하면: streamlit run app.py --server.fileWatcherType auto
+[server]
+fileWatcherType = "none"

@@ -1,0 +1,82 @@
+[
+ {
+  "version": "v0.3",
+  "run": 1,
+  "card_query_en": "image input region restriction territory excluded EU",
+  "eu_rank": 1,
+  "hit_k6": true,
+  "sec": 12.06
+ },
+ {
+  "version": "v0.3",
+  "run": 2,
+  "card_query_en": "image input region restriction license territory",
+  "eu_rank": 2,
+  "hit_k6": true,
+  "sec": 1.58
+ },
+ {
+  "version": "v0.3",
+  "run": 3,
+  "card_query_en": "image input region restriction license territory",
+  "eu_rank": 2,
+  "hit_k6": true,
+  "sec": 1.52
+ },
+ {
+  "version": "v0.3",
+  "run": 4,
+  "card_query_en": "image input region restriction license territory",
+  "eu_rank": 2,
+  "hit_k6": true,
+  "sec": 1.61
+ },
+ {
+  "version": "v0.3",
+  "run": 5,
+  "card_query_en": "image input territory restriction license EU multimodal use",
+  "eu_rank": 1,
+  "hit_k6": true,
+  "sec": 1.66
+ },
+ {
+  "version": "v0.4",
+  "run": 1,
+  "card_query_en": "image input geographic restrictions license acceptable use policy territory",
+  "eu_rank": 2,
+  "hit_k6": true,
+  "sec": 1.25
+ },
+ {
+  "version": "v0.4",
+  "run": 2,
+  "card_query_en": "image input region restriction EU license acceptable use policy terms",
+  "eu_rank": 2,
+  "hit_k6": true,
+  "sec": 1.35
+ },
+ {
+  "version": "v0.4",
+  "run": 3,
+  "card_query_en": "image input region restriction territory license acceptable use policy",
+  "eu_rank": 4,
+  "hit_k6": true,
+  "sec": 2.02
+ },
+ {
+  "version": "v0.4",
+  "run": 4,
+  "card_query_en": "image input region restriction excluded territories license acceptable use policy",
+  "eu_rank": 3,
+  "hit_k6": true,
+  "sec": 2.45
+ },
+ {
+  "version": "v0.4",
+  "run": 5,
+  "card_query_en": "region restriction territory image input license acceptable use policy terms",
+  "eu_rank": 6,
+  "hit_k6": true,
+  "sec": 2.88
+ }
+]

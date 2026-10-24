@@ -1,0 +1,12 @@
+모델: {model_id} ({vendor}, {vendor_country_label})
+계열·버전: {family} {version}
+크기·구조: 파라미터 {params_b}B, {arch_label}
+입력 모달리티: {modalities_label}
+학습 단계: {stage_label}
+분야: {category_label}
+지원 언어: {languages_label}
+컨텍스트 길이: {context_label}
+라이선스: {license}{gated_label}
+도구 호출: {tools_label}
+베이스 모델: {base_model}
+소개: {summary}

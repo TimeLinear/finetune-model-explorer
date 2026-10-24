@@ -1,0 +1,24 @@
+{
+  "active_profile": "anthropic_direct",
+  "profiles": {
+    "anthropic_direct": {
+      "providers": {
+        "anthropic": {"base_url": null, "api_key_env": "ANTHROPIC_API_KEY"}
+      },
+      "tasks": {
+        "LLM_SUMMARY": {"provider": "anthropic", "model": "claude-sonnet-5-5", "max_tokens": 2048},
+        "LLM_SMALL": {"provider": "anthropic", "model": "claude-haiku-5-5", "max_tokens": 2048},
+        "LLM_ANSWER": {"provider": "anthropic", "model": "claude-haiku-5-5", "max_tokens": 2048}
+      }
+    }
+  },
+  "model_options": {
+    "claude-haiku-5-5": {"thinking": {"type": "disabled"}}
+  },
+  "structured_output_method": {
+    "default": "function_calling",
+    "models": {
+      "claude-sonnet-5-5": "json_schema"
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+ "cond_api_proxy": {
+  "profile": "api_proxy",
+  "small_model": "gpt-5.4-nano",
+  "request": "이미지도 받을 수 있는 10B 이하 모델 중 요즘 제일 많이 쓰는 거",
+  "candidates": 30,
+  "c2_prompt_version": "v0.4",
+  "results": [
+   [
+    "Qwen/Qwen3.5-4B",
+    "4B 이하(약 4.66B로 경계이지만 ‘10B 이하’ 조건을 만족하는 소형 범용 VLM이며 텍스트·이미지 입력과 인스트럭트 튜닝을 제공)."
+   ],
+   [
+    "Qwen/Qwen3-VL-4B-Instruct",
+    "약 4.44B의 비전-언어 인스트럭트 모델로 텍스트·이미지 입력을 지원해 10B 이하 범용용으로 적합."
+   ],
+   [
+    "Qwen/Qwen3.5-2B",
+    "2B 규모 인스트럭트 멀티모달 모델로 텍스트·이미지를 지원해 10B 이하에서 비교적 많이 쓰는 경량 범용 후보."
+   ],
+   [
+    "google/gemma-3-4b-it",
+    "4.3B 지시 튜닝 멀티모달로 텍스트·이미지 입력을 제공하며 일반적인 경량 VLM으로 활용되기 쉬움."
+   ],
+   [
+    "microsoft/Phi-3.5-vision-instruct",
+    "4.15B 범용 비전 지시 튜닝 모델로 텍스트·이미지 입력과 128K 컨텍스트를 제공."
+   ]
+  ],
+  "calls": [
+   {
+    "model": "gpt-5.4-nano-2026-03-17",
+    "input_tokens": 816,
+    "output_tokens": 41,
+    "sec": 1.07,
+    "stop": "tool_calls",
+    "truncated": false
+   },
+   {
+    "model": "gpt-5.4-nano-2026-03-17",
+    "input_tokens": 8226,
+    "output_tokens": 302,
+    "sec": 3.01,
+    "stop": "tool_calls",
+    "truncated": false
+   }
+  ]
+ },
+ "cond_direct": {
+  "profile": "anthropic_direct",
+  "small_model": "claude-haiku-5-5",
+  "request": "이미지도 받을 수 있는 10B 이하 모델 중 요즘 제일 많이 쓰는 거",
+  "candidates": 30,
+  "c2_prompt_version": "v0.4",
+  "results": [
+   [
+    "Qwen/Qwen3.5-4B",
+    "이미지 입력 가능, 파라미터 4.66B로 10B 이하, 인스트럭트 모델이며 라이선스 apache-2.0."
+   ],
+   [
+    "Qwen/Qwen3.5-9B",
+    "이미지 입력 가능, 파라미터 9.65B로 10B 이하, 인스트럭트 모델이며 라이선스 apache-2.0."
+   ],
+   [
+    "Qwen/Qwen3-VL-8B-Instruct",
+    "이미지 입력 가능, 파라미터 8.77B로 10B 이하, 인스트럭트 모델이며 라이선스 apache-2.0."
+   ],
+   [
+    "Qwen/Qwen2.5-VL-7B-Instruct",
+    "이미지 입력 가능, 파라미터 8.29B로 10B 이하, 인스트럭트 모델이며 라이선스 apache-2.0."
+   ],
+   [
+    "Qwen/Qwen3-VL-4B-Instruct",
+    "이미지 입력 가능, 파라미터 4.44B로 10B 이하, 인스트럭트 모델이며 라이선스 apache-2.0."
+   ]
+  ],
+  "calls": [
+   {
+    "model": "claude-haiku-5-5",
+    "input_tokens": 1813,
+    "output_tokens": 141,
+    "sec": 1.98,
+    "stop": "tool_use",
+    "truncated": false
+   },
+   {
+    "model": "claude-haiku-5-5",
+    "input_tokens": 13528,
+    "output_tokens": 468,
+    "sec": 1.95,
+    "stop": "tool_use",
+    "truncated": false
+   }
+  ]
+ }
+}
