@@ -186,11 +186,11 @@ class RelinkTest(unittest.TestCase):
 
     def test_important_change_marks_b(self):
         old = {"license": "llama3.2", "gated": True, "max_position_embeddings": 8192}
-        new = {"license": "llama3.3", "gated": True}
-        self.assertEqual(ra.important_changes(old, new, 131072),
+        new = {"license": "llama3.3", "gated": True, "max_position_embeddings": 131072}
+        self.assertEqual(ra.important_changes(old, new),
                          {"license": {"before": "llama3.2", "after": "llama3.3"},
                           "max_position_embeddings": {"before": 8192, "after": 131072}})
-        self.assertEqual(ra.important_changes(old, {**old}, None), {})
+        self.assertEqual(ra.important_changes(old, {**old}), {})
 
     def test_chunk_check(self):
         """청크 수 급변·머리말 누락 (5-1). 실제 입력 형식: index_status.json 의 모델 기록."""
@@ -494,6 +494,64 @@ class ModelAtomicTest(unittest.TestCase):
             self.w.apply_model(self.new, self.old, chain, True, ra.Timer({}))
         self.assertTrue(ctx.exception.stop)
         self.assertEqual(chain.chain.calls, 0)
+
+    def test_failed_new_model_card_files_removed(self):
+        """반영에 실패한 신규 모델: 이번 갱신이 만든 카드 파일은 지우고, 서비스에서 복사해 온 기존 카드는 남긴다 (5-1·5-2)."""
+        from data_prep import indexing
+        from vectorstore import store
+        new_item = {**self.old, "model_id": "o/n", "card_url": "https://huggingface.co/o/n"}
+
+        def fake_index(mid, item=None):
+            docs_index.set_status(mid, status="failed", card_revision="r1")
+            return "failed"
+        with mock.patch.object(indexing, "ensure_card_indexed", fake_index), \
+                mock.patch.object(store, "delete_where") as deleted, self.assertRaises(ra.ModelFailed):
+            self.w.apply_model(new_item, None, self.w.CappedChain(FakeChain(), 8), True, ra.Timer({}))
+        self.assertFalse(cards.body_path("o/n").exists())
+        self.assertFalse(cards.front_matter_path("o/n").exists())
+        self.assertNotIn("o/n", cards.load_manifest())
+        self.assertNotIn("o/n", docs_index.load_status())
+        deleted.assert_called_once()  # 작업 공간 색인에서 그 모델의 청크도 뺀다
+        self.assertEqual(cards.body_path("o/x").read_text(encoding="utf-8"), "old body\n")  # 기존 카드는 남는다
+
+
+class ReenrichTest(unittest.TestCase):
+    """커밋 해시가 바뀐 유지 모델의 보강 다시 조회 (4). HTTP 는 가짜 응답 (data_prep.enrich.fetch).
+    값이 바뀌는 경우는 합성: 2026-10-25 갱신의 LFM2.5-2.6B 는 컨텍스트 길이 등이 그대로였다."""
+
+    ROW = {"model_id": "o/x", "architecture": "LlamaForCausalLM", "model_type": "llama", "is_moe": False,
+           "num_experts": None, "experts_per_token": None, "max_position_embeddings": 8192,
+           "context_source": "config.json", "context_library_version": None, "weight_precision": "BF16",
+           "chat_template_has_tools": None, "license": "mit"}
+
+    def run_reenrich(self, ctx=8192, config_ok=True, info_ok=True):
+        from data_prep import enrich, refresh_worker
+
+        def fake_fetch(url, auth=False):
+            if "/api/models/" in url:
+                return {"config": {"architectures": ["LlamaForCausalLM"], "model_type": "llama"},
+                        "safetensors": {"parameters": {"BF16": 1}}} if info_ok else None
+            return {"max_position_embeddings": ctx} if config_ok else None
+        row = dict(self.ROW)
+        with mock.patch.object(enrich, "fetch", fake_fetch):
+            return refresh_worker.reenrich(row), row
+
+    def test_changed(self):
+        info, row = self.run_reenrich(ctx=32768)
+        self.assertEqual(info["changed"], {"max_position_embeddings": {"before": 8192, "after": 32768}})
+        self.assertEqual(row["max_position_embeddings"], 32768)
+        self.assertEqual(ra.important_changes(self.ROW, row), {"max_position_embeddings": {"before": 8192, "after": 32768}})
+
+    def test_same(self):
+        info, row = self.run_reenrich()
+        self.assertEqual((info["updated"], info["changed"], row), (True, {}, self.ROW))
+
+    def test_failed_keeps_values(self):
+        for kwargs in ({"config_ok": False}, {"info_ok": False}):
+            info, row = self.run_reenrich(**kwargs)
+            self.assertFalse(info["updated"])
+            self.assertTrue(info["reason"])
+            self.assertEqual(row, self.ROW)
 
 
 if __name__ == "__main__":

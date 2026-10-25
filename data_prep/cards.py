@@ -21,6 +21,7 @@ CARDS_DIR = DATA_DIR / "cards"
 MANIFEST_PATH = CARDS_DIR / "_manifest.json"
 USER_AGENT = "finetune-model-explorer/0.1"
 NO_RETRY_STATUS = {401, 403, 404}
+STATS = {"requests": 0}  # 카드 다운로드 요청 수 (재시도 포함, 갱신 보고서용)
 
 
 class CardFetchError(RuntimeError):
@@ -69,6 +70,7 @@ def download(model_id, revision):
     for attempt in range(setting("http.max_retries") + 1):
         if attempt:
             time.sleep(2 * attempt)
+        STATS["requests"] += 1
         try:
             r = requests.get(raw_url(model_id, revision), headers=headers, timeout=30)
         except requests.RequestException:

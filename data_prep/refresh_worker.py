@@ -11,8 +11,10 @@ index_items, load_items, latest_summaries)가 경로를 바꾸지 않고 그대�
 
 build
 - 신규·재활성 행 보강 (data_prep.enrich.enrich_fields)
+- 커밋 해시가 바뀐 유지 모델(카드 변경·메타데이터만 변경) 보강 다시 조회: 바뀐 값만 반영, 실패하면 기존 값 유지 (reenrich)
 - 메타데이터만 바뀐 모델: 카드 리비전 갱신 (카드를 같은 리비전으로 받고 다시 색인. LLM 호출 없음)
-- 요약 대상: 우선순위대로 카드 수집 → 요약(일반 API) → 카드 청크 교체. 하나라도 실패하면 그 모델 전체를 이월하고 작업 공간을 되돌린다.
+- 요약 대상: 우선순위대로 카드 수집 → 요약(일반 API) → 카드 청크 교체. 하나라도 실패하면 그 모델 전체를 이월하고 작업 공간을 되돌린다
+  (이번 갱신이 새로 만든 그 모델의 카드 파일은 지운다).
   비용은 실제 토큰으로 누적한다 (refresh_apply.run_targets). LLM 호출은 --max-llm-calls 까지 (SDK 자동 재시도는 끄고 직접 센다)
 - 새 목록 쓰기 → items 컬렉션 전체 재색인 → 점검(5절) → 평가 세트 정답 다시 연결(5절)
 """
@@ -93,7 +95,8 @@ def restore(mid, snap, old_item):
     for path, text in ((body_path(mid), snap["body"]), (front_matter_path(mid), snap["front"])):
         if text is not None:
             path.write_text(text, encoding="utf-8", newline="")
-        # 이전에 없던 카드 파일은 지우지 않고 남긴다 (manifest 에서 빠지므로 쓰이지 않는다)
+        else:  # 반영 전에 없던 파일 = 이번 갱신이 작업 공간에 새로 만든 파일만 지운다 (서비스에서 복사해 온 파일은 위에서 되돌린다)
+            path.unlink(missing_ok=True)
     manifest = load_manifest()
     if snap["manifest"] is None:
         manifest.pop(mid, None)
@@ -151,9 +154,26 @@ def apply_model(item, old_item, chain, summarize_card, step):
         raise ModelFailed(f"{type(e).__name__}: {str(e)[:200]}", used()) from e
 
 
+def reenrich(row, lookup=None):
+    """커밋 해시가 바뀐 유지 모델의 보강 필드를 다시 조회해 바뀐 값만 row 에 반영한다.
+    조회에 실패하면 기존 값을 그대로 두고 사유를 남긴다 (이 때문에 이월하지는 않는다)."""
+    from data_prep.enrich import ENRICH_FIELDS, EnrichError, enrich_fields
+    lookup = lookup or (lambda mid: enrich_fields(mid, strict=True))
+    mid = row["model_id"]
+    try:
+        new = lookup(mid)
+    except EnrichError as e:
+        return {"model_id": mid, "updated": False, "reason": str(e)}
+    changed = {k: {"before": row.get(k), "after": new[k]} for k in ENRICH_FIELDS if row.get(k) != new[k]}
+    row.update({k: v["after"] for k, v in changed.items()})
+    return {"model_id": mid, "updated": True, "changed": changed}
+
+
 # ---------- build ----------
 
 def build(out_path):
+    from data_prep import cards as cards_mod
+    from data_prep import enrich as enrich_mod
     from data_prep import items as items_mod
     from data_prep.enrich import enrich_fields
     from data_prep.indexing import card_doc_id, index_items
@@ -176,6 +196,10 @@ def build(out_path):
             fields = {k: v for k, v in enrich_fields(mid).items() if k != "card_revision"}
             rows[mid].update(fields)
             print(f"보강 {mid}", flush=True)
+        reenriched = [reenrich(rows[mid]) for mid in plan["reenrich"]]
+        for r in reenriched:
+            print(f"보강 다시 조회 {r['model_id']}: " + (f"바뀐 필드 {sorted(r['changed'])}" if r["updated"]
+                                                    else f"실패, 기존 값 유지 ({r['reason']})"), flush=True)
 
     carried = []
     for m in plan["metadata_only"]:
@@ -207,18 +231,18 @@ def build(out_path):
         latest_summaries.cache_clear()
         index_items()
 
-    # 점검 (5절): 카드가 바뀐 모델(카드 변경·새 카드)
+    # 점검 (5절): 카드가 바뀐 모델(카드 변경·새 카드)과 메타데이터만 바뀐 모델 (보강 다시 조회로 컨텍스트 길이가 바뀔 수 있다)
     status_after = load_status()
     final_by = {it["model_id"]: it for it in final}
+    carried_ids = {c["model_id"] for c in carried}
+    checked = [(t["model_id"], t["decision"], t["card_result"]) for t in applied]
+    checked += [(m["model_id"], m["decision"], "metadata_only") for m in plan["metadata_only"]
+                if m["model_id"] not in carried_ids]
     checks = []
-    for t in applied:
-        mid = t["model_id"]
+    for mid, decision, card_result in checked:
         old = old_items.get(mid)
-        ctx = None
-        if old and mid in plan["context_check"]:
-            ctx = enrich_fields(mid)["max_position_embeddings"]
-        checks.append({"model_id": mid, "decision": t["decision"], "card_result": t["card_result"],
-                       "important_changes": important_changes(old, final_by[mid], ctx) if old else {},
+        checks.append({"model_id": mid, "decision": decision, "card_result": card_result,
+                       "important_changes": important_changes(old, final_by[mid]) if old else {},
                        "chunks": chunk_check(status_before.get(mid), status_after.get(mid))})
 
     # 평가 세트 정답 다시 연결 (5절): 카드가 바뀐 평가 세트 모델의 사례
@@ -244,7 +268,10 @@ def build(out_path):
         "applied": applied, "carried": carried,
         "metadata_only_applied": [m["model_id"] for m in plan["metadata_only"]
                                   if m["model_id"] not in {c["model_id"] for c in carried}],
-        "enriched": plan["enrich"], "summary_usage": spent, "llm_calls": {"sonnet": chain.calls if chain else 0},
+        "enriched": plan["enrich"],
+        "reenrich": [{**r, "applied": r["model_id"] not in carried_ids} for r in reenriched],
+        "summary_usage": spent, "llm_calls": {"sonnet": chain.calls if chain else 0},
+        "hf_requests": {"enrich": enrich_mod.STATS["requests"], "card_fetch": cards_mod.STATS["requests"]},
         "checks": checks, "relink": relinks, "cases_changed": cases_changed,
         "a_cases": sorted(r["case_id"] for r in relinks if r["status"] == "A"),
         "b_possible_cases": sorted(r["case_id"] for r in relinks if r["b_possible"]),

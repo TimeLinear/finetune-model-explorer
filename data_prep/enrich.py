@@ -20,6 +20,14 @@ import urllib.request
 
 TOKEN = os.environ.get("HF_TOKEN")
 UA = {"User-Agent": "finetune-model-explorer/0.1"}
+STATS = {"requests": 0}  # 보낸 요청 수 (재시도 포함, 갱신 보고서용)
+# enrich_fields 가 채우는 필드 (card_revision·card_url 은 카드 쪽 값이라 보강 비교에서 뺀다)
+ENRICH_FIELDS = ("architecture", "model_type", "is_moe", "num_experts", "experts_per_token", "max_position_embeddings",
+                 "context_source", "context_library_version", "weight_precision", "chat_template_has_tools")
+
+
+class EnrichError(RuntimeError):
+    pass
 
 
 def fetch(url, auth=False):
@@ -27,6 +35,7 @@ def fetch(url, auth=False):
     if auth and TOKEN:
         h["Authorization"] = f"Bearer {TOKEN}"
     for i in range(3):
+        STATS["requests"] += 1
         try:
             with urllib.request.urlopen(urllib.request.Request(url, headers=h), timeout=30) as r:
                 return json.load(r)
@@ -55,6 +64,7 @@ def pick(cfg, *keys):
 
 def library_default_context(mid):
     """설정 파일에 값이 없을 때 transformers 설정 클래스의 기본값. 없으면 (None, None)."""
+    STATS["requests"] += 1  # transformers 가 Hub 에서 설정을 받는다 (내부 요청 수는 세지 않고 1회로 센다)
     try:
         import transformers
         from transformers import AutoConfig
@@ -85,10 +95,14 @@ def resolve_context(mid, cfg, model_type):
     return None, "not_in_config", None
 
 
-def enrich_fields(mid):
-    """모델 1개의 보강 필드 dict (요청 실패는 빈 값으로 둔다)."""
+def enrich_fields(mid, strict=False):
+    """모델 1개의 보강 필드 dict (요청 실패는 빈 값으로 둔다).
+    strict=True 면 모델 정보 API 나 config.json 을 받지 못했을 때 EnrichError (기존 값을 지켜야 하는 다시 조회용)."""
     q = urllib.parse.urlencode([("expand[]", e) for e in ("config", "safetensors", "sha")])
-    info = fetch(f"https://huggingface.co/api/models/{mid}?{q}") or {}
+    info = fetch(f"https://huggingface.co/api/models/{mid}?{q}")
+    if info is None and strict:
+        raise EnrichError("모델 정보 API 응답 없음")
+    info = info or {}
     api_cfg = info.get("config") or {}
     tmpl = ((api_cfg.get("tokenizer_config") or {}).get("chat_template")) or ""
     if isinstance(tmpl, list):
@@ -96,6 +110,8 @@ def enrich_fields(mid):
     params = ((info.get("safetensors") or {}).get("parameters")) or {}
 
     cfg = fetch(f"https://huggingface.co/{mid}/resolve/main/config.json", auth=True)
+    if cfg is None and strict:
+        raise EnrichError("config.json 응답 없음 (승인 필요이거나 요청 실패)")
     experts = pick(cfg or {}, "num_experts", "num_local_experts", "n_routed_experts") or api_cfg.get("num_experts")
     per_tok = pick(cfg or {}, "num_experts_per_tok", "moe_topk") or api_cfg.get("num_experts_per_tok")
 

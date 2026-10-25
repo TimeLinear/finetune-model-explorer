@@ -232,15 +232,13 @@ def order_keys(row, keys):
 
 # ---------- 점검 (5절) ----------
 
-def important_changes(old_item, new_item, new_context=None):
-    """라이선스·승인 필요 여부·컨텍스트 길이 변경. new_context 가 None 이면 컨텍스트는 비교하지 않는다."""
-    out = {}
-    for field in ("license", "gated"):
-        if old_item.get(field) != new_item.get(field):
-            out[field] = {"before": old_item.get(field), "after": new_item.get(field)}
-    if new_context is not None and old_item.get("max_position_embeddings") != new_context:
-        out["max_position_embeddings"] = {"before": old_item.get("max_position_embeddings"), "after": new_context}
-    return out
+IMPORTANT_FIELDS = ("license", "gated", "max_position_embeddings")
+
+
+def important_changes(old_item, new_item):
+    """라이선스·승인 필요 여부·컨텍스트 길이 변경 (컨텍스트 길이는 보강을 다시 조회한 모델에서만 바뀐다)."""
+    return {f: {"before": old_item.get(f), "after": new_item.get(f)}
+            for f in IMPORTANT_FIELDS if old_item.get(f) != new_item.get(f)}
 
 
 def chunk_check(old_status, new_status):
@@ -373,7 +371,8 @@ def prepare(root, ref_date, allow_large, ops, rs, cfg, log):
         "card_counts": count_by(checks, "result", CARD_RESULTS),
         "catalog": {"rows": len(catalog["rows"]), "missing_orgs": catalog.get("missing_orgs"),
                     "failed_orgs": catalog.get("failed_orgs")},
-        "hf_requests": {"catalog": catalog_requests, "card_checks": client.requests - catalog_requests},
+        "hf_requests": {"catalog": catalog_requests, "card_checks": client.requests - catalog_requests,
+                        "enrich": 0, "card_fetch": 0, "total": client.requests},  # 보강·카드 수집은 작업 공간 단계에서 더한다
         "decisions": {d: [r for r in results if r["decision"] == d] for d in DECISIONS},
         "card_checks": {c: [x for x in checks if x["result"] == c] for c in CARD_RESULTS},
         "labels": {"decision": DECISIONS, "card": CARD_RESULTS, "verdict": VERDICT_LABELS},
@@ -412,11 +411,13 @@ def prepare(root, ref_date, allow_large, ops, rs, cfg, log):
         create_workspace(root, work)
     enrich = sorted({r["model_id"] for r in results if r["decision"] in ("new", "reactivate")}
                     - {c["model_id"] for c in plan["carried"]})
-    context_check = sorted(t["model_id"] for t in plan["targets"] if t["card_result"] == "card_changed")
+    # 커밋 해시가 바뀐 유지 모델(카드 변경·메타데이터만 변경)은 config.json 도 바뀌었을 수 있어 보강을 다시 조회한다
+    reenrich = sorted({t["model_id"] for t in plan["targets"] if t["decision"] == "keep"}
+                      | {m["model_id"] for m in plan["metadata_only"] if m["decision"] == "keep"})
     write_json(work / "plan.json", {
         "date": day, "items": new_items, "item_keys": keys, "fallback": fallback,
         "targets": plan["targets"], "metadata_only": plan["metadata_only"], "enrich": enrich,
-        "context_check": context_check, "old_items": {it["model_id"]: it for it in items},
+        "reenrich": reenrich, "old_items": {it["model_id"]: it for it in items},
         "eval_models": erosion["eval_models"], "max_cost_usd": rs["max_cost_usd"],
         "max_llm_calls": ops.max_llm_calls,
     })
@@ -510,6 +511,12 @@ def run_apply(root, ref_date, allow_large, ops, rs=None, cfg=None, log=print):
         for k, v in build.get("timings_sec", {}).items():
             timings[k] = v
         report["carried"] = report.get("carried", []) + build["carried"]
+        hf = report["hf_requests"]
+        hf.update(build.get("hf_requests", {}))
+        hf["total"] = sum(hf.get(k, 0) for k in ("catalog", "card_checks", "enrich", "card_fetch"))
+        failed_enrich = [r["model_id"] for r in build.get("reenrich", []) if not r["updated"]]
+        if failed_enrich:
+            report["alerts"].append(f"보강 다시 조회 실패 (기존 값 유지): {failed_enrich}")
         gated = [c["model_id"] for c in report["carried"] if c.get("gated")]
         if gated:
             report["alerts"].append(f"게이트 승인 필요 (사람이 Hugging Face 에서 승인해야 함): {gated}")
