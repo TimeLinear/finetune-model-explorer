@@ -4,6 +4,7 @@
   "modality": {"text": "텍스트", "image": "이미지", "audio": "오디오", "video": "영상"},
   "stage": {"base": "베이스(사전학습)", "instruct": "인스트럭트(지시 튜닝)"},
   "category": {"general": "범용", "code": "코드", "math": "수학", "medical": "의료·생명", "document_ocr": "문서·OCR", "translation": "번역"},
+  "selection_group": {"region:KR": "한국 모델"},
   "arch_dense": "Dense",
   "arch_ssm": "상태 공간 모델 (Mamba 계열)",
   "arch_moe": "MoE (전문가 {num_experts}개 중 토큰당 {experts_per_token}개 사용)",
