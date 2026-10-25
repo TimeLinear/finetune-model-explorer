@@ -1,5 +1,9 @@
 # 데이터 갱신 설계
 
+- 상태: 확정
+- 최종 수정일: 2026-10-25
+- 관련 문서: [backlog.md](backlog.md), [decisions.md](decisions.md), [evaluation.md](../reports/evaluation.md), [collections.md](collections.md)
+
 > 상태: 설계 확정 (2026-10-25), 구현 전. 표의 수치는 잠정값이며 실제로 운용하면서 조정한다.
 
 ## 1. 목표

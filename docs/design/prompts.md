@@ -1,14 +1,23 @@
-# 프롬프트 (v0.4, 2026-10-23)
+# 프롬프트
 
-> v0.2: 샘플 3건 결과 반영 — 요약 프롬프트 S에 벤치마크 나열 제한(규칙 2), highlights 길이 규칙(규칙 7) 추가.
-> v0.3: P1에 카드 검색용 영어 문구(`card_query_en`) 추가, P2 설명 주석을 프롬프트 밖으로 이동, U 근거 개수 명확화.
-> v0.4: C2를 "맞는 후보만, 최대 limit개" 출력으로 변경, 구조화 출력 잘림 처리 추가. P1은 v0.3 유지 (v0.4 후보 미채택).
+- 상태: 확정
+- 최종 수정일: 2026-10-25
+- 관련 문서: [models.md](models.md), [retrieval-and-ui.md](retrieval-and-ui.md), [decisions.md](decisions.md), [evaluation.md](../reports/evaluation.md)
 
-> 구현 시 각 프롬프트는 `prompts/ko/<이름>.txt` 파일로 분리한다 (D-08: 언어별 프롬프트 파일). `{중괄호}`는 코드에서 채우는 변수.
-> 출력이 정해진 프롬프트는 전부 LangChain `with_structured_output`(Pydantic 스키마)로 강제한다. 프롬프트 안의 JSON 설명은 보조 수단이다.
-> few-shot 예시는 가상의 모델명(ExampleLM 등)만 쓴다.
+## 요약
+- 프롬프트 7개(S, P1, P2, P3, C1, C2, U)의 본문은 `prompts/ko/<이름>.txt`와 같고, 문서 버전은 v0.4다.
+- 현재 버전: S v0.2, P1 v0.3, P2 v0.3, P3 v0.1, C1 v0.1, C2 v0.4, U v0.3 (S·P1·P2·C2는 코드의 `PROMPT_VERSION` 상수와 같다).
+- 출력이 정해진 프롬프트는 `with_structured_output`(Pydantic 스키마)로 강제하고, 출력이 잘리면(`max_tokens`/`length`) 실패로 처리한다.
+- 모델 배정: S는 `LLM_SUMMARY`(claude-sonnet-5-5), 나머지는 `LLM_SMALL`·`LLM_ANSWER`(claude-haiku-5-5, 기본 프로필 `anthropic_direct`).
+- P1은 v0.3을 쓴다 — v0.4 후보가 평가에서 채택 규칙에 못 미쳤다. C2는 맞는 후보만 최대 `limit`개 출력한다 — 후보 전부를 판정하면 출력이 잘렸다.
 
-## 모델 배정 (확정)
+## 공통 규칙
+
+- 각 프롬프트는 `prompts/ko/<이름>.txt` 파일로 분리한다 (D-08: 언어별 프롬프트 파일). `{중괄호}`는 코드에서 채우는 변수.
+- 출력이 정해진 프롬프트는 전부 LangChain `with_structured_output`(Pydantic 스키마)로 강제한다. 프롬프트 안의 JSON 설명은 보조 수단이다.
+- few-shot 예시는 가상의 모델명(ExampleLM 등)만 쓴다.
+
+## 모델 배정
 
 | 프롬프트 | 모델 (설정 키) | 현재 (`anthropic_direct`) |
 |---|---|---|
@@ -20,11 +29,13 @@
 | P3. 답변 생성 | `LLM_ANSWER` | `claude-haiku-5-5` |
 | U. 사용 조건 점검표 | `LLM_ANSWER` | `claude-haiku-5-5` |
 
-- 초기 API 프록시 단계에서는 `LLM_SMALL`(P1·P2·C1·C2)이 gpt-5.4-nano였다. **2026-10-23에 기본 프로필을 `anthropic_direct`로 전환해 현재는 위 표와 같다** ([models.md](models.md) 참고).
+- 위 표는 기본 프로필 `anthropic_direct` 기준이다 ([models.md](models.md) 참고).
 
 ---
 
 ## S. 모델 소개 요약 (`summary.txt`) — 데이터 준비, 1회성
+
+**버전:** v0.2 (`data_prep/summaries.py` `PROMPT_VERSION`)
 
 **입력:** 모델 카드 본문(앞쪽 최대 24,000자), 항목 메타데이터 일부
 **출력 스키마**
@@ -69,9 +80,9 @@ card_quality: "sufficient" | "thin"   # 카드 정보가 빈약하면 thin
 
 ## P1. 검색어 추출 (`query_extract.txt`) — F2003
 
-**용도:** 모델 카드 검색용 영어 문구와, 추가 문서(한국어 위키백과) 검색어를 만든다.
+**버전:** v0.3 (`data_prep/wiki.py` `P1_PROMPT_VERSION`) — v0.4 후보는 평가에서 채택 규칙에 못 미쳐 쓰지 않는다 (전체 적중 189 → 188, [evaluation.md](../reports/evaluation.md)). 후보 문안: `tests/retrieval_eval/prompt_candidates/query_extract_v04.txt`.
 
-> v0.3 유지 (2026-10-23 평가). "속성어 보존 + license/acceptable use policy 덧붙이기" 규칙을 넣은 v0.4 후보를 Haiku로 비교했으나(평가 세트 99개 × 2회, `card_k`=6) 전체 적중 189 → 188, Llama 한계 사례 6 → 4로 채택 규칙에 못 미쳤다. Haiku는 v0.3에서도 "지역 제한"을 "region restriction"으로 옮겨 Llama EU 조각을 10회 모두 6위 안에서 찾았다. "regional availability" 문제는 nano의 문구였다. 후보 문안: `tests/retrieval_eval/prompt_candidates/query_extract_v04.txt`.
+**용도:** 모델 카드 검색용 영어 문구와, 추가 문서(한국어 위키백과) 검색어를 만든다.
 **출력 스키마**
 ```
 queries: list[{ query: str, reason: str }]   # 0~3개 (위키백과 검색용)
@@ -113,6 +124,8 @@ card_query_en: str                           # 모델 카드 검색용 영어 �
 
 ## P2. 후보 문서 선별 (`doc_select.txt`) — F2004
 
+**버전:** v0.3 (`data_prep/wiki.py` `P2_PROMPT_VERSION`)
+
 **입력:** 위키 검색 후보 목록(제목·요약만, 본문 받기 전)
 **출력 스키마**
 ```
@@ -141,6 +154,8 @@ decisions: list[{ index: int, selected: bool, reason: str }]
 ---
 
 ## P3. 답변 생성 (`answer.txt`) — F2007
+
+**버전:** v0.1
 
 **출력:** 마크다운 텍스트 (구조화 출력 아님). 후처리로 `[근거 n]`을 찾아 실제 인용된 근거만 화면에 표시 (F2008).
 
@@ -180,6 +195,8 @@ decisions: list[{ index: int, selected: bool, reason: str }]
 ---
 
 ## C1. 조건 → 필터·정렬 변환 (`condition_parse.txt`) — F2011
+
+**버전:** v0.1
 
 **출력 스키마**
 ```
@@ -227,7 +244,7 @@ limit: int                             # 기본 5, 최대 10
 
 ## C2. 조건 탐색 후보 선별 (`condition_select.txt`) — F2011
 
-> v0.4 (2026-10-23): 맞는 후보만, 최대 `limit`개 출력으로 변경. v0.3은 후보 30개 전부에 판정·이유를 써서 Haiku `max_tokens` 2048에서 잘렸다 (화면에는 맞는 후보만 표시하므로 나머지 판정은 쓰이지 않았다). v0.4 확인: Haiku 출력 468토큰, 다운로드 상위 5개와 일치. nano는 상위 후보 일부를 건너뛰었으나, 10-24부터 `LLM_SMALL`이 Haiku라 그대로 둔다.
+**버전:** v0.4 (`services/condition_search.py` `C2_PROMPT_VERSION`) — 맞는 후보만, 최대 `limit`개 출력한다. 후보 30개 전부에 판정·이유를 쓰면 Haiku `max_tokens` 2048에서 잘리고, 화면에는 맞는 후보만 표시하기 때문이다 (Haiku 출력 468토큰, 다운로드 상위 5개와 일치).
 
 **출력 스키마**
 ```
@@ -259,6 +276,8 @@ picks: list[{ model_id: str, reason: str }]   # 맞는 후보만, 최대 limit�
 ---
 
 ## U. 사용 조건 점검표 (`usage_check.txt`) — F2010 도메인 특화 기능
+
+**버전:** v0.3
 
 **용도:** 모델 하나를 고르면 도입 전에 확인할 조건을 근거와 함께 표로 보여 준다.
 **근거 수집:** 항목 메타데이터 1개 + 모델 카드에서 점검 항목별 고정 검색어로 청크를 가져온다 (예: "license terms commercial use", "supported languages", "context length", "intended use limitations", "image input"). 카드 청크는 중복 제거 후 최대 `usage_check.card_k`개(기본 8)이고, 여기에 항목 메타데이터 1개를 더한다. 점검표는 모델 고유 조건만 다루므로 위키 문서는 쓰지 않는다.

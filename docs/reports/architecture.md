@@ -1,5 +1,9 @@
 # RAG 파이프라인 구조
 
+- 상태: 확정
+- 최종 수정일: 2026-10-25
+- 관련 문서: [features.md](features.md), [collections.md](../design/collections.md), [retrieval-and-ui.md](../design/retrieval-and-ui.md), [prompts.md](../design/prompts.md)
+
 > 개발 기간 2026-10-21~23. 측정값은 각 항목에 적은 날짜 기준이다.
 > 기능 번호(F2001 등)는 [features.md](features.md)를 따른다.
 

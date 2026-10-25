@@ -1,5 +1,9 @@
 # 검증 결과
 
+- 상태: 확정
+- 최종 수정일: 2026-10-25
+- 관련 문서: [features.md](features.md), [rag-vs-no-rag.md](rag-vs-no-rag.md), [performance.md](performance.md), [retrieval-and-ui.md](../design/retrieval-and-ui.md)
+
 > 기능별 확인 항목과 결과. 상태: 통과 / 실패 / 미확인. 증빙은 `screenshots/` 아래 캡처 파일 또는 실행 출력.
 > 버전: 1단계 개발 후 점검 · 2026-10-22 (출처별 분리 검색·F2015 반영), 이후 2026-10-23 결과 추가
 > 실행 환경: Windows 11, Python 3.12.10, 임베딩 `BAAI/bge-m3`(CPU), 답변 `claude-haiku-5-5`, 검색어 추출·선별·조건 변환 `gpt-5.4-nano` (초기 개발 단계의 API 프록시 경유)

@@ -1,5 +1,9 @@
 # RAG 사용 전후 답변 비교 (F2015)
 
+- 상태: 확정
+- 최종 수정일: 2026-10-25
+- 관련 문서: [evaluation.md](evaluation.md), [domain.md](../design/domain.md), [models.md](../design/models.md)
+
 > 실행일 2026-10-22. 대표 질문은 [domain.md](../design/domain.md) 조건 3의 5개. 모델 호출은 모두 초기 개발 단계의 API 프록시를 거쳤다.
 > (a) RAG 없이: `claude-haiku-5-5`에 질문만 보냄 (시스템 프롬프트 없음). (b) RAG: 앱과 같은 순서(위키 수집 → retrieve → generate), 답변 모델 `claude-haiku-5-5`, 설정 기본값(카드 4 + 위키 2, 유사도 검색).
 > 추가 비교: (b)와 같은 근거·같은 메시지로 답변 모델만 바꿈. `claude-haiku-5-5` 칸은 (b) 결과를 그대로 쓴다(따로 다시 호출하지 않음).
