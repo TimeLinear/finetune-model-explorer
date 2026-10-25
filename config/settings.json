@@ -68,5 +68,14 @@
   "answer": {
     "lang": "ko",
     "history_turns": 4
+  },
+  "refresh": {
+    "auto": false,
+    "interval_days": 7,
+    "exit_rank_factor": 1.5,
+    "exit_streak_required": 2,
+    "protect_days": 30,
+    "grace_days": 30,
+    "max_cost_usd": 1.0
   }
 }

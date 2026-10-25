@@ -46,6 +46,13 @@
 | `http.max_retries` | 3 | 외부 요청(Hugging Face·위키백과) 재시도 최대 횟수 (NF2006) |
 | `answer.lang` | `ko` | 답변 언어 (D-08) |
 | `answer.history_turns` | 4 | 답변 생성 시 넣을 같은 모델의 최근 대화 턴 수 |
+| `refresh.auto` | false | 예약 실행으로 자동 갱신할지 (false면 수동 명령·버튼만, [data-refresh.md](data-refresh.md) 2절) |
+| `refresh.interval_days` | 7 | 자동 갱신 주기 (일) |
+| `refresh.exit_rank_factor` | 1.5 | 퇴출 순위 = 진입 순위(그룹별 선발 수 k) × 이 값, 올림 (data-refresh.md 4절) |
+| `refresh.exit_streak_required` | 2 | 퇴출 후보 상태가 이 횟수만큼 연속되면 보관 |
+| `refresh.protect_days` | 30 | 최근 이 기간(일) 안에 질문받은 모델은 퇴출하지 않는다 |
+| `refresh.grace_days` | 30 | 공개 후 이 기간(일) 안의 모델은 순위 기준 퇴출 판정에서 뺀다 |
+| `refresh.max_cost_usd` | 1.0 | 갱신 1회 비용 상한 (달러, 소개 요약 비용 기준) |
 
 - 근거 병합·중복 제거(F2006): 항목 청크 → 카드 청크(`card_k`) → 위키 청크(`wiki_k`) 순으로 합치고, 청크 ID 기준으로 중복을 제거한다. 근거 번호는 이 순서대로 1부터 붙인다 (항목 메타데이터가 항상 [근거 1]). 위키 청크가 모자라도 카드로 채우지 않는다.
 - 카드 검색 설정은 평가 세트(`tests/retrieval_eval/`, 33사례 × 표현 3개)로 바꿔 비교한다. 결과 기록은 [evaluation.md](../reports/evaluation.md).

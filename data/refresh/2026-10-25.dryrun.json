@@ -1,0 +1,4082 @@
+{
+ "date": "2026-10-25",
+ "dry_run": true,
+ "settings": {
+  "auto": false,
+  "interval_days": 7,
+  "exit_rank_factor": 1.5,
+  "exit_streak_required": 2,
+  "protect_days": 30,
+  "grace_days": 30,
+  "max_cost_usd": 1.0
+ },
+ "groups": {
+  "code": {
+   "size": 71,
+   "k": 21,
+   "exit_rank": 32,
+   "exit_candidates": 0
+  },
+  "document_ocr": {
+   "size": 12,
+   "k": 4,
+   "exit_rank": 6,
+   "exit_candidates": 0
+  },
+  "general": {
+   "size": 744,
+   "k": 134,
+   "exit_rank": 201,
+   "exit_candidates": 0
+  },
+  "math": {
+   "size": 37,
+   "k": 11,
+   "exit_rank": 17,
+   "exit_candidates": 0
+  },
+  "medical": {
+   "size": 5,
+   "k": 2,
+   "exit_rank": 3,
+   "exit_candidates": 0
+  },
+  "region:KR": {
+   "size": 55,
+   "k": 28,
+   "exit_rank": 42,
+   "exit_candidates": 0
+  },
+  "translation": {
+   "size": 6,
+   "k": 2,
+   "exit_rank": 3,
+   "exit_candidates": 0
+  }
+ },
+ "decision_counts": {
+  "new": 4,
+  "keep": 202,
+  "exit_candidate": 0,
+  "archive": 0,
+  "reactivate": 0,
+  "archived": 0,
+  "hold": 0
+ },
+ "card_counts": {
+  "unchanged": 201,
+  "metadata_only": 0,
+  "card_changed": 1,
+  "new_card": 4,
+  "fetch_failed": 0
+ },
+ "cost_estimate": {
+  "model": "claude-sonnet-5-5",
+  "price": {
+   "model": "claude-sonnet-5-5",
+   "input_usd_per_mtok": 2.0,
+   "output_usd_per_mtok": 10.0,
+   "batch_discount": 0.5
+  },
+  "token_estimate": {
+   "prompt_overhead": 800,
+   "chars_per_token": 2.0,
+   "output": 450
+  },
+  "card_max_chars": 24000,
+  "targets": 5,
+  "input_tokens": 35514,
+  "output_tokens": 2250,
+  "cost_usd": 0.0935,
+  "batch_cost_usd": 0.0468,
+  "max_cost_usd": 1.0,
+  "batch_within_limit": true
+ },
+ "decisions": {
+  "new": [
+   {
+    "model_id": "google/shieldgemma-9b",
+    "status": null,
+    "group": "general",
+    "rank": 92,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 119986,
+    "decision": "new",
+    "reason": "진입 순위 안 (92위 ≤ 134위)",
+    "vendor": "Google",
+    "params_b": 9.24,
+    "created": "2024-07-16"
+   },
+   {
+    "model_id": "microsoft/phi-1_5",
+    "status": null,
+    "group": "general",
+    "rank": 134,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 54800,
+    "decision": "new",
+    "reason": "진입 순위 안 (134위 ≤ 134위)",
+    "vendor": "Microsoft",
+    "params_b": 1.42,
+    "created": "2023-09-10"
+   },
+   {
+    "model_id": "skt/A.X-3.1-Light",
+    "status": null,
+    "group": "region:KR",
+    "rank": 27,
+    "size": 55,
+    "k": 28,
+    "exit_rank": 42,
+    "downloads_30d_adj": 983,
+    "decision": "new",
+    "reason": "진입 순위 안 (27위 ≤ 28위)",
+    "vendor": "SKT",
+    "params_b": 7.26,
+    "created": "2025-07-10"
+   },
+   {
+    "model_id": "kakaocorp/kanana-2-3b-base",
+    "status": null,
+    "group": "region:KR",
+    "rank": 28,
+    "size": 55,
+    "k": 28,
+    "exit_rank": 42,
+    "downloads_30d_adj": 866,
+    "decision": "new",
+    "reason": "진입 순위 안 (28위 ≤ 28위)",
+    "vendor": "Kakao",
+    "params_b": 3.18,
+    "created": "2026-07-24"
+   }
+  ],
+  "keep": [
+   {
+    "model_id": "01-ai/Yi-Coder-9B",
+    "status": "active",
+    "group_before": "code",
+    "group": "code",
+    "rank": 18,
+    "size": 71,
+    "k": 21,
+    "exit_rank": 32,
+    "downloads_30d_adj": 8902,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (18위 ≤ 32위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "01-ai/Yi-Coder-9B-Chat",
+    "status": "active",
+    "group_before": "code",
+    "group": "code",
+    "rank": 17,
+    "size": 71,
+    "k": 21,
+    "exit_rank": 32,
+    "downloads_30d_adj": 9698,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (17위 ≤ 32위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-Coder-1.5B",
+    "status": "active",
+    "group_before": "code",
+    "group": "code",
+    "rank": 6,
+    "size": 71,
+    "k": 21,
+    "exit_rank": 32,
+    "downloads_30d_adj": 381083,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (6위 ≤ 32위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "status": "active",
+    "group_before": "code",
+    "group": "code",
+    "rank": 4,
+    "size": 71,
+    "k": 21,
+    "exit_rank": 32,
+    "downloads_30d_adj": 410539,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (4위 ≤ 32위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-Coder-14B-Instruct",
+    "status": "active",
+    "group_before": "code",
+    "group": "code",
+    "rank": 1,
+    "size": 71,
+    "k": 21,
+    "exit_rank": 32,
+    "downloads_30d_adj": 1776211,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (1위 ≤ 32위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-Coder-3B",
+    "status": "active",
+    "group_before": "code",
+    "group": "code",
+    "rank": 15,
+    "size": 71,
+    "k": 21,
+    "exit_rank": 32,
+    "downloads_30d_adj": 28802,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (15위 ≤ 32위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-Coder-3B-Instruct",
+    "status": "active",
+    "group_before": "code",
+    "group": "code",
+    "rank": 3,
+    "size": 71,
+    "k": 21,
+    "exit_rank": 32,
+    "downloads_30d_adj": 434333,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (3위 ≤ 32위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-Coder-7B",
+    "status": "active",
+    "group_before": "code",
+    "group": "code",
+    "rank": 8,
+    "size": 71,
+    "k": 21,
+    "exit_rank": 32,
+    "downloads_30d_adj": 360760,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (8위 ≤ 32위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-Coder-7B-Instruct",
+    "status": "active",
+    "group_before": "code",
+    "group": "code",
+    "rank": 2,
+    "size": 71,
+    "k": 21,
+    "exit_rank": 32,
+    "downloads_30d_adj": 1457962,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (2위 ≤ 32위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "deepseek-ai/DeepSeek-Coder-V2-Lite-Base",
+    "status": "active",
+    "group_before": "code",
+    "group": "code",
+    "rank": 21,
+    "size": 71,
+    "k": 21,
+    "exit_rank": 32,
+    "downloads_30d_adj": 6238,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (21위 ≤ 32위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct",
+    "status": "active",
+    "group_before": "code",
+    "group": "code",
+    "rank": 7,
+    "size": 71,
+    "k": 21,
+    "exit_rank": 32,
+    "downloads_30d_adj": 368848,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (7위 ≤ 32위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "deepseek-ai/deepseek-coder-1.3b-instruct",
+    "status": "active",
+    "group_before": "code",
+    "group": "code",
+    "rank": 13,
+    "size": 71,
+    "k": 21,
+    "exit_rank": 32,
+    "downloads_30d_adj": 35128,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (13위 ≤ 32위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "deepseek-ai/deepseek-coder-6.7b-base",
+    "status": "active",
+    "group_before": "code",
+    "group": "code",
+    "rank": 10,
+    "size": 71,
+    "k": 21,
+    "exit_rank": 32,
+    "downloads_30d_adj": 110701,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (10위 ≤ 32위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "deepseek-ai/deepseek-coder-6.7b-instruct",
+    "status": "active",
+    "group_before": "code",
+    "group": "code",
+    "rank": 14,
+    "size": 71,
+    "k": 21,
+    "exit_rank": 32,
+    "downloads_30d_adj": 29573,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (14위 ≤ 32위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "deepseek-ai/deepseek-coder-7b-instruct-v1.5",
+    "status": "active",
+    "group_before": "code",
+    "group": "code",
+    "rank": 5,
+    "size": 71,
+    "k": 21,
+    "exit_rank": 32,
+    "downloads_30d_adj": 404192,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (5위 ≤ 32위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "google/codegemma-7b-it",
+    "status": "active",
+    "group_before": "code",
+    "group": "code",
+    "rank": 11,
+    "size": 71,
+    "k": 21,
+    "exit_rank": 32,
+    "downloads_30d_adj": 51505,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (11위 ≤ 32위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "ibm-granite/granite-3b-code-base-2k",
+    "status": "active",
+    "group_before": "code",
+    "group": "code",
+    "rank": 12,
+    "size": 71,
+    "k": 21,
+    "exit_rank": 32,
+    "downloads_30d_adj": 42141,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (12위 ≤ 32위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "meta-llama/CodeLlama-7b-Python-hf",
+    "status": "active",
+    "group_before": "code",
+    "group": "code",
+    "rank": 19,
+    "size": 71,
+    "k": 21,
+    "exit_rank": 32,
+    "downloads_30d_adj": 8403,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (19위 ≤ 32위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+    "status": "active",
+    "group_before": "code",
+    "group": "code",
+    "rank": 9,
+    "size": 71,
+    "k": 21,
+    "exit_rank": 32,
+    "downloads_30d_adj": 195608,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (9위 ≤ 32위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "mistralai/Devstral-Small-2507",
+    "status": "active",
+    "group_before": "code",
+    "group": "code",
+    "rank": 20,
+    "size": 71,
+    "k": 21,
+    "exit_rank": 32,
+    "downloads_30d_adj": 6824,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (20위 ≤ 32위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "mistralai/Mamba-Codestral-7B-v0.1",
+    "status": "active",
+    "group_before": "code",
+    "group": "code",
+    "rank": 16,
+    "size": 71,
+    "k": 21,
+    "exit_rank": 32,
+    "downloads_30d_adj": 19324,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (16위 ≤ 32위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "baidu/Unlimited-OCR",
+    "status": "active",
+    "group_before": "document_ocr",
+    "group": "document_ocr",
+    "rank": 1,
+    "size": 12,
+    "k": 4,
+    "exit_rank": 6,
+    "downloads_30d_adj": 2574074,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (1위 ≤ 6위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "deepseek-ai/DeepSeek-OCR",
+    "status": "active",
+    "group_before": "document_ocr",
+    "group": "document_ocr",
+    "rank": 2,
+    "size": 12,
+    "k": 4,
+    "exit_rank": 6,
+    "downloads_30d_adj": 2072209,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (2위 ≤ 6위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "deepseek-ai/DeepSeek-OCR-2",
+    "status": "active",
+    "group_before": "document_ocr",
+    "group": "document_ocr",
+    "rank": 4,
+    "size": 12,
+    "k": 4,
+    "exit_rank": 6,
+    "downloads_30d_adj": 529743,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (4위 ≤ 6위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "tencent/HunyuanOCR",
+    "status": "active",
+    "group_before": "document_ocr",
+    "group": "document_ocr",
+    "rank": 3,
+    "size": 12,
+    "k": 4,
+    "exit_rank": 6,
+    "downloads_30d_adj": 830713,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (3위 ≤ 6위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "allenai/OLMo-2-0425-1B",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 96,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 114094,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (96위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "allenai/OLMoE-1B-7B-0125-Instruct",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 122,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 68756,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (122위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "allenai/OLMoE-1B-7B-0924",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 129,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 64096,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (129위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "allenai/Olmo-3-1025-7B",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 81,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 156273,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (81위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "allenai/Olmo-3-7B-Instruct",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 60,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 262454,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (60위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "allenai/Olmo-3-7B-Think",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 40,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 485730,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (40위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen-7B",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 125,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 67277,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (125위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen1.5-1.8B-Chat",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 74,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 182893,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (74위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen1.5-7B",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 117,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 74733,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (117위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen1.5-MoE-A2.7B",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 106,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 85292,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (106위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen2-1.5B",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 90,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 123687,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (90위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen2-1.5B-Instruct",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 73,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 184890,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (73위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen2-7B",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 68,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 218413,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (68위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen2-7B-Instruct",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 71,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 193617,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (71위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen2-VL-2B-Instruct",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 23,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 1106656,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (23위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 34,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 601271,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (34위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-1.5B",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 31,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 638408,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (31위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 11,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 4590606,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (11위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-14B",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 105,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 85625,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (105위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-14B-Instruct",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 26,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 772764,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (26위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-3B",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 72,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 192480,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (72위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-3B-Instruct",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 14,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 3609164,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (14위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-7B",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 41,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 437832,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (41위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 7,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 5732337,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (7위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-7B-Instruct-1M",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 109,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 82937,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (109위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 21,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 1636755,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (21위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-VL-7B-Instruct",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 9,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 5133806,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (9위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen3-1.7B",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 12,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 4092300,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (12위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen3-1.7B-Base",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 35,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 571928,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (35위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen3-14B",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 2,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 10428928,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (2위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen3-14B-Base",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 101,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 103980,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (101위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen3-4B",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 1,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 11268043,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (1위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen3-4B-Base",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 37,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 558184,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (37위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 17,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 2577859,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (17위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen3-4B-Thinking-2507",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 30,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 646075,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (30위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen3-8B",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 3,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 8114096,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (3위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen3-8B-Base",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 27,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 732423,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (27위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen3-VL-2B-Instruct",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 19,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 1776668,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (19위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen3-VL-2B-Thinking",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 131,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 58300,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (131위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen3-VL-4B-Instruct",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 13,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 3796825,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (13위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen3-VL-8B-Instruct",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 8,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 5518605,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (8위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen3-VL-8B-Thinking",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 99,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 109458,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (99위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen3.5-2B",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 16,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 3125364,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (16위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen3.5-2B-Base",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 57,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 314720,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (57위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen3.5-4B",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 4,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 7430684,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (4위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen3.5-4B-Base",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 29,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 714056,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (29위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen3.5-9B",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 5,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 6085485,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (5위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen3.5-9B-Base",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 50,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 351976,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (50위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "baidu/ERNIE-4.5-21B-A3B-Thinking",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 126,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 67271,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (126위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 49,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 355790,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (49위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 100,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 109377,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (100위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 22,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 1274971,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (22위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 59,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 292391,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (59위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 58,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 309108,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (58위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "deepseek-ai/DeepSeek-V2-Lite",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 82,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 141573,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (82위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "deepseek-ai/DeepSeek-V2-Lite-Chat",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 127,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 65262,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (127위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "deepseek-ai/deepseek-vl2-tiny",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 88,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 127455,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (88위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "google/gemma-2-2b",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 98,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 110336,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (98위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "google/gemma-2-2b-it",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 65,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 236988,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (65위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "google/gemma-2-9b-it",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 70,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 200361,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (70위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "google/gemma-2b",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 95,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 114974,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (95위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "google/gemma-3-12b-it",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 56,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 329716,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (56위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "google/gemma-3-4b-it",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 25,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 970319,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (25위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "google/gemma-3-4b-pt",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 64,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 250003,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (64위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "google/gemma-3n-E2B-it",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 110,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 82685,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (110위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "google/paligemma-3b-mix-224",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 119,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 74165,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (119위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "google/paligemma-3b-pt-224",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 61,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 260565,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (61위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "google/t5gemma-2b-2b-ul2-it",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 93,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 118366,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (93위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 62,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 255464,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (62위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "HuggingFaceTB/SmolLM3-3B",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 28,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 718665,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (28위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "HuggingFaceTB/SmolLM3-3B-Base",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 115,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 77135,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (115위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 120,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 72063,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (120위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "ibm-granite/granite-3.0-1b-a400m-instruct",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 148,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 39204,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (148위 ≤ 201위) (진입 순위와 퇴출 순위 사이)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "ibm-granite/granite-3.3-2b-instruct",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 54,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 338247,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (54위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "ibm-granite/granite-3.3-8b-instruct",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 121,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 69355,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (121위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "ibm-granite/granite-4.0-3b-vision",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 123,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 68528,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (123위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "ibm-granite/granite-4.1-3b",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 33,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 602022,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (33위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "ibm-granite/granite-4.1-8b",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 103,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 89098,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (103위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "ibm-granite/granite-4.2-8b",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 113,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 78274,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (113위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "ibm-granite/granite-vision-4.1-4b",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 91,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 123417,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (91위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "LiquidAI/LFM2.5-1.2B-Instruct",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 97,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 113772,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (97위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "LiquidAI/LFM2.5-2.6B",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 102,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 97589,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (102위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "meta-llama/Llama-2-13b-chat-hf",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 79,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 175402,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (79위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "meta-llama/Llama-2-7b-chat-hf",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 84,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 132956,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (84위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "meta-llama/Llama-2-7b-hf",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 44,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 419550,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (44위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "meta-llama/Llama-3.1-8B",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 32,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 602534,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (32위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 10,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 4833514,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (10위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 133,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 57014,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (133위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "meta-llama/Llama-3.2-1B",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 38,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 534994,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (38위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "meta-llama/Llama-3.2-1B-Instruct",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 15,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 3488705,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (15위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "meta-llama/Llama-3.2-3B",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 66,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 234396,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (66위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "meta-llama/Llama-3.2-3B-Instruct",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 24,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 1106217,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (24위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "meta-llama/Meta-Llama-3-8B",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 83,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 133144,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (83위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 53,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 340477,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (53위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "microsoft/Phi-3-mini-128k-instruct",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 63,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 251473,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (63위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "microsoft/Phi-3-mini-4k-instruct",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 52,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 341977,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (52위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "microsoft/Phi-3.5-mini-instruct",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 46,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 380951,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (46위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "microsoft/Phi-3.5-vision-instruct",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 39,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 486719,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (39위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "microsoft/Phi-4-mini-instruct",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 51,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 342842,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (51위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "microsoft/phi-2",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 42,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 430490,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (42위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "microsoft/phi-4",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 47,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 368280,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (47위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "mistralai/Magistral-Small-2506",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 124,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 67599,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (124위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "mistralai/Ministral-3-14B-Instruct-2512",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 89,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 126480,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (89위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "mistralai/Ministral-3-14B-Reasoning-2512",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 80,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 171570,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (80위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "mistralai/Ministral-3-3B-Instruct-2512",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 104,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 87360,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (104위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "mistralai/Ministral-3-8B-Instruct-2512",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 112,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 79382,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (112위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "mistralai/Ministral-8B-Instruct-2410",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 132,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 57760,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (132위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "mistralai/Mistral-7B-Instruct-v0.1",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 94,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 116639,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (94위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "mistralai/Mistral-7B-Instruct-v0.2",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 18,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 1780710,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (18위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 20,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 1724933,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (20위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "mistralai/Mistral-7B-v0.1",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 48,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 355829,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (48위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "mistralai/Mistral-7B-v0.3",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 76,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 180793,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (76위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "mistralai/Mistral-Nemo-Base-2407",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 86,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 129867,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (86위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "mistralai/Mistral-Nemo-Instruct-2407",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 77,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 178317,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (77위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "mistralai/Mistral-Small-24B-Instruct-2501",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 116,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 75361,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (116위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 67,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 223802,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (67위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 75,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 181449,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (75위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "moonshotai/Kimi-VL-A3B-Instruct",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 87,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 128940,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (87위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "nvidia/Cosmos-Reason2-2B",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 36,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 571428,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (36위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "nvidia/Cosmos-Reason2-8B",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 107,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 84651,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (107위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "nvidia/Cosmos3-Nano",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 85,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 130425,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (85위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "nvidia/Llama-3.1-Nemotron-Nano-VL-8B-V1",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 111,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 82278,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (111위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "nvidia/LocateAnything-3B",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 45,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 389968,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (45위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 69,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 208094,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (69위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "nvidia/Nemotron-H-8B-Base-8K",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 130,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 58612,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (130위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "nvidia/Nemotron-Labs-Diffusion-3B",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 128,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 64823,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (128위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "nvidia/Nemotron-Labs-Diffusion-8B-Base",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 118,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 74549,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (118위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "openai/gpt-oss-20b",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 6,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 5766151,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (6위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "internlm/internlm2-chat-7b",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 136,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 49705,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (136위 ≤ 201위) (진입 순위와 퇴출 순위 사이)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "swiss-ai/Apertus-8B-Instruct-2509",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 43,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 420291,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (43위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "swiss-ai/Apertus-v1.5-8B",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 55,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 331302,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (55위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "tiiuae/falcon-7b",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 78,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 176136,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (78위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "zai-org/GLM-4.1V-9B-Thinking",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 108,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 83775,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (108위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "zai-org/GLM-4.6V-Flash",
+    "status": "active",
+    "group_before": "general",
+    "group": "general",
+    "rank": 114,
+    "size": 744,
+    "k": 134,
+    "exit_rank": 201,
+    "downloads_30d_adj": 77323,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (114위 ≤ 201위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "allenai/Olmo-3-7B-RL-Zero-Math",
+    "status": "active",
+    "group_before": "math",
+    "group": "math",
+    "rank": 5,
+    "size": 37,
+    "k": 11,
+    "exit_rank": 17,
+    "downloads_30d_adj": 3301,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (5위 ≤ 17위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "allenai/Olmo-3.1-7B-RL-Zero-Math",
+    "status": "active",
+    "group_before": "math",
+    "group": "math",
+    "rank": 6,
+    "size": 37,
+    "k": 11,
+    "exit_rank": 17,
+    "downloads_30d_adj": 2956,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (6위 ≤ 17위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen2-Math-1.5B",
+    "status": "active",
+    "group_before": "math",
+    "group": "math",
+    "rank": 9,
+    "size": 37,
+    "k": 11,
+    "exit_rank": 17,
+    "downloads_30d_adj": 1798,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (9위 ≤ 17위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-Math-1.5B",
+    "status": "active",
+    "group_before": "math",
+    "group": "math",
+    "rank": 1,
+    "size": 37,
+    "k": 11,
+    "exit_rank": 17,
+    "downloads_30d_adj": 231346,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (1위 ≤ 17위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "status": "active",
+    "group_before": "math",
+    "group": "math",
+    "rank": 2,
+    "size": 37,
+    "k": 11,
+    "exit_rank": 17,
+    "downloads_30d_adj": 132541,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (2위 ≤ 17위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-Math-7B",
+    "status": "active",
+    "group_before": "math",
+    "group": "math",
+    "rank": 4,
+    "size": 37,
+    "k": 11,
+    "exit_rank": 17,
+    "downloads_30d_adj": 34321,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (4위 ≤ 17위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-Math-7B-Instruct",
+    "status": "active",
+    "group_before": "math",
+    "group": "math",
+    "rank": 3,
+    "size": 37,
+    "k": 11,
+    "exit_rank": 17,
+    "downloads_30d_adj": 45479,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (3위 ≤ 17위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "deepseek-ai/deepseek-math-7b-rl",
+    "status": "active",
+    "group_before": "math",
+    "group": "math",
+    "rank": 8,
+    "size": 37,
+    "k": 11,
+    "exit_rank": 17,
+    "downloads_30d_adj": 1889,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (8위 ≤ 17위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "mistralai/Mathstral-7B-v0.1",
+    "status": "active",
+    "group_before": "math",
+    "group": "math",
+    "rank": 7,
+    "size": 37,
+    "k": 11,
+    "exit_rank": 17,
+    "downloads_30d_adj": 2030,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (7위 ≤ 17위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "nvidia/OpenMath-Nemotron-14B",
+    "status": "active",
+    "group_before": "math",
+    "group": "math",
+    "rank": 11,
+    "size": 37,
+    "k": 11,
+    "exit_rank": 17,
+    "downloads_30d_adj": 1307,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (11위 ≤ 17위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "internlm/internlm2-math-plus-7b",
+    "status": "active",
+    "group_before": "math",
+    "group": "math",
+    "rank": 10,
+    "size": 37,
+    "k": 11,
+    "exit_rank": 17,
+    "downloads_30d_adj": 1384,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (10위 ≤ 17위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "google/medgemma-1.5-4b-it",
+    "status": "active",
+    "group_before": "medical",
+    "group": "medical",
+    "rank": 2,
+    "size": 5,
+    "k": 2,
+    "exit_rank": 3,
+    "downloads_30d_adj": 125072,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (2위 ≤ 3위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "google/medgemma-4b-it",
+    "status": "active",
+    "group_before": "medical",
+    "group": "medical",
+    "rank": 1,
+    "size": 5,
+    "k": 2,
+    "exit_rank": 3,
+    "downloads_30d_adj": 415640,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (1위 ≤ 3위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "K-intelligence/Midm-2.0-Base-Instruct",
+    "status": "active",
+    "group_before": "region:KR",
+    "group": "region:KR",
+    "rank": 2,
+    "size": 55,
+    "k": 28,
+    "exit_rank": 42,
+    "downloads_30d_adj": 86318,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (2위 ≤ 42위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "K-intelligence/Midm-2.0-Mini-Instruct",
+    "status": "active",
+    "group_before": "region:KR",
+    "group": "region:KR",
+    "rank": 6,
+    "size": 55,
+    "k": 28,
+    "exit_rank": 42,
+    "downloads_30d_adj": 26271,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (6위 ≤ 42위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "kakaocorp/kanana-1.5-2.1b-base",
+    "status": "active",
+    "group_before": "region:KR",
+    "group": "region:KR",
+    "rank": 21,
+    "size": 55,
+    "k": 28,
+    "exit_rank": 42,
+    "downloads_30d_adj": 1582,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (21위 ≤ 42위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "kakaocorp/kanana-1.5-2.1b-instruct-2505",
+    "status": "active",
+    "group_before": "region:KR",
+    "group": "region:KR",
+    "rank": 16,
+    "size": 55,
+    "k": 28,
+    "exit_rank": 42,
+    "downloads_30d_adj": 4234,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (16위 ≤ 42위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "kakaocorp/kanana-1.5-8b-base",
+    "status": "active",
+    "group_before": "region:KR",
+    "group": "region:KR",
+    "rank": 18,
+    "size": 55,
+    "k": 28,
+    "exit_rank": 42,
+    "downloads_30d_adj": 2801,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (18위 ≤ 42위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "kakaocorp/kanana-1.5-8b-instruct-2505",
+    "status": "active",
+    "group_before": "region:KR",
+    "group": "region:KR",
+    "rank": 14,
+    "size": 55,
+    "k": 28,
+    "exit_rank": 42,
+    "downloads_30d_adj": 7243,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (14위 ≤ 42위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "kakaocorp/kanana-1.5-v-3b-instruct",
+    "status": "active",
+    "group_before": "region:KR",
+    "group": "region:KR",
+    "rank": 9,
+    "size": 55,
+    "k": 28,
+    "exit_rank": 42,
+    "downloads_30d_adj": 18454,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (9위 ≤ 42위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "kakaocorp/kanana-2-1.3b-instruct",
+    "status": "active",
+    "group_before": "region:KR",
+    "group": "region:KR",
+    "rank": 19,
+    "size": 55,
+    "k": 28,
+    "exit_rank": 42,
+    "downloads_30d_adj": 2058,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (19위 ≤ 42위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "kakaocorp/kanana-2-3b-instruct",
+    "status": "active",
+    "group_before": "region:KR",
+    "group": "region:KR",
+    "rank": 13,
+    "size": 55,
+    "k": 28,
+    "exit_rank": 42,
+    "downloads_30d_adj": 10987,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (13위 ≤ 42위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "kakaocorp/kanana-nano-2.1b-instruct",
+    "status": "active",
+    "group_before": "region:KR",
+    "group": "region:KR",
+    "rank": 25,
+    "size": 55,
+    "k": 28,
+    "exit_rank": 42,
+    "downloads_30d_adj": 1148,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (25위 ≤ 42위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "LGAI-EXAONE/EXAONE-3.0-7.8B-Instruct",
+    "status": "active",
+    "group_before": "region:KR",
+    "group": "region:KR",
+    "rank": 10,
+    "size": 55,
+    "k": 28,
+    "exit_rank": 42,
+    "downloads_30d_adj": 14504,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (10위 ≤ 42위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct",
+    "status": "active",
+    "group_before": "region:KR",
+    "group": "region:KR",
+    "rank": 4,
+    "size": 55,
+    "k": 28,
+    "exit_rank": 42,
+    "downloads_30d_adj": 53744,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (4위 ≤ 42위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+    "status": "active",
+    "group_before": "region:KR",
+    "group": "region:KR",
+    "rank": 1,
+    "size": 55,
+    "k": 28,
+    "exit_rank": 42,
+    "downloads_30d_adj": 258491,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (1위 ≤ 42위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "LGAI-EXAONE/EXAONE-4.0-1.2B",
+    "status": "active",
+    "group_before": "region:KR",
+    "group": "region:KR",
+    "rank": 11,
+    "size": 55,
+    "k": 28,
+    "exit_rank": 42,
+    "downloads_30d_adj": 14235,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (11위 ≤ 42위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "LGAI-EXAONE/EXAONE-Deep-2.4B",
+    "status": "active",
+    "group_before": "region:KR",
+    "group": "region:KR",
+    "rank": 20,
+    "size": 55,
+    "k": 28,
+    "exit_rank": 42,
+    "downloads_30d_adj": 1773,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (20위 ≤ 42위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "LGAI-EXAONE/EXAONE-Deep-7.8B",
+    "status": "active",
+    "group_before": "region:KR",
+    "group": "region:KR",
+    "rank": 17,
+    "size": 55,
+    "k": 28,
+    "exit_rank": 42,
+    "downloads_30d_adj": 3720,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (17위 ≤ 42위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "naver-hyperclovax/HyperCLOVAX-SEED-Omni-8B",
+    "status": "active",
+    "group_before": "region:KR",
+    "group": "region:KR",
+    "rank": 24,
+    "size": 55,
+    "k": 28,
+    "exit_rank": 42,
+    "downloads_30d_adj": 1173,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (24위 ≤ 42위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-1.5B",
+    "status": "active",
+    "group_before": "region:KR",
+    "group": "region:KR",
+    "rank": 26,
+    "size": 55,
+    "k": 28,
+    "exit_rank": 42,
+    "downloads_30d_adj": 1125,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (26위 ≤ 42위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "naver-hyperclovax/HyperCLOVAX-SEED-Think-14B",
+    "status": "active",
+    "group_before": "region:KR",
+    "group": "region:KR",
+    "rank": 8,
+    "size": 55,
+    "k": 28,
+    "exit_rank": 42,
+    "downloads_30d_adj": 20336,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (8위 ≤ 42위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "naver-hyperclovax/HyperCLOVAX-SEED-Vision-Instruct-3B",
+    "status": "active",
+    "group_before": "region:KR",
+    "group": "region:KR",
+    "rank": 7,
+    "size": 55,
+    "k": 28,
+    "exit_rank": 42,
+    "downloads_30d_adj": 22113,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (7위 ≤ 42위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "NCSOFT/VARCO-VISION-2.0-1.7B",
+    "status": "active",
+    "group_before": "region:KR",
+    "group": "region:KR",
+    "rank": 22,
+    "size": 55,
+    "k": 28,
+    "exit_rank": 42,
+    "downloads_30d_adj": 1240,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (22위 ≤ 42위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "NCSOFT/VARCO-VISION-2.0-1.7B-OCR",
+    "status": "active",
+    "group_before": "region:KR",
+    "group": "region:KR",
+    "rank": 33,
+    "size": 55,
+    "k": 28,
+    "exit_rank": 42,
+    "downloads_30d_adj": 549,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (33위 ≤ 42위) (진입 순위와 퇴출 순위 사이)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "skt/A.X-4.0-Light",
+    "status": "active",
+    "group_before": "region:KR",
+    "group": "region:KR",
+    "rank": 3,
+    "size": 55,
+    "k": 28,
+    "exit_rank": 42,
+    "downloads_30d_adj": 79290,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (3위 ≤ 42위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "skt/ko-gpt-trinity-1.2B-v0.5",
+    "status": "active",
+    "group_before": "region:KR",
+    "group": "region:KR",
+    "rank": 31,
+    "size": 55,
+    "k": 28,
+    "exit_rank": 42,
+    "downloads_30d_adj": 574,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (31위 ≤ 42위) (진입 순위와 퇴출 순위 사이)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "trillionlabs/Tri-7B",
+    "status": "active",
+    "group_before": "region:KR",
+    "group": "region:KR",
+    "rank": 23,
+    "size": 55,
+    "k": 28,
+    "exit_rank": 42,
+    "downloads_30d_adj": 1213,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (23위 ≤ 42위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "upstage/SOLAR-10.7B-Instruct-v1.0",
+    "status": "active",
+    "group_before": "region:KR",
+    "group": "region:KR",
+    "rank": 5,
+    "size": 55,
+    "k": 28,
+    "exit_rank": 42,
+    "downloads_30d_adj": 37543,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (5위 ≤ 42위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "upstage/SOLAR-10.7B-v1.0",
+    "status": "active",
+    "group_before": "region:KR",
+    "group": "region:KR",
+    "rank": 12,
+    "size": 55,
+    "k": 28,
+    "exit_rank": 42,
+    "downloads_30d_adj": 13453,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (12위 ≤ 42위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "upstage/solar-pro-preview-instruct",
+    "status": "active",
+    "group_before": "region:KR",
+    "group": "region:KR",
+    "rank": 15,
+    "size": 55,
+    "k": 28,
+    "exit_rank": 42,
+    "downloads_30d_adj": 4949,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (15위 ≤ 42위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "google/translategemma-12b-it",
+    "status": "active",
+    "group_before": "translation",
+    "group": "translation",
+    "rank": 2,
+    "size": 6,
+    "k": 2,
+    "exit_rank": 3,
+    "downloads_30d_adj": 7862,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (2위 ≤ 3위)",
+    "streak_if_applied": 0
+   },
+   {
+    "model_id": "google/translategemma-4b-it",
+    "status": "active",
+    "group_before": "translation",
+    "group": "translation",
+    "rank": 1,
+    "size": 6,
+    "k": 2,
+    "exit_rank": 3,
+    "downloads_30d_adj": 12492,
+    "decision": "keep",
+    "reason": "퇴출 순위 안 (1위 ≤ 3위)",
+    "streak_if_applied": 0
+   }
+  ],
+  "exit_candidate": [],
+  "archive": [],
+  "reactivate": [],
+  "archived": [],
+  "hold": []
+ },
+ "card_checks": {
+  "unchanged": [
+   {
+    "model_id": "01-ai/Yi-Coder-9B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "01-ai/Yi-Coder-9B-Chat",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-Coder-1.5B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-Coder-14B-Instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-Coder-3B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-Coder-3B-Instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-Coder-7B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-Coder-7B-Instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "deepseek-ai/DeepSeek-Coder-V2-Lite-Base",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "deepseek-ai/deepseek-coder-1.3b-instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "deepseek-ai/deepseek-coder-6.7b-base",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "deepseek-ai/deepseek-coder-6.7b-instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "deepseek-ai/deepseek-coder-7b-instruct-v1.5",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "google/codegemma-7b-it",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "ibm-granite/granite-3b-code-base-2k",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "meta-llama/CodeLlama-7b-Python-hf",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "mistralai/Devstral-Small-2507",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "mistralai/Mamba-Codestral-7B-v0.1",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "baidu/Unlimited-OCR",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "deepseek-ai/DeepSeek-OCR",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "deepseek-ai/DeepSeek-OCR-2",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "tencent/HunyuanOCR",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "allenai/OLMo-2-0425-1B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "allenai/OLMoE-1B-7B-0125-Instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "allenai/OLMoE-1B-7B-0924",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "allenai/Olmo-3-1025-7B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "allenai/Olmo-3-7B-Instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "allenai/Olmo-3-7B-Think",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen-7B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen1.5-1.8B-Chat",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen1.5-7B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen1.5-MoE-A2.7B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen2-1.5B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen2-1.5B-Instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen2-7B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen2-7B-Instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen2-VL-2B-Instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-1.5B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-14B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-14B-Instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-3B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-3B-Instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-7B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-7B-Instruct-1M",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-VL-7B-Instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen3-1.7B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen3-1.7B-Base",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen3-14B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen3-14B-Base",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen3-4B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen3-4B-Base",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen3-4B-Thinking-2507",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen3-8B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen3-8B-Base",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen3-VL-2B-Instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen3-VL-2B-Thinking",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen3-VL-4B-Instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen3-VL-8B-Instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen3-VL-8B-Thinking",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen3.5-2B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen3.5-2B-Base",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen3.5-4B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen3.5-4B-Base",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen3.5-9B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen3.5-9B-Base",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "baidu/ERNIE-4.5-21B-A3B-Thinking",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "deepseek-ai/DeepSeek-V2-Lite",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "deepseek-ai/DeepSeek-V2-Lite-Chat",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "deepseek-ai/deepseek-vl2-tiny",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "google/gemma-2-2b",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "google/gemma-2-2b-it",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "google/gemma-2-9b-it",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "google/gemma-2b",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "google/gemma-3-12b-it",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "google/gemma-3-4b-it",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "google/gemma-3-4b-pt",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "google/gemma-3n-E2B-it",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "google/paligemma-3b-mix-224",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "google/paligemma-3b-pt-224",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "google/t5gemma-2b-2b-ul2-it",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "HuggingFaceTB/SmolLM3-3B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "HuggingFaceTB/SmolLM3-3B-Base",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "ibm-granite/granite-3.0-1b-a400m-instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "ibm-granite/granite-3.3-2b-instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "ibm-granite/granite-3.3-8b-instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "ibm-granite/granite-4.0-3b-vision",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "ibm-granite/granite-4.1-3b",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "ibm-granite/granite-4.1-8b",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "ibm-granite/granite-4.2-8b",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "ibm-granite/granite-vision-4.1-4b",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "LiquidAI/LFM2.5-1.2B-Instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "meta-llama/Llama-2-13b-chat-hf",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "meta-llama/Llama-2-7b-chat-hf",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "meta-llama/Llama-2-7b-hf",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "meta-llama/Llama-3.1-8B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "meta-llama/Llama-3.2-1B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "meta-llama/Llama-3.2-1B-Instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "meta-llama/Llama-3.2-3B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "meta-llama/Llama-3.2-3B-Instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "meta-llama/Meta-Llama-3-8B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "microsoft/Phi-3-mini-128k-instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "microsoft/Phi-3-mini-4k-instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "microsoft/Phi-3.5-mini-instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "microsoft/Phi-3.5-vision-instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "microsoft/Phi-4-mini-instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "microsoft/phi-2",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "microsoft/phi-4",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "mistralai/Magistral-Small-2506",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "mistralai/Ministral-3-14B-Instruct-2512",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "mistralai/Ministral-3-14B-Reasoning-2512",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "mistralai/Ministral-3-3B-Instruct-2512",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "mistralai/Ministral-3-8B-Instruct-2512",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "mistralai/Ministral-8B-Instruct-2410",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "mistralai/Mistral-7B-Instruct-v0.1",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "mistralai/Mistral-7B-Instruct-v0.2",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "mistralai/Mistral-7B-v0.1",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "mistralai/Mistral-7B-v0.3",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "mistralai/Mistral-Nemo-Base-2407",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "mistralai/Mistral-Nemo-Instruct-2407",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "mistralai/Mistral-Small-24B-Instruct-2501",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "moonshotai/Kimi-VL-A3B-Instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "nvidia/Cosmos-Reason2-2B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "nvidia/Cosmos-Reason2-8B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "nvidia/Cosmos3-Nano",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "nvidia/Llama-3.1-Nemotron-Nano-VL-8B-V1",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "nvidia/LocateAnything-3B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "nvidia/Nemotron-H-8B-Base-8K",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "nvidia/Nemotron-Labs-Diffusion-3B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "nvidia/Nemotron-Labs-Diffusion-8B-Base",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "openai/gpt-oss-20b",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "internlm/internlm2-chat-7b",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "swiss-ai/Apertus-8B-Instruct-2509",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "swiss-ai/Apertus-v1.5-8B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "tiiuae/falcon-7b",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "zai-org/GLM-4.1V-9B-Thinking",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "zai-org/GLM-4.6V-Flash",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "allenai/Olmo-3-7B-RL-Zero-Math",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "allenai/Olmo-3.1-7B-RL-Zero-Math",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen2-Math-1.5B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-Math-1.5B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-Math-7B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "Qwen/Qwen2.5-Math-7B-Instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "deepseek-ai/deepseek-math-7b-rl",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "mistralai/Mathstral-7B-v0.1",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "nvidia/OpenMath-Nemotron-14B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "internlm/internlm2-math-plus-7b",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "google/medgemma-1.5-4b-it",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "google/medgemma-4b-it",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "K-intelligence/Midm-2.0-Base-Instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "K-intelligence/Midm-2.0-Mini-Instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "kakaocorp/kanana-1.5-2.1b-base",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "kakaocorp/kanana-1.5-2.1b-instruct-2505",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "kakaocorp/kanana-1.5-8b-base",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "kakaocorp/kanana-1.5-8b-instruct-2505",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "kakaocorp/kanana-1.5-v-3b-instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "kakaocorp/kanana-2-1.3b-instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "kakaocorp/kanana-2-3b-instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "kakaocorp/kanana-nano-2.1b-instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "LGAI-EXAONE/EXAONE-3.0-7.8B-Instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "LGAI-EXAONE/EXAONE-4.0-1.2B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "LGAI-EXAONE/EXAONE-Deep-2.4B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "LGAI-EXAONE/EXAONE-Deep-7.8B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "naver-hyperclovax/HyperCLOVAX-SEED-Omni-8B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-1.5B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "naver-hyperclovax/HyperCLOVAX-SEED-Think-14B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "naver-hyperclovax/HyperCLOVAX-SEED-Vision-Instruct-3B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "NCSOFT/VARCO-VISION-2.0-1.7B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "NCSOFT/VARCO-VISION-2.0-1.7B-OCR",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "skt/A.X-4.0-Light",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "skt/ko-gpt-trinity-1.2B-v0.5",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "trillionlabs/Tri-7B",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "upstage/SOLAR-10.7B-Instruct-v1.0",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "upstage/SOLAR-10.7B-v1.0",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "upstage/solar-pro-preview-instruct",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "google/translategemma-12b-it",
+    "decision": "keep",
+    "result": "unchanged"
+   },
+   {
+    "model_id": "google/translategemma-4b-it",
+    "decision": "keep",
+    "result": "unchanged"
+   }
+  ],
+  "metadata_only": [],
+  "card_changed": [
+   {
+    "model_id": "LiquidAI/LFM2.5-2.6B",
+    "decision": "keep",
+    "result": "card_changed",
+    "old_revision": "654f9463ce32b05d0429d76fe1f580b27d4c1ac0",
+    "new_revision": "b212e75975bbda9676a94d3cb7b2ca25b65fed48",
+    "body_chars": 17940,
+    "body_sha256": "0e5b86b7bc4bce83d9025fbec4ad137a4040fe2b80b345c4129b5afa942aaa3f"
+   }
+  ],
+  "new_card": [
+   {
+    "model_id": "google/shieldgemma-9b",
+    "decision": "new",
+    "result": "new_card",
+    "new_revision": "b8b636016df4540721a098c7aab91c97ec6ee508",
+    "body_chars": 15612,
+    "body_sha256": "d85fd21b6e78b512b0af115a2945a5bee2316712d24ed64d9fe5abe26a96f1f6"
+   },
+   {
+    "model_id": "microsoft/phi-1_5",
+    "decision": "new",
+    "result": "new_card",
+    "new_revision": "77aa61eeac94fbf33d492b9f2744c98b42d5b5eb",
+    "body_chars": 7775,
+    "body_sha256": "a86ebef34d1ec302f9527e2f22ced28cadbeb46aa640fff6ca4f7f152654aec6"
+   },
+   {
+    "model_id": "skt/A.X-3.1-Light",
+    "decision": "new",
+    "result": "new_card",
+    "new_revision": "9b41bb2406472634d8812c0b8931fa40fa9a6c3a",
+    "body_chars": 11785,
+    "body_sha256": "87edae010aa21c93fe95758ef2aa7ef3ef117c135e78d6b14ec4fea0b5454482"
+   },
+   {
+    "model_id": "kakaocorp/kanana-2-3b-base",
+    "decision": "new",
+    "result": "new_card",
+    "new_revision": "9fa2a678c379700868d72685a22ea8ed0263ef33",
+    "body_chars": 9914,
+    "body_sha256": "03a37983dcda7a9316b3237576890b173240a5da7f08ff83445516e424d43eb9"
+   }
+  ],
+  "fetch_failed": []
+ },
+ "labels": {
+  "decision": {
+   "new": "신규 진입",
+   "keep": "유지",
+   "exit_candidate": "퇴출 후보",
+   "archive": "보관 예정",
+   "reactivate": "보관에서 재활성",
+   "archived": "보관 유지",
+   "hold": "판정 보류"
+  },
+  "card": {
+   "unchanged": "변경 없음",
+   "metadata_only": "메타데이터만 변경",
+   "card_changed": "카드 변경",
+   "new_card": "새 카드",
+   "fetch_failed": "조회 실패"
+  }
+ },
+ "catalog": {
+  "rows": 964,
+  "missing_orgs": [
+   "THUDM",
+   "CohereForAI"
+  ],
+  "failed_orgs": {}
+ },
+ "hf_requests": {
+  "total": 38,
+  "catalog": 33,
+  "cards": 5
+ },
+ "elapsed_sec": 19.7
+}

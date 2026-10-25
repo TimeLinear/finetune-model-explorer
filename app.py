@@ -8,7 +8,7 @@ _RERUN_T0 = time.perf_counter()  # 계측: 재실행 시작 시각 (Streamlit �
 
 import streamlit as st  # noqa: E402
 
-from common import perf  # noqa: E402
+from common import last_asked, perf  # noqa: E402
 from common.config import texts  # noqa: E402
 from common.logs import get_logger  # noqa: E402
 from data_prep.index_text import item_summary_text  # noqa: E402
@@ -92,6 +92,7 @@ with tab_chat:
 
 question = st.chat_input(T["chat_placeholder"], disabled=blocked)
 if question:
+    last_asked.record(mid)  # 보호 기간 판정용 (실패해도 질의응답은 계속)
     perf.start_trace("app", model_id=mid, question=question)
     perf.add_event("rerun_to_question_start", time.perf_counter() - _RERUN_T0)
     with tab_chat:

@@ -3,6 +3,7 @@
 입력은 합성이다: 카드 색인·위키 수집·답변 스트리밍을 가짜 함수로 바꿔 LLM·외부 API 를 부르지 않는다.
 - status, models: 실제 색인·항목 파일을 읽는다 (읽기만)
 - chat: SSE 이벤트 순서(stage … → token … → done)와 done 의 인용 근거, 오류 시 짧은 문구만 나가는지
+- chat: 마지막 질문 일시를 기록하고, 기록이 실패해도 질의응답은 그대로 진행되는지
 - 이스케이프: 화면 코드(web/static/js/common.js)의 renderMarkdown 을 node 로 실행해 <script> 가 글자로 남는지
 """
 import json
@@ -19,7 +20,7 @@ sys.path.insert(0, str(ROOT))
 
 from fastapi.testclient import TestClient  # noqa: E402
 
-from common import perf  # noqa: E402
+from common import last_asked, perf  # noqa: E402
 from web import api  # noqa: E402
 
 MODEL = "google/gemma-3-4b-it"
@@ -52,8 +53,13 @@ class WebApiTest(unittest.TestCase):
         self.tmp = tempfile.TemporaryDirectory()
         self.perf_patch = mock.patch.object(perf, "PERF_PATH", Path(self.tmp.name) / "perf.jsonl")
         self.perf_patch.start()
+        # 마지막 질문 기록도 실제 data/state 대신 임시 폴더에 쓴다
+        self.asked_path = Path(self.tmp.name) / "state" / "last_asked.json"
+        self.asked_patch = mock.patch.object(last_asked, "STATE_PATH", self.asked_path)
+        self.asked_patch.start()
 
     def tearDown(self):
+        self.asked_patch.stop()
         self.perf_patch.stop()
         self.tmp.cleanup()
 
@@ -123,6 +129,18 @@ class WebApiTest(unittest.TestCase):
         self.assertEqual(events[-1][0], "error")
         self.assertNotIn("secret", r.text)
         self.assertEqual(events[-1][1]["text"], api.T["error_generic"])
+
+    def test_chat_records_last_asked(self):
+        self.chat()
+        self.assertIn(MODEL, last_asked.load(self.asked_path))
+
+    def test_chat_continues_when_last_asked_fails(self):
+        blocker = Path(self.tmp.name) / "file"
+        blocker.write_text("x", encoding="utf-8")  # 폴더 자리에 파일이 있어 기록할 수 없다
+        with mock.patch.object(last_asked, "STATE_PATH", blocker / "last_asked.json"),                 self.assertLogs("app", level="WARNING"):
+            r = self.chat()
+        self.assertEqual(r.status_code, 200)
+        self.assertEqual(parse_sse(r.text)[-1][0], "done")
 
     def test_chat_blocked_without_key(self):
         r = self.chat(missing_api_keys=["ANTHROPIC_API_KEY"])

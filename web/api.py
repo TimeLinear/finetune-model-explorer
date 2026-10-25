@@ -22,7 +22,7 @@ from fastapi.responses import JSONResponse, Response, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
-from common import perf
+from common import last_asked, perf
 from common.config import labels, setting, texts
 from common.llm import missing_api_keys, profile_name
 from common.logs import get_logger
@@ -204,6 +204,7 @@ def chat(req: ChatRequest):
     if blocked:
         return error_response(blocked, 503)
     question = req.question.strip()
+    last_asked.record(req.model_id)  # 보호 기간 판정용 (실패해도 질의응답은 계속)
     events = chat_events(req.model_id, question, clean_history(req.history))
     return StreamingResponse(traced_stream(events, "web_chat", model_id=req.model_id, question=question),
                              media_type="text/event-stream", headers={"Cache-Control": "no-cache"})

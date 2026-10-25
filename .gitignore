@@ -21,6 +21,9 @@ data/cards/*
 # Chroma 색인 (카드 본문 청크가 들어 있어 같은 이유로 제외)
 data/chroma/
 
+# 실행 환경별 상태 (모델별 마지막 질문 일시 등)
+data/state/
+
 # 실행 로그, 로컬 도구 설정
 logs/
 .claude/
