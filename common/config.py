@@ -2,6 +2,8 @@
 
 비밀 값은 .env 에서 환경 변수로만 읽는다 (NF2003).
 검증 단계에서 설정을 바꿔 비교할 때는 APP_SETTINGS(설정 파일 경로), CHROMA_DIR(색인 폴더)로 바꿔 실행한다.
+APP_DATA_DIR 은 데이터 폴더(목록·카드·manifest·요약·색인) 전체를 바꾼다. 데이터 갱신이 작업 공간에서 만들 때 쓴다
+(design/data-refresh.md 6절 "교체와 되돌리기", data_prep/refresh_worker.py).
 """
 import json
 import os
@@ -13,7 +15,7 @@ from dotenv import load_dotenv
 
 ROOT = Path(__file__).resolve().parent.parent
 CONFIG_DIR = ROOT / "config"
-DATA_DIR = ROOT / "data"
+DATA_DIR = Path(os.environ.get("APP_DATA_DIR") or ROOT / "data")
 LOG_DIR = ROOT / "logs"
 
 load_dotenv(ROOT / ".env")

@@ -46,9 +46,10 @@ def guess_lang(text):
     return "ko" if len(HANGUL.findall(text)) > len(LATIN.findall(text)) else "en"
 
 
-def ensure_card_indexed(model_id):
-    """반환: 'done'(이미 색인됨) | 'indexed' | 'failed'"""
-    item = items_by_id()[model_id]
+def ensure_card_indexed(model_id, item=None):
+    """반환: 'done'(이미 색인됨) | 'indexed' | 'failed'
+    item 을 주면 목록 파일 대신 그 항목(카드 리비전)으로 색인한다 (데이터 갱신이 새 목록을 쓰기 전에 모델 단위로 반영할 때)."""
+    item = item or items_by_id()[model_id]
     rev = item["card_revision"]
     if is_done(model_id, rev):
         return "done"

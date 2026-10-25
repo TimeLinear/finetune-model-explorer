@@ -92,6 +92,14 @@ def set_status(model_id, **rec):
         STATUS_PATH.write_text(json.dumps(status, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
+def drop_status(model_id):
+    """모델의 색인 상태 기록을 뺀다 (데이터 갱신이 반영에 실패한 신규 모델을 작업 공간에서 되돌릴 때)."""
+    with _status_lock:
+        status = load_status()
+        if status.pop(model_id, None) is not None:
+            STATUS_PATH.write_text(json.dumps(status, ensure_ascii=False, indent=1), encoding="utf-8")
+
+
 def is_done(model_id, revision):
     """같은 리비전·같은 색인 규칙 버전·같은 청크 설정으로 색인을 마쳤는가"""
     rec = load_status().get(model_id) or {}
