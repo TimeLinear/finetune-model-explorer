@@ -5,7 +5,7 @@
 - 관련 문서: [evaluation.md](evaluation.md), [retrieval-and-ui.md](../design/retrieval-and-ui.md), [architecture.md](architecture.md)
 
 > 2026-10-22 측정. 조사·보고만 했고 앱 동작은 바꾸지 않았다 (계측 코드만 추가: `common/perf.py`와 각 단계의 시간 기록).
-> 목표 ([검색 설정·기능 화면 설계](../design/retrieval-and-ui.md)의 "성능 목표", 잠정): 웜 15초 이내, 콜드 40초 이내 (질문 입력 → 답변 표시 완료).
+> 목표 ([검색 설정·기능 화면 설계](../design/retrieval-and-ui.md)의 "성능 목표", 2026-10-23 확정): 웜 15초 이내, 콜드 40초 이내 (질문 입력 → 답변 표시 완료).
 
 ## 1. 측정 방법
 

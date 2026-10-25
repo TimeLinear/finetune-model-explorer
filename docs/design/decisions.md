@@ -191,8 +191,8 @@
 ## 2026-10-23 프롬프트 v0.4: C2 출력 방식 변경, 구조화 출력 잘림 처리
 - 배경: C2 v0.3은 후보 30개 전부에 판정·이유를 써서 Haiku `max_tokens` 2048에서 잘렸다 (화면에는 맞는 후보만 표시하므로 나머지 판정은 쓰이지 않았다).
 - 결정: C2를 "맞는 후보만, 최대 `limit`개" 출력으로 바꾸고, 구조화 출력이 잘리면 결과를 쓰지 않고 실패로 처리한다.
-- 영향: v0.4 확인 — Haiku 출력 468토큰, 다운로드 상위 5개와 일치. nano는 상위 후보 일부를 건너뛰었으나 `LLM_SMALL`이 Haiku로 바뀌어 그대로 둔다 (당시 기록은 "10-24부터"). C2 v0.3(후보마다 판정)을 대체.
-- 관련: [prompts.md](prompts.md), [architecture.md](../reports/architecture.md)
+- 영향: v0.4 확인 — Haiku 출력 468토큰, 다운로드 상위 5개와 일치. nano는 상위 후보 일부를 건너뛰었으나 `LLM_SMALL`이 Haiku로 바뀌어 그대로 둔다 (실제 전환: 2026-10-23, 아래 "API 프록시 사용 종료" 항목). C2 v0.3(후보마다 판정)을 대체.
+- 관련: [prompts-services.md](prompts-services.md), [architecture.md](../reports/architecture.md)
 
 ## 2026-10-23 위키 선별(P2) 병렬 실행
 - 배경: 성능 조사에서 P2 후보 선별이 처리 시간의 22%를 차지했다.

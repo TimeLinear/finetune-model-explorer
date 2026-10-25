@@ -31,7 +31,7 @@
 
 | 작업 | 설정 키 | 현재 (`anthropic_direct`) |
 |---|---|---|
-| 모델 소개 요약 (1회성) | `LLM_SUMMARY` | `claude-sonnet-5-5` |
+| 모델 소개 요약 (카드 본문이 바뀌면 다시 생성, [data-refresh.md](data-refresh.md)) | `LLM_SUMMARY` | `claude-sonnet-5-5` |
 | 검색어 추출, 후보 선별, 조건 변환·선별 | `LLM_SMALL` | `claude-haiku-5-5` |
 | 답변 생성, 사용 조건 점검표 | `LLM_ANSWER` | `claude-haiku-5-5` |
 
@@ -47,4 +47,4 @@
 - F2003의 "도메인 전문가 역할"은 빈 페르소나가 아니라 구체적 작업 맥락으로 쓴다.
 - 구조화 출력은 API 차원에서 강제. 근거는 번호·출처 종류가 붙은 블록으로. 선별 프롬프트는 이유 필드를 받는다.
 - few-shot은 추출·변환 작업에 집중. **예시는 가상 모델명만.**
-- 프롬프트 본문: [prompts.md](prompts.md)
+- 프롬프트 본문: [prompts.md](prompts.md) (S·P1~P3), [prompts-services.md](prompts-services.md) (C1·C2·U)

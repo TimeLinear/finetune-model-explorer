@@ -1,4 +1,4 @@
-"""조건 기반 항목 탐색 (F2011, 프롬프트 C1·C2, design/prompts.md 처리 흐름).
+"""조건 기반 항목 탐색 (F2011, 프롬프트 C1·C2, design/prompts-services.md 처리 흐름).
 
 자연어 조건 → C1(필터·정렬 변환) → items 컬렉션 메타데이터 필터 + semantic_query 의미 검색(비어 있으면 필터만)
 → 후보 최대 condition.candidate_k 개 → sort_by 가 있으면 파이썬에서 정렬 → C2(최종 선별) → 맞는 모델만 limit 개.

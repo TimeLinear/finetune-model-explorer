@@ -1,7 +1,7 @@
 """사용 조건 점검표 (F2010, 프롬프트 U).
 
 근거: 항목 메타데이터 1개 + 모델 카드에서 점검 항목별 고정 검색어로 찾은 청크 (중복 제거 후 최대 usage_check.card_k 개).
-모델 고유 조건만 다루므로 위키 문서는 쓰지 않는다 (design/prompts.md U).
+모델 고유 조건만 다루므로 위키 문서는 쓰지 않는다 (design/prompts-services.md U).
 출력: 점검 항목마다 근거에 적힌 내용, 사용한 근거 번호, 확인 여부. 라이선스 가부 판단은 하지 않는다.
 """
 import time
@@ -17,7 +17,7 @@ from data_prep.indexing import ensure_card_indexed
 from rag.evidence import format_blocks, make_evidence
 from vectorstore import store
 
-# design/prompts.md U의 "근거 수집" 예시 검색어 + 나머지 점검 항목용 (모델 카드가 영어라 영어로 검색)
+# design/prompts-services.md U의 "근거 수집" 예시 검색어 + 나머지 점검 항목용 (모델 카드가 영어라 영어로 검색)
 ASPECT_QUERIES = {
     "license": "license terms commercial use",
     "gated": "access request agree to license terms",
