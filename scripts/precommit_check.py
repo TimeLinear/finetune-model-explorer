@@ -7,6 +7,8 @@
 - .env 가 있으면 그 값 문자열 (8글자 이상만. 짧은 값은 일반 단어와 겹친다)
 - 키 형태 문자열 (hf_…, sk-…)
 - .claude/forbidden_terms.txt 가 있으면 그 문자열 (대소문자 무시, 파일 이름 포함, 이미지 등 바이너리 제외). 없으면 이 검사만 건너뛴다
+  ASCII 로만 된 문자열은 단어 단위로 찾는다: 바로 앞뒤 글자가 ASCII 영문자·숫자가 아닐 때만 걸린다
+  (다른 영어 단어 속에 들어 있는 경우는 통과. `.`·`_`·`-` 같은 구분 문자는 경계). 한글이 든 문자열은 부분 문자열로 찾는다.
 - 제외 대상 경로 (.env, .venv, data/chroma, data/cards 원문, logs)
 걸리면 파일과 줄 번호만 출력하고(값·문자열은 출력하지 않는다) 종료 코드 1.
 """
@@ -53,6 +55,18 @@ def line_numbers(data, needle):
     return sorted(set(lines))
 
 
+def term_pattern(term):
+    """금지 문자열 하나의 검색 패턴 (소문자 문자열 기준). ASCII 만이면 앞뒤가 영문자·숫자가 아닐 때만, 아니면 부분 문자열."""
+    if term.isascii():
+        return re.compile(r"(?<![a-z0-9])" + re.escape(term) + r"(?![a-z0-9])")
+    return re.compile(re.escape(term))
+
+
+def term_lines(text, term):
+    """소문자로 바꾼 text 안에서 term 이 걸리는 줄 번호 (1부터)."""
+    return sorted({text.count("\n", 0, m.start()) + 1 for m in term_pattern(term).finditer(text)})
+
+
 def check_file(path, data, env_vals, terms):
     """파일 하나의 검사 결과 [(경로, 줄 번호 또는 None, 항목)]. 값·문자열 자체는 담지 않는다."""
     found = []
@@ -62,12 +76,12 @@ def check_file(path, data, env_vals, terms):
         found += [(path, n, f".env 값 ({key})") for n in line_numbers(data, value)]
     found += [(path, data.count(b"\n", 0, m.start()) + 1, "키 형태 문자열") for m in KEY_PATTERN.finditer(data)]
     if terms:
-        if any(t in path.lower() for t in terms):
+        if any(term_pattern(t).search(path.lower()) for t in terms):
             found.append((path, None, "금지 문자열 (파일 이름)"))
         if b"\0" not in data:  # 바이너리(이미지 등)는 문자열 검사를 하지 않는다
-            lower = data.decode("utf-8", "ignore").lower().encode("utf-8")
+            lower = data.decode("utf-8", "ignore").lower()
             for t in terms:
-                found += [(path, n, "금지 문자열") for n in line_numbers(lower, t.encode("utf-8"))]
+                found += [(path, n, "금지 문자열") for n in term_lines(lower, t)]
     return found
 
 

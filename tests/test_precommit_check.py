@@ -38,6 +38,21 @@ class CheckFileTest(unittest.TestCase):
         self.assertIn((f"docs/{FAKE_TERM}.md", None, "금지 문자열 (파일 이름)"), found)
         self.assertEqual(sorted(f[1] for f in found if f[2] == "금지 문자열"), [2, 3])
 
+    def test_ascii_term_matches_whole_word_only(self):
+        """영문 금지어는 다른 영어 단어 속에서는 통과, 단독·구분 문자 앞뒤에서는 걸린다 (가짜 금지어 zqx)."""
+        text = "paradigzqxs\nZQX 키\nzqxs\nazqx\nzqx_1\nv.zqx-2\n(zqx)\nzqx3\n한글zqx한글\n"
+        found = pc.check_file("notes.md", text.encode(), [], ["zqx"])
+        self.assertEqual([f[1] for f in found], [2, 5, 6, 7, 9])
+
+    def test_ascii_term_in_file_name(self):
+        self.assertEqual(pc.check_file("docs/zqxs.md", b"", [], ["zqx"]), [])
+        for name in ["docs/zqx.md", "docs/a_zqx-b.md", "ZQX/x.md"]:
+            self.assertEqual(pc.check_file(name, b"", [], ["zqx"]), [(name, None, "금지 문자열 (파일 이름)")], name)
+
+    def test_korean_term_is_substring(self):
+        found = pc.check_file("k.md", f"앞{FAKE_TERM}뒤\nabc{FAKE_TERM}\n".encode(), [], [FAKE_TERM])
+        self.assertEqual([f[1] for f in found], [1, 2])
+
     def test_binary_skips_term_check_but_not_keys(self):
         data = b"\x89PNG\0" + FAKE_TERM.encode() + b" " + FAKE_HF.encode()
         found = pc.check_file("img.png", data, [], [FAKE_TERM])
