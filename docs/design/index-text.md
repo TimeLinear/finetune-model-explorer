@@ -76,7 +76,7 @@
 3. Mamba 계열은 "상태 공간 모델"로, MoE는 "전문가 N개 중 토큰당 K개 사용"으로 표기한다.
 4. 컨텍스트 길이는 출처에 따라 "(설정 파일 기준)" / "(라이브러리 기본값 기준)" / "구조상 고정 길이 제한 없음"으로 표기한다.
 5. 표시 문구는 `config/labels.ko.json`에서 가져온다.
-6. 미리보기: `python scripts/render_index_text.py data/items_20261021.json <model_id>`
+6. 미리보기: `python scripts/render_index_text.py data/items.json <model_id>`
 
 ## 6. 렌더링 예시 (실제 데이터, 소개 요약 생성 전)
 

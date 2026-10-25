@@ -46,7 +46,7 @@ class CheckFileTest(unittest.TestCase):
     def test_excluded_paths(self):
         for path in [".env", ".venv/x.py", "data/chroma/a.bin", "data/cards/x__y.md", "logs/app.log"]:
             self.assertIn((path, None, "제외 대상 경로"), pc.check_file(path, b"", [], None), path)
-        for path in ["data/cards/_manifest.json", ".env.example", "data/items_20261021.json"]:
+        for path in ["data/cards/_manifest.json", ".env.example", "data/items.json"]:
             self.assertEqual(pc.check_file(path, b"", [], None), [], path)
 
 

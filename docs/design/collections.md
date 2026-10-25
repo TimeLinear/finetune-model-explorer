@@ -25,7 +25,7 @@
 - **Chroma 메타데이터 값은 문자열·숫자·참거짓만 쓰고, 빈 값(None)은 키를 빼서 표현한다.** 목록 필드는 플래그로 펼친다.
   - `input_modalities: [text, image]` → `mod_text: true`, `mod_image: true`
   - `languages: [ko, en]` → `lang_ko: true`, `lang_en: true`
-- **본문이 서로 비슷해지는 문제:** 항목을 구별해 주는 것은 소개 요약이므로, 요약이 들어간 뒤 조건 검색 품질을 확인한다.
+- **본문이 서로 비슷해지는 문제:** 항목을 구별해 주는 것은 소개 요약이다. 요약 반영 후 조건 검색 품질 확인은 [backlog.md](backlog.md) 1절 "데이터 갱신"에서 관리한다.
 
 ## 2. 다운로드 수 (인기도)의 쓰임
 

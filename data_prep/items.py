@@ -4,7 +4,7 @@ from functools import lru_cache
 
 from common.config import DATA_DIR
 
-ITEMS_PATH = DATA_DIR / "items_20261021.json"
+ITEMS_PATH = DATA_DIR / "items.json"
 
 
 @lru_cache

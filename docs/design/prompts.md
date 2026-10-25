@@ -21,7 +21,7 @@
 
 | 프롬프트 | 모델 (설정 키) | 현재 (`anthropic_direct`) |
 |---|---|---|
-| S. 모델 소개 요약 (1회성) | `LLM_SUMMARY` | `claude-sonnet-5-5` (초기 API 프록시 단계에 Sonnet급으로 생성 완료) |
+| S. 모델 소개 요약 (카드 본문이 바뀌면 다시 생성, [data-refresh.md](data-refresh.md)) | `LLM_SUMMARY` | `claude-sonnet-5-5` (초기 API 프록시 단계에 Sonnet급으로 생성 완료) |
 | P1. 검색어 추출 | `LLM_SMALL` | `claude-haiku-5-5` |
 | P2. 후보 문서 선별 | `LLM_SMALL` | `claude-haiku-5-5` |
 | C1. 조건 → 필터·정렬 변환 | `LLM_SMALL` | `claude-haiku-5-5` |
@@ -34,7 +34,7 @@
 
 ---
 
-## S. 모델 소개 요약 (`summary.txt`) — 데이터 준비, 1회성
+## S. 모델 소개 요약 (`summary.txt`) — 데이터 준비, 카드 본문이 바뀌면 다시 생성 ([data-refresh.md](data-refresh.md))
 
 **버전:** v0.2 (`data_prep/summaries.py` `PROMPT_VERSION`)
 

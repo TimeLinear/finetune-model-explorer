@@ -23,7 +23,7 @@
 - 출처: Hugging Face Hub API (모델 정보), 각 저장소의 `config.json`, 필요 시 `transformers` 설정 클래스 기본값
 - 건수: **202건** (2026-10-21 스냅샷 고정)
 - 선별 기준: 공식 조직 계정, 1~24B, 최근 30일 다운로드 기준 그룹 내 상대 순위
-- 파일: `data/items_20261021.csv`, `data/items_20261021.json`
+- 파일: `data/items.csv`, `data/items.json`
 
 ## 2. 항목마다 연결되는 외부 문서가 있고 이용 조건이 분명하다
 
