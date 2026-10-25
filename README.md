@@ -167,6 +167,8 @@ python -m venv .venv
 
 LLM·외부 API를 호출하지 않는다. 검색 평가: `.venv\Scripts\python.exe scripts\eval_retrieval.py --label my_check`
 
+커밋 전 검사 훅 연결 (clone 후 한 번): `git config core.hooksPath .githooks` — 커밋할 때마다 `scripts/precommit_check.py`가 스테이징된 파일의 비밀 값·키 형태·제외 대상 경로를 검사한다.
+
 ### 환경 변수
 
 | 이름 | 용도 |

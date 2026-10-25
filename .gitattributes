@@ -1,0 +1,2 @@
+# pre-commit 훅은 sh 가 읽으므로 Windows 에서도 LF 로 둔다
+.githooks/* text eol=lf

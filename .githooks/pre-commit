@@ -1,0 +1,10 @@
+#!/bin/sh
+# 커밋 전 검사 (scripts/precommit_check.py). 연결: git config core.hooksPath .githooks
+if [ -x .venv/Scripts/python.exe ]; then
+    PY=.venv/Scripts/python.exe
+elif [ -x .venv/bin/python ]; then
+    PY=.venv/bin/python
+else
+    PY=python
+fi
+exec "$PY" scripts/precommit_check.py

@@ -13,10 +13,7 @@
 ## 커밋
 - 작성자는 저장소 로컬 git 설정을 그대로 쓴다.
 - 커밋 메시지의 Co-Authored-By 줄은 유지한다.
-- 커밋 전에 검사한다:
-  - .env 값과 키 형태(hf_, sk-) 문자열
-  - .claude/forbidden_terms.txt의 문자열
-  - 제외 대상(.env, .venv, data/chroma, data/cards 원문, logs)이 스테이징되지 않았는지
+- 커밋 전 검사: scripts/precommit_check.py (pre-commit 훅으로 자동 실행. .env 값, 키 형태, .claude/forbidden_terms.txt, 제외 대상 경로)
 - 푸시한 커밋의 amend·rebase, force push는 하지 않는다.
 
 ## 비용과 데이터
