@@ -1,4 +1,5 @@
 {
+  "_note": "2026-10-21 선별 결과(202개)를 재현하기 위한 고정 규칙. 선별에 쓰이는 값은 당시와 같고, 1단계에서 더한 국가 2개(THUDM·CohereForAI)와 조회 항목(sha·lastModified)이 함께 들어 있다. 장기 테스트 기준(backlog.md 1절)으로 바뀌면 정리한다.",
   "rules_version": "2026-10-21",
   "orgs": {
     "meta-llama": {"vendor": "Meta", "country": "US"},
