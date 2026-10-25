@@ -150,14 +150,14 @@
   "body_sha256": "d8275d537c49def4d9ebc763fc21554c938f2690a5b12733ae81d8ecf347d9ac"
  },
  "LiquidAI/LFM2.5-2.6B": {
-  "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B/resolve/654f9463ce32b05d0429d76fe1f580b27d4c1ac0/README.md",
-  "fetched_at": "2026-10-22T14:13:45+09:00",
-  "status": "ok",
-  "body_chars": 18007,
-  "has_front_matter": true,
-  "card_revision": "654f9463ce32b05d0429d76fe1f580b27d4c1ac0",
   "model_id": "LiquidAI/LFM2.5-2.6B",
-  "body_sha256": "1e339ee49a0c267a476b97280fa26d0367bd139b07a9730e4cea0293073ff5c6"
+  "card_revision": "b212e75975bbda9676a94d3cb7b2ca25b65fed48",
+  "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B/resolve/b212e75975bbda9676a94d3cb7b2ca25b65fed48/README.md",
+  "fetched_at": "2026-10-25T23:41:28+09:00",
+  "status": "ok",
+  "body_sha256": "0e5b86b7bc4bce83d9025fbec4ad137a4040fe2b80b345c4129b5afa942aaa3f",
+  "body_chars": 17940,
+  "has_front_matter": true
  },
  "NCSOFT/VARCO-VISION-2.0-1.7B": {
   "url": "https://huggingface.co/NCSOFT/VARCO-VISION-2.0-1.7B/resolve/ed09f37445518b1564d1ef3c6e26fbd7c1b2c818/README.md",
@@ -1319,6 +1319,16 @@
   "model_id": "kakaocorp/kanana-2-1.3b-instruct",
   "body_sha256": "73497f3f8869c61fba58f343426fff31df0093473f0a2f6d1f59a793e796b993"
  },
+ "kakaocorp/kanana-2-3b-base": {
+  "model_id": "kakaocorp/kanana-2-3b-base",
+  "card_revision": "9fa2a678c379700868d72685a22ea8ed0263ef33",
+  "url": "https://huggingface.co/kakaocorp/kanana-2-3b-base/resolve/9fa2a678c379700868d72685a22ea8ed0263ef33/README.md",
+  "fetched_at": "2026-10-25T23:42:21+09:00",
+  "status": "ok",
+  "body_sha256": "03a37983dcda7a9316b3237576890b173240a5da7f08ff83445516e424d43eb9",
+  "body_chars": 9914,
+  "has_front_matter": true
+ },
  "kakaocorp/kanana-2-3b-instruct": {
   "url": "https://huggingface.co/kakaocorp/kanana-2-3b-instruct/resolve/6a5d7889964c4c590299d16e309eabab1f73f8a9/README.md",
   "fetched_at": "2026-10-22T14:15:03+09:00",
@@ -1518,6 +1528,16 @@
   "card_revision": "cfbefacb99257ffa30c83adab238a50856ac3083",
   "model_id": "microsoft/Phi-4-mini-instruct",
   "body_sha256": "85c34e386d66aa5f503ed4bb8639abc9261ad27a0707c1929b5034508d7eca06"
+ },
+ "microsoft/phi-1_5": {
+  "model_id": "microsoft/phi-1_5",
+  "card_revision": "77aa61eeac94fbf33d492b9f2744c98b42d5b5eb",
+  "url": "https://huggingface.co/microsoft/phi-1_5/resolve/77aa61eeac94fbf33d492b9f2744c98b42d5b5eb/README.md",
+  "fetched_at": "2026-10-25T23:42:37+09:00",
+  "status": "ok",
+  "body_sha256": "a86ebef34d1ec302f9527e2f22ced28cadbeb46aa640fff6ca4f7f152654aec6",
+  "body_chars": 7775,
+  "has_front_matter": true
  },
  "microsoft/phi-2": {
   "url": "https://huggingface.co/microsoft/phi-2/resolve/810d367871c1d460086d9f82db8696f2e0a0fcd0/README.md",
@@ -1899,6 +1919,16 @@
   "card_revision": "6cee5e81ee83917806bbde320786a8fb61efebee",
   "model_id": "openai/gpt-oss-20b",
   "body_sha256": "2941103ca26711e02c20e0ab3176aac2e291430c1929f83df497abce3ba4f6e7"
+ },
+ "skt/A.X-3.1-Light": {
+  "model_id": "skt/A.X-3.1-Light",
+  "card_revision": "9b41bb2406472634d8812c0b8931fa40fa9a6c3a",
+  "url": "https://huggingface.co/skt/A.X-3.1-Light/resolve/9b41bb2406472634d8812c0b8931fa40fa9a6c3a/README.md",
+  "fetched_at": "2026-10-25T23:42:00+09:00",
+  "status": "ok",
+  "body_sha256": "87edae010aa21c93fe95758ef2aa7ef3ef117c135e78d6b14ec4fea0b5454482",
+  "body_chars": 11785,
+  "has_front_matter": true
  },
  "skt/A.X-4.0-Light": {
   "url": "https://huggingface.co/skt/A.X-4.0-Light/resolve/ba21c20ea1b31ded1ec3e2fb432335077dc4be98/README.md",
