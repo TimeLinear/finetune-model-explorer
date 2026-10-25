@@ -1,12 +1,13 @@
 """모델 소개 요약 생성. data/summaries.jsonl 에 한 줄씩 추가한다.
 
-같은 model_id + card_revision + prompt_version 이 이미 있으면 건너뛰므로, 중단 후 다시 실행하면
+같은 model_id + 카드 본문 해시 + prompt_version 이 이미 있으면 건너뛰므로, 중단 후 다시 실행하면
 실패·미처리분만 처리된다. 전체 실행은 비용이 들어 --all 을 명시해야 한다.
 실행마다 토큰 합계와 실패 목록을 logs/summary_runs.jsonl 에 남긴다.
 
 사용:
   python scripts/generate_summaries.py MODEL_ID [MODEL_ID ...]
   python scripts/generate_summaries.py --all [--workers 4]
+  python scripts/generate_summaries.py --all --dry-run     (생성할 개수만 출력하고 끝낸다. LLM 을 부르지 않는다)
 """
 import argparse
 import json
@@ -20,6 +21,7 @@ sys.stdout.reconfigure(encoding="utf-8")
 
 from common.config import ROOT  # noqa: E402
 from common.llm import MissingApiKey, model_name, structured_output_method  # noqa: E402
+from data_prep.cards import load_manifest  # noqa: E402
 from data_prep.items import items_by_id, load_items  # noqa: E402
 from data_prep.summaries import PROMPT_VERSION, TASK, SummaryParseError, done_keys, item_key, summarize, summarizer  # noqa: E402
 
@@ -29,15 +31,21 @@ ap = argparse.ArgumentParser()
 ap.add_argument("models", nargs="*")
 ap.add_argument("--all", action="store_true")
 ap.add_argument("--workers", type=int, default=1)
+ap.add_argument("--dry-run", action="store_true", help="생성할 개수만 출력하고 끝낸다")
 args = ap.parse_args()
 if bool(args.models) == args.all:
     ap.error("모델 ID 목록 또는 --all 중 하나만 지정한다")
 
 targets = load_items() if args.all else [items_by_id()[m] for m in args.models]
 done = done_keys()
-todo = [it for it in targets if item_key(it) not in done]
+manifest = load_manifest()
+todo = [it for it in targets if item_key(it, manifest) not in done]
 print(f"모델 {model_name(TASK)} / 구조화 출력 {structured_output_method(TASK)} / 프롬프트 {PROMPT_VERSION}")
 print(f"대상 {len(targets)} / 이미 생성 {len(targets) - len(todo)} / 생성할 것 {len(todo)}", flush=True)
+if args.dry_run:
+    for it in todo:
+        print("  생성할 것:", it["model_id"])
+    sys.exit(0)
 
 try:
     chain = summarizer()

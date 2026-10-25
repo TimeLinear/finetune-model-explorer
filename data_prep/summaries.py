@@ -5,7 +5,8 @@
 - stage_from_card·languages_from_card 는 항목 원본 값을 덮어쓰지 않고 별도 필드로만 둔다.
 - 구조화 출력 방식은 모델별 설정(config/llm.json)을 따른다. 파싱 실패 시 1회 재시도 후 실패로 넘긴다.
   출력이 잘리면(max_tokens) 재시도 없이 실패로 넘긴다.
-- 건너뛰기 기준은 model_id + card_revision + prompt_version. 프롬프트가 바뀌면 다시 생성된다.
+- 건너뛰기 기준은 model_id + 카드 본문 해시(card_body_sha256, manifest 의 body_sha256 과 같은 값) + prompt_version.
+  카드 리비전만 바뀌고 본문이 같으면(가중치 파일 변경 등) 다시 만들지 않는다. 프롬프트가 바뀌면 다시 생성된다.
 """
 import json
 import os
@@ -18,7 +19,7 @@ from pydantic import BaseModel, Field
 
 from common.config import CONFIG_DIR, DATA_DIR, ROOT, load_json, setting
 from common.llm import TruncatedOutput, check_truncated, get_structured_llm, model_name
-from data_prep.cards import read_card_body
+from data_prep.cards import load_manifest, read_card_body, sha256
 
 LANG = os.environ.get("INDEX_LANG", "ko")
 TASK = "LLM_SUMMARY"
@@ -59,15 +60,25 @@ def load_records():
 
 
 def record_key(r):
-    return r["model_id"], r["card_revision"], r.get("prompt_version", "v0.1")  # v0.1 샘플에는 필드가 없다
+    return r["model_id"], r.get("card_body_sha256"), r.get("prompt_version", "v0.1")  # v0.1 샘플에는 필드가 없다
 
 
 def done_keys():
-    return {record_key(r) for r in load_records()}
+    """이미 만든 요약의 키. 본문 해시가 없는 기록은 어떤 항목과도 맞추지 않는다."""
+    return {record_key(r) for r in load_records() if r.get("card_body_sha256")}
 
 
-def item_key(item):
-    return item["model_id"], item["card_revision"], PROMPT_VERSION
+def card_body_hash(item, manifest=None):
+    """항목의 카드 리비전에 해당하는 본문 해시 (manifest). 그 리비전의 카드를 아직 받지 않았으면 None."""
+    rec = (manifest if manifest is not None else load_manifest()).get(item["model_id"]) or {}
+    if rec.get("card_revision") != item["card_revision"] or rec.get("status") not in ("ok", "mismatch"):
+        return None
+    return rec.get("body_sha256")
+
+
+def item_key(item, manifest=None):
+    """본문 해시를 모르면 (model_id, None, 버전) → done_keys 에 없으므로 생성 대상."""
+    return item["model_id"], card_body_hash(item, manifest), PROMPT_VERSION
 
 
 @lru_cache
@@ -118,6 +129,7 @@ def summarize(item, chain):
         "prompt_version": PROMPT_VERSION,
         "summary_generated_at": datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds"),
         "card_revision": item["card_revision"],
+        "card_body_sha256": sha256(body),
         "card_url": item["card_url"],
     }
     with _write_lock, SUMMARIES_PATH.open("a", encoding="utf-8") as f:
