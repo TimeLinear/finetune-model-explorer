@@ -24,6 +24,10 @@ data/chroma/
 # 실행 환경별 상태 (모델별 마지막 질문 일시 등)
 data/state/
 
+# 데이터 갱신 작업 공간과 직전 묶음 (카드 본문·색인이 들어 있다)
+data/refresh/work/
+data/refresh/prev/
+
 # 실행 로그, 로컬 도구 설정
 logs/
 .claude/

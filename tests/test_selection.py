@@ -1,8 +1,9 @@
 """선별 규칙 (data_prep/selection.py, data_prep/catalog_fetch.py).
 
 - 회귀: 2026-10-21 수집 원본(tests/fixtures/raw_models_2026-10-21.json.gz, collect.py 출력 961행)을 그날의 규칙
-  (tests/fixtures/catalog_2026-10-21.json)과 기준 날짜 2026-10-21 로 선별하면 data/items.json 의 202개와
-  model_id·selection_group·group_rank 가 모두 같아야 한다. 현재 규칙(config/catalog.json)은 바뀔 수 있으므로 쓰지 않는다.
+  (tests/fixtures/catalog_2026-10-21.json)과 기준 날짜 2026-10-21 로 선별하면 첫 기준본 202개
+  (tests/fixtures/selection_2026-10-21.json)와 model_id·selection_group·group_rank 가 모두 같아야 한다.
+  현재 규칙(config/catalog.json)과 현재 목록(data/items.json)은 데이터 갱신으로 바뀌므로 쓰지 않는다.
 - 조회 결과 1건의 필터 (합성 입력): 언어 모델 여부, 크기 범위, 제외 패턴(안전 분류 모델 이름 변형 포함),
   커밋 해시·수정 시각 보존
 """
@@ -21,7 +22,7 @@ from data_prep.selection import select  # noqa: E402
 
 FIXTURE = ROOT / "tests" / "fixtures" / "raw_models_2026-10-21.json.gz"
 FROZEN_RULES = ROOT / "tests" / "fixtures" / "catalog_2026-10-21.json"
-ITEMS = ROOT / "data" / "items.json"
+EXPECTED = ROOT / "tests" / "fixtures" / "selection_2026-10-21.json"
 
 
 class SelectionRegressionTest(unittest.TestCase):
@@ -32,10 +33,9 @@ class SelectionRegressionTest(unittest.TestCase):
         rules = json.loads(FROZEN_RULES.read_text(encoding="utf-8"))
         self.assertEqual(rules["rules_version"], "2026-10-21")
         picked = select(rows, date(2026, 10, 21), rules)
-        items = json.loads(ITEMS.read_text(encoding="utf-8"))
-        key = lambda it: (it["model_id"], it["selection_group"], it["group_rank"])  # noqa: E731
+        expected = [tuple(x) for x in json.loads(EXPECTED.read_text(encoding="utf-8"))["items"]]
         self.assertEqual(len(picked), 202)
-        self.assertEqual([key(it) for it in picked], [key(it) for it in items])
+        self.assertEqual([(it["model_id"], it["selection_group"], it["group_rank"]) for it in picked], expected)
 
 
 def api_model(mid, total=8e9, pipe="text-generation", **extra):

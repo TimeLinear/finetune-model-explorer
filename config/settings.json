@@ -76,6 +76,8 @@
     "exit_streak_required": 2,
     "protect_days": 30,
     "grace_days": 30,
-    "max_cost_usd": 1.0
+    "max_cost_usd": 1.0,
+    "anomaly_ratio": 0.2,
+    "batch_threshold": 30
   }
 }

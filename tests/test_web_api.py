@@ -21,6 +21,7 @@ sys.path.insert(0, str(ROOT))
 from fastapi.testclient import TestClient  # noqa: E402
 
 from common import last_asked, perf  # noqa: E402
+from data_prep.items import load_items  # noqa: E402
 from web import api  # noqa: E402
 
 MODEL = "google/gemma-3-4b-it"
@@ -72,7 +73,7 @@ class WebApiTest(unittest.TestCase):
 
     def test_models(self):
         body = self.client.get("/api/models").json()
-        self.assertEqual(len(body["models"]), 202)
+        self.assertEqual(len(body["models"]), len(load_items()))  # 개수는 데이터 갱신마다 바뀐다
         self.assertEqual(set(body["models"][0]), {"model_id", "vendor", "params_b", "input_modalities", "stage", "license"})
         detail = self.client.get(f"/api/models/{MODEL}").json()
         self.assertEqual(detail["model_id"], MODEL)

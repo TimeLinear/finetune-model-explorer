@@ -53,6 +53,8 @@
 | `refresh.protect_days` | 30 | 최근 이 기간(일) 안에 질문받은 모델은 퇴출하지 않는다 |
 | `refresh.grace_days` | 30 | 공개 후 이 기간(일) 안의 모델은 순위 기준 퇴출 판정에서 뺀다 |
 | `refresh.max_cost_usd` | 1.0 | 갱신 1회 비용 상한 (달러, 소개 요약 비용 기준) |
+| `refresh.anomaly_ratio` | 0.2 | 신규·퇴출 후보·보관 예정·재활성 모델 수가 활성 목록의 이 비율을 넘으면 반영하지 않는다 (data-refresh.md 9절) |
+| `refresh.batch_threshold` | 30 | 요약 대상이 이 개수를 넘으면 보고서에 배치 API 전환 검토 경고 (data-refresh.md 8·9절) |
 
 - 근거 병합·중복 제거(F2006): 항목 청크 → 카드 청크(`card_k`) → 위키 청크(`wiki_k`) 순으로 합치고, 청크 ID 기준으로 중복을 제거한다. 근거 번호는 이 순서대로 1부터 붙인다 (항목 메타데이터가 항상 [근거 1]). 위키 청크가 모자라도 카드로 채우지 않는다.
 - 카드 검색 설정은 평가 세트(`tests/retrieval_eval/`, 33사례 × 표현 3개)로 바꿔 비교한다. 결과 기록은 [evaluation.md](../reports/evaluation.md).
