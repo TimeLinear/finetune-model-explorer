@@ -13,6 +13,7 @@ from datetime import date
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+sys.stdout.reconfigure(encoding="utf-8")
 
 from common import last_asked  # noqa: E402
 from common.config import DATA_DIR  # noqa: E402
@@ -50,7 +51,7 @@ out = REPORT_DIR / f"{ref_date.isoformat()}.dryrun.json"
 out.write_text(json.dumps(report, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 cost = report["cost_estimate"]
-print(f"기준 날짜 {report['date']} | 조회 {len(catalog['rows'])}건 | 조회 실패 조직 {list(catalog['failed_orgs']) or '없음'}")
+print(f"기준 날짜 {report['date']} | 규칙 {report['rules_version']} | 조회 {len(catalog['rows'])}건 | 조회 실패 조직 {list(catalog['failed_orgs']) or '없음'}")
 print("판정:", ", ".join(f"{DECISIONS[k]} {v}" for k, v in report["decision_counts"].items()))
 print("카드:", ", ".join(f"{CARD_RESULTS[k]} {v}" for k, v in report["card_counts"].items()))
 print(f"예상 요약 비용: 대상 {cost['targets']}개, 일반 ${cost['cost_usd']:.4f}, 배치 ${cost['batch_cost_usd']:.4f}"

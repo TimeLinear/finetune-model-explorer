@@ -1,4 +1,5 @@
 {
+  "rules_version": "2026-10-25",
   "orgs": {
     "meta-llama": {"vendor": "Meta", "country": "US"},
     "google": {"vendor": "Google", "country": "US"},
@@ -36,7 +37,7 @@
   "pipelines": ["text-generation", "image-text-to-text"],
   "lm_tags_without_pipeline": ["conversational", "text-generation", "mistral-common", "vllm"],
   "params_range_b": [1, 24.99],
-  "exclude_pattern": "(gguf|awq|gptq|fp8|fp4|int4|int8|w4a16|w8a8|nvfp4|mxfp4|bnb|4bit|8bit|quant|onnx|mlx|exl2|reward|-rm\\b|prm|guard|embed|eagle|draft|-mtp)",
+  "exclude_pattern": "(gguf|awq|gptq|fp8|fp4|int4|int8|w4a16|w8a8|nvfp4|mxfp4|bnb|4bit|8bit|quant|onnx|mlx|exl2|reward|-rm\\b|prm|guard|shield|content-safety|embed|eagle|draft|-mtp)",
   "exclude_audio_pattern": "(voxtral|whisper|speech|tts|asr)",
   "duplicate_pattern": "(-bf16$|-hf$)",
   "duplicate_exempt_orgs": ["meta-llama"],

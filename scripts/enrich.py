@@ -11,6 +11,8 @@
 """
 import csv, json, os, sys, time, urllib.parse, urllib.request
 
+sys.stdout.reconfigure(encoding="utf-8")
+
 SRC, OUT_JSON, OUT_CSV = sys.argv[1:4]
 TOKEN = os.environ.get("HF_TOKEN")
 UA = {"User-Agent": "finetune-model-explorer/0.1"}

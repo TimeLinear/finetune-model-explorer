@@ -208,6 +208,7 @@ def count_by(rows, key, labels):
 def dry_run(ref_date, items, catalog, manifest, client, last_asked=None, rs=None, cfg=None):
     """시험 실행 보고서 본문 (HF 요청 수·소요 시간·조회 요약은 호출한 쪽에서 더한다)."""
     rs = rs or refresh_settings()
+    cfg = cfg or catalog_config()
     judged = judge(items, catalog, ref_date, rs=rs, last_asked=last_asked, cfg=cfg)
     checks = card_checks(judged, items, catalog, manifest, client)
     max_chars = setting("summary.card_max_chars")
@@ -218,6 +219,7 @@ def dry_run(ref_date, items, catalog, manifest, client, last_asked=None, rs=None
     return {
         "date": ref_date.isoformat(),
         "dry_run": True,
+        "rules_version": cfg.get("rules_version"),
         "settings": rs,
         "groups": groups,
         "decision_counts": count_by(results, "decision", DECISIONS),

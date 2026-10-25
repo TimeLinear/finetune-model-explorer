@@ -1,6 +1,7 @@
 """공식 조직 계정의 모델 목록 조회 (D-04, design/data-refresh.md 3절 "조회").
 
-- 조직·조회 항목·필터 규칙은 config/catalog.json 에 둔다.
+- 조직·조회 항목·필터 규칙은 config/catalog.json 에 둔다. 규칙을 바꾸면 rules_version 을 올린다
+  (2026-10-21 첫 기준본의 규칙은 tests/fixtures/catalog_2026-10-21.json 에 고정해 선별 회귀 테스트에 쓴다).
 - 조회 항목(expand)에 커밋 해시(sha)와 마지막 수정 시각(lastModified)을 넣어, 카드 본문을 받지 않고도 변경 여부를 먼저 가린다.
 - 요청 간격(hf.request_interval_sec)과 재시도(http.max_retries)는 설정값을 쓰고, HF_TOKEN 이 있으면 함께 보낸다 (NF2006).
 - 카드 본문은 받지 않는다. 받은 요청 수는 HFClient.requests 로 센다 (갱신 보고서에 기록).
@@ -93,6 +94,11 @@ def size_bounds(cfg):
     return float(f"{lo}e9"), float(f"{hi}e9")
 
 
+def name_excluded(mid, cfg):
+    """모델 ID 가 제외 패턴(양자화·변환본, 보상·안전 분류·임베딩, 음성 등)에 걸리는가."""
+    return bool(re.search(cfg["exclude_pattern"], mid, re.I) or re.search(cfg["exclude_audio_pattern"], mid, re.I))
+
+
 def to_row(m, org, cfg):
     """조회 결과 1건 → (행, None) 또는 (None, 제외 사유). 언어 모델·크기 범위·제외 패턴을 여기서 거른다."""
     mid = m["id"]
@@ -105,7 +111,7 @@ def to_row(m, org, cfg):
         return None, "언어 모델 아님"
     if not total:
         return None, "파라미터 수 정보 없음"
-    if re.search(cfg["exclude_pattern"], mid, re.I) or re.search(cfg["exclude_audio_pattern"], mid, re.I):
+    if name_excluded(mid, cfg):
         return None, "제외 패턴"
     lo, hi = size_bounds(cfg)
     if not (lo <= total <= hi):
